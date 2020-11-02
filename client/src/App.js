@@ -6,6 +6,7 @@ import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
+import Logout from "./pages/Logout";
 import UserContext from "./utils/UserContext";
 
 function App() {
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route exact path="/signup">
             <SignUp />
+          </Route>
+          <Route exact path="/logout">
+            <Logout />
           </Route>
           <Route>
             <NoMatch />
