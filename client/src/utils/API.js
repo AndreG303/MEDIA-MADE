@@ -20,5 +20,9 @@ export default {
   // Saves a user to the database
   userLogin: function(userData) {
     return axios.post("/api/login/signup", userData);
-  }
+  },
+
+  // userSignUp: function(userSignupData) {
+  //   return axios.post("/api/signup", userSignupData);
+  // }
 };
