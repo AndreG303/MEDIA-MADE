@@ -8,11 +8,12 @@ function SignUpForm(props){
 
     const emailInput = useRef();
     const passwordInput = useRef();
+    const usernameInput = useRef();
     const { setEmail, setLoggedIn} = useContext(UserContext);
 
     const handleSubmit = event => {
         event.preventDefault();
-        API.userSignUp({ email: emailInput.current.value, password: passwordInput.current.value})
+        API.userSignUp({ username: usernameInput.current.value, email: emailInput.current.value, password: passwordInput.current.value})
         .then( data => {
             console.log(data);
             setEmail(data.data.email);
@@ -37,6 +38,10 @@ function SignUpForm(props){
                 </Col>
             </Form.Row>
             </Form.Group>
+            <Form.Group controlId="formBasicUsername">
+                <Form.Label>Username</Form.Label>
+                <Form.Control ref={usernameInput} type="username" placeholder="Enter a username" />
+            </Form.Group>
             <Form.Group controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control ref={emailInput} type="email" placeholder="Enter email" />
@@ -44,7 +49,6 @@ function SignUpForm(props){
                 We'll never share your email with anyone else.
                 </Form.Text>
             </Form.Group>
-
             <Form.Group controlId="formBasicPassword">
                 <Form.Label>Password</Form.Label>
                 <Form.Control ref={passwordInput} type="password" placeholder="Password" />

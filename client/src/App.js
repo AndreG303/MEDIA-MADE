@@ -14,13 +14,13 @@ import SessionUser from "./utils/SessionUser";
 
 function App() {
   const [email, setEmail] = useState("");
-  
+  const [username, setUsername] = useState("");
   const [loggedIn, setLoggedIn] = useState(false);
   SessionUser(setEmail, setLoggedIn);
 
   return (
     <Router>
-      <UserContext.Provider value={{email, setEmail, loggedIn, setLoggedIn}}>
+      <UserContext.Provider value={{email, setEmail, loggedIn, setLoggedIn, username, setUsername}}>
       <div>
         <NavBar />
         <Switch>
