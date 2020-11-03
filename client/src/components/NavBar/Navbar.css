@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Old+Standard+TT:ital@1&display=swap');
+
+a.brand-title.navbar-brand{
+    font-family: 'Old Standard TT', serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 30px;
+    color: #d8dbe2;
+}
+
+.navbar-light .navbar-nav.navbar-body .nav-link{
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    color: #d8dbe2;
+}
+
+.navbar{
+    background-color: #373f51;
+}

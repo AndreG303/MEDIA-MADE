@@ -1,7 +1,7 @@
 import React, {Fragment, useContext} from "react";
 import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
 import UserContext from "../../utils/UserContext";
-
+import './Navbar.css';
 
 
 
@@ -11,23 +11,22 @@ function NavBar() {
 
   return( 
 
-<Navbar bg="light" expand="lg">
-  <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
+<Navbar className="navbar" expand="lg">
+  <Navbar.Brand className="brand-title" href="/">MEDIA MADE</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#link">Link</Nav.Link>
+    <Nav className="mr-auto navbar-body">
+      <Nav.Link href="/">Home</Nav.Link>
+      <Nav.Link href="">TV Shows</Nav.Link>
+      <Nav.Link href="">About Us</Nav.Link>
     { ( () => {
       if(loggedIn){
         return(
         <Fragment>
           <NavDropdown title={email} id="basic-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+          <NavDropdown.Item href="/">My Closet</NavDropdown.Item>
           <NavDropdown.Divider />
-          <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+          <NavDropdown.Item href="/logout">Log Out</NavDropdown.Item>
           </NavDropdown>
         </Fragment>
       )

@@ -39,6 +39,9 @@ function LoginForm(props){
                 <Form.Label>Password</Form.Label>
                 <Form.Control ref={passwordInput} type="password" placeholder="Password" />
             </Form.Group>
+            <Form.Text className="text-muted">
+                Or Sign-Up <a href="/signup">HERE</a>
+            </Form.Text>
             <Button variant="primary" type="submit">
                 Submit
             </Button>
