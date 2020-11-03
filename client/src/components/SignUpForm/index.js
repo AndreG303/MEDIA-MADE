@@ -36,7 +36,7 @@ function SignUpForm(props){
             </div>
             <button type="submit" className="btn btn-primary">Submit</button>
         </form>
-    )
+    )   
 }
 
 export default SignUpForm;
