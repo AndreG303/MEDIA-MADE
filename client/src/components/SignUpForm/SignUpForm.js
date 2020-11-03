@@ -11,8 +11,6 @@ function SignUpForm(props){
 
     const handleSubmit = event => {
         event.preventDefault();
-        console.log("submit successful");
-        console.log({ email: emailInput.current.value, password: passwordInput.current.value});
         API.userSignUp({ email: emailInput.current.value, password: passwordInput.current.value})
         .then( data => {
             console.log(data);
