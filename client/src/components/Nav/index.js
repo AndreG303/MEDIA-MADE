@@ -6,6 +6,7 @@ function Nav() {
       <a className="navbar-brand" href="/">
         React Reading List
       </a>
+      
     </nav>
   );
 }
