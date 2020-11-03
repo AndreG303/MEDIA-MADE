@@ -1,4 +1,11 @@
-import react from "react"
+import React from "react";
+import {Navbar, Nav, NavDropdown, Form, Button, FormControl} from 'react-bootstrap';
+
+
+
+
+function NavBar() {
+  return( 
 
 <Navbar bg="light" expand="lg">
   <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
@@ -21,3 +28,10 @@ import react from "react"
     </Form>
   </Navbar.Collapse>
 </Navbar>
+
+)
+}
+
+export default NavBar;
+
+

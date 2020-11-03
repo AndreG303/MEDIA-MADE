@@ -23,7 +23,7 @@ function SignUpForm(props){
         })
     }
 
-    return(
+    return( 
         <form onSubmit={handleSubmit}>
             <div className="form-group">
                 <label htmlFor="exampleInputEmail1">Email address</label>
