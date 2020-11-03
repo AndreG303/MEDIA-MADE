@@ -8,10 +8,13 @@ import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import Logout from "./pages/Logout";
 import UserContext from "./utils/UserContext";
+import SessionUser from "./utils/SessionUser";
 
 function App() {
   const [email, setEmail] = useState("");
   const [loggedIn, setLoggedIn] = useState(false);
+  SessionUser(setEmail, setLoggedIn);
+  
   return (
     <Router>
       <UserContext.Provider value={{email, setEmail, loggedIn, setLoggedIn}}>
