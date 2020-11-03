@@ -14,6 +14,7 @@ import SessionUser from "./utils/SessionUser";
 
 function App() {
   const [email, setEmail] = useState("");
+  
   const [loggedIn, setLoggedIn] = useState(false);
   SessionUser(setEmail, setLoggedIn);
 

@@ -1,7 +1,8 @@
 import React, {useRef, useContext} from "react";
 import API from "../../utils/API";
 import UserContext from "../../utils/UserContext";
-import {Form, Button} from 'react-bootstrap';
+import {Form, Button, Col} from 'react-bootstrap';
+import "./SignUpForm.css";
 
 function SignUpForm(props){
 
@@ -23,11 +24,23 @@ function SignUpForm(props){
     }
 
     return( 
-        <Form onSubmit={handleSubmit}>
+        <Form className="form" onSubmit={handleSubmit}>
+            <Form.Group>
+            <Form.Row>
+                <Col>
+                <Form.Label>First Name</Form.Label>
+                <Form.Control placeholder="First name" />
+                </Col>
+                <Col>
+                <Form.Label>Last Name</Form.Label>
+                <Form.Control placeholder="Last name" />
+                </Col>
+            </Form.Row>
+            </Form.Group>
             <Form.Group controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control ref={emailInput} type="email" placeholder="Enter email" />
-                <Form.Text className="text-muted">
+                <Form.Text>
                 We'll never share your email with anyone else.
                 </Form.Text>
             </Form.Group>
@@ -36,7 +49,7 @@ function SignUpForm(props){
                 <Form.Label>Password</Form.Label>
                 <Form.Control ref={passwordInput} type="password" placeholder="Password" />
             </Form.Group>
-            <Button variant="primary" type="submit">
+            <Button variant="outline-light" type="submit">
                 Submit
             </Button>
         </Form>
