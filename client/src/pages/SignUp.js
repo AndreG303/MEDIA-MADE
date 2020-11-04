@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import SignUpForm from "../components/SignUpForm";
+import SignUpForm from "../components/SignUpForm/SignUpForm";
 import {Redirect} from "react-router-dom";
 import UserContext from "../utils/UserContext";
 
