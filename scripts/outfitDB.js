@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-// const db = require("../models");
+const db = require("../models");
 
 mongoose.connect(
   process.env.MONGODB_URI ||
@@ -192,3 +192,17 @@ const Outfit = new Outfits({ //single outfit document with properties (can add b
     },
 }
 )
+
+
+// Save the new model instance, passing a callback
+Outfit.save(function (err) {
+    if (err) return handleError(err);
+    // saved!
+  });
+
+
+
+db.find({outfit1}, function (err, displayoutfit) {
+    if (err) return handleError(err);
+    console.log("displayoutfit", displayoutfit);
+})
