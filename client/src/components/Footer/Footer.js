@@ -18,7 +18,6 @@ function Footer() {
         height="30"
         className="d-inline-block align-top"
       />{' '}
-      React Bootstrap
     </Navbar.Brand>
     <Nav className="mr-auto">
       <Nav.Link href="">Coctact Us</Nav.Link>
