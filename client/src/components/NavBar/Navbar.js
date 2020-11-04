@@ -7,7 +7,7 @@ import './Navbar.css';
 
 function NavBar() {
 
-  const {username, loggedIn} = useContext(UserContext);
+  const {email, loggedIn} = useContext(UserContext);
 
   return( 
 
@@ -23,7 +23,7 @@ function NavBar() {
       if(loggedIn){
         return(
         <Fragment>
-          <NavDropdown title={username} id="basic-nav-dropdown">
+          <NavDropdown title={email} id="basic-nav-dropdown">
           <NavDropdown.Item href="/">My Closet</NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item href="/logout">Log Out</NavDropdown.Item>

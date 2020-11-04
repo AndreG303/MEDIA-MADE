@@ -9,6 +9,7 @@ import SignUp from "./pages/SignUp";
 import Logout from "./pages/Logout";
 import UserContext from "./utils/UserContext";
 import SessionUser from "./utils/SessionUser";
+import Outfits from "./pages/Outfits";
 
 
 
@@ -38,6 +39,9 @@ function App() {
           </Route>
           <Route exact path="/logout">
             <Logout />
+          </Route>
+          <Route exact path="/outfits">
+            <Outfits />
           </Route>
           <Route>
             <NoMatch />
