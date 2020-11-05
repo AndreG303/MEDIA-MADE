@@ -9,6 +9,8 @@ import SignUp from "./pages/SignUp";
 import Logout from "./pages/Logout";
 import UserContext from "./utils/UserContext";
 import SessionUser from "./utils/SessionUser";
+import OutfitPage from "./pages/OutfitPage";
+import Homepage from "./pages/Homepage"
 
 
 
@@ -19,12 +21,14 @@ function App() {
 
   return (
     <Router>
+      <h1>{email}</h1>
       <UserContext.Provider value={{email, setEmail, loggedIn, setLoggedIn}}>
       <div>
         <NavBar />
         <Switch>
-          <Route exact path={["/", "/books"]}>
-            <Books />
+
+          <Route exact path="/">
+            <Homepage />
           </Route>
           <Route exact path="/books/:bookid">
             <Detail />
@@ -40,6 +44,9 @@ function App() {
           </Route>
           <Route>
             <NoMatch />
+          </Route>
+          <Route exact path="/outfits">
+            <OutfitPage />
           </Route>
         </Switch>
       </div>

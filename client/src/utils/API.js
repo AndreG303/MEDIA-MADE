@@ -39,10 +39,10 @@ export default {
   },
 
   getOutfits: function() {
-    return axios.get("/api/outfit");
+    return axios.get("/api/outfits");
   },
 
-  getOutfits: function(id) {
-    return axios.get("/api/outfit/" + id);
+  getOutfit: function(id) {
+    return axios.get("/api/outfits/" + id);
   }
 };
