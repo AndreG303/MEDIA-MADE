@@ -36,5 +36,13 @@ export default {
 
   getUser: function(userData) {
     return axios.get("/api/user/data", userData);
+  },
+
+  getOutfits: function() {
+    return axios.get("/api/outfits");
+  },
+
+  getOutfit: function(id) {
+    return axios.get("/api/outfits/" + id);
   }
 };
