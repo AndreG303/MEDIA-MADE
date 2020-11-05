@@ -3,10 +3,14 @@ const db = require("../models");
 
 mongoose.connect(
     process.env.MONGODB_URI ||
-    "mongodb://localhost/proj3"
+    "mongodb://localhost/proj3",
+    {
+  useNewUrlParser: true,
+  useFindAndModify: false
+    }
 );
 
-const outfit = new db.Outfit({
+const outfit = [{
     outfitImage: "/assets/outfitImg/Outfit1.1.jpg",
     items: [{
         image: "https://s1.thcdn.com/productimg/1600/1600/12081059-1064677155724591.jpg",
@@ -227,7 +231,7 @@ const outfit = new db.Outfit({
         ]
     },
 
-);
+];
 
 // const outfit2 = new db.Outfit({
 //     outfitImage: "/assets/outfitImg/Outfit1.2.JPG",
@@ -241,9 +245,9 @@ const outfit = new db.Outfit({
 // });
 
 
-db.Outfit.remove({})
+db.Outfit.deleteMany({})
     .then(() => {
-        return db.Outfit.collection.insertMany([outfit])
+        return db.Outfit.collection.insertMany(outfit)
     })
     .then(data => {
         mongoose.connection.close();
