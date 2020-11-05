@@ -9,13 +9,14 @@ function SignUpForm(props){
     const emailInput = useRef();
     const passwordInput = useRef();
     const usernameInput = useRef();
-    const { setEmail, setLoggedIn} = useContext(UserContext);
+    const { setEmail, setUsername, setLoggedIn} = useContext(UserContext);
 
     const handleSubmit = event => {
         event.preventDefault();
         API.userSignUp({ username: usernameInput.current.value, email: emailInput.current.value, password: passwordInput.current.value})
         .then( data => {
             console.log(data);
+            setUsername(data.data.username);
             setEmail(data.data.email);
             setLoggedIn(true); 
         })
@@ -40,7 +41,7 @@ function SignUpForm(props){
             </Form.Group>
             <Form.Group controlId="formBasicUsername">
                 <Form.Label>Username</Form.Label>
-                <Form.Control ref={usernameInput} type="username" placeholder="Enter a username" />
+                <Form.Control ref={usernameInput} type="text" placeholder="Enter a username" />
             </Form.Group>
             <Form.Group controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>

@@ -34,8 +34,9 @@ router.post("/signup", (req, res) => {
         password: req.body.password
     })
     .then(data => {
-        res.json({username: data.username});
-        res.json({email: data.email});
+        res.json({
+            username: data.username,
+            email: data.email});
     })
     .catch(err => {
         console.log(err);
