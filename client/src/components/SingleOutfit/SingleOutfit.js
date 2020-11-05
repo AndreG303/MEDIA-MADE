@@ -5,7 +5,7 @@ function OutfitCard(props) {
     return (
         <>
        <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src={props.outfit.outfitImage} />
+  <Card.Img variant="top" src={process.env.PUBLIC_URL + props.outfit.outfitImage} />
   <Card.Body>
     <Card.Title>Card Title</Card.Title>
     <Card.Text>

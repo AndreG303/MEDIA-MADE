@@ -7,7 +7,7 @@ mongoose.connect(
 );
 
 const outfit1 = new db.Outfit({
-    outfitImage: "https://s1.thcdn.com/productimg/1600/1600/12081059-1064677155724591.jpg",
+    outfitImage: "/assets/outfitImg/Outfit 1.1.jpg",
     items: [ {
         image: "https://s1.thcdn.com/productimg/1600/1600/12081059-1064677155724591.jpg",
         name: "KENZO Women's Allover Flower Rice Bag Cotton Poplin Dress - Deep Fuschia",
