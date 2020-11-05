@@ -4,6 +4,7 @@ import Books from "./pages/Books";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import NavBar from "./components/NavBar/Navbar";
+import Footer from "./components/Footer/Footer"
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import Logout from "./pages/Logout";
@@ -42,6 +43,7 @@ function App() {
             <NoMatch />
           </Route>
         </Switch>
+        <Footer />
       </div>
       </UserContext.Provider>
     </Router>
