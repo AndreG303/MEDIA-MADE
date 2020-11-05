@@ -4,6 +4,7 @@ import Books from "./pages/Books";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import NavBar from "./components/NavBar/Navbar";
+import Footer from "./components/Footer/Footer"
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import Logout from "./pages/Logout";
@@ -11,18 +12,19 @@ import UserContext from "./utils/UserContext";
 import SessionUser from "./utils/SessionUser";
 import OutfitPage from "./pages/OutfitPage";
 import Homepage from "./pages/Homepage"
+import Outfits from "./pages/Outfits";
 
 
 
 function App() {
   const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
   const [loggedIn, setLoggedIn] = useState(false);
   SessionUser(setEmail, setLoggedIn);
 
   return (
     <Router>
-      <h1>{email}</h1>
-      <UserContext.Provider value={{email, setEmail, loggedIn, setLoggedIn}}>
+      <UserContext.Provider value={{email, setEmail, loggedIn, setLoggedIn, username, setUsername}}>
       <div>
         <NavBar />
         <Switch>
@@ -42,6 +44,9 @@ function App() {
           <Route exact path="/logout">
             <Logout />
           </Route>
+          <Route exact path="/outfits">
+            <Outfits />
+          </Route>
           <Route>
             <NoMatch />
           </Route>
@@ -49,6 +54,7 @@ function App() {
             <OutfitPage />
           </Route>
         </Switch>
+        <Footer />
       </div>
       </UserContext.Provider>
     </Router>
