@@ -10,17 +10,19 @@ import SignUp from "./pages/SignUp";
 import Logout from "./pages/Logout";
 import UserContext from "./utils/UserContext";
 import SessionUser from "./utils/SessionUser";
+import Outfits from "./pages/Outfits";
 
 
 
 function App() {
   const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
   const [loggedIn, setLoggedIn] = useState(false);
   SessionUser(setEmail, setLoggedIn);
 
   return (
     <Router>
-      <UserContext.Provider value={{email, setEmail, loggedIn, setLoggedIn}}>
+      <UserContext.Provider value={{email, setEmail, loggedIn, setLoggedIn, username, setUsername}}>
       <div>
         <NavBar />
         <Switch>
@@ -38,6 +40,9 @@ function App() {
           </Route>
           <Route exact path="/logout">
             <Logout />
+          </Route>
+          <Route exact path="/outfits">
+            <Outfits />
           </Route>
           <Route>
             <NoMatch />
