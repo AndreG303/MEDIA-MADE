@@ -6,26 +6,41 @@ mongoose.connect(
   "mongodb://localhost/proj3"
 );
 
-const outfit1 = new db.Outfit({
-    outfitImage: "/assets/outfitImg/Outfit 1.1.jpg",
+const outfit = new db.Outfit({
+    outfitImage: "/assets/outfitImg/Outfit1.1.jpg",
     items: [ {
         image: "https://s1.thcdn.com/productimg/1600/1600/12081059-1064677155724591.jpg",
         name: "KENZO Women's Allover Flower Rice Bag Cotton Poplin Dress - Deep Fuschia",
         url: "https://www.revolve.com/kenzo-all-over-rice-bag-dress-in-deep-fuchsia/dp/KZOR-WD19/?d=Womens&AID=11017645&PID=7900573&bneEl=false&cjevent=9c5119d11e1311eb804100a20a24060b&d=Womens&product=KZOR-WD19&source=cj&utm_campaign=glob_p_4609662&utm_medium=affiliate&utm_source=cj&product=KZOR-WD19&",
-        avail: true
-    },
-    {
-        image: "some/url/string",
-        name: "",
-        url: "product/url",
-        avail: true
+        avail: false
+    }
+    ]
+},{
+    outfitImage: "/assets/outfitImg/Outfit1.2.JPG",
+    items: [ {
+        image: "https://n.nordstrommedia.com/id/sr3/956c7594-0803-4f0c-8f72-abf40f7a6af3.webp?crop=pad&pad_color=FFF&format=jpeg&w=1318&h=2021",
+        name: "ALICE + OLIVIA Willa Silk Blouse",
+        url: "https://www.revolve.com/kenzo-all-over-rice-bag-dress-in-deep-fuchsia/dp/KZOR-WD19/?d=Womens&AID=11017645&PID=7900573&bneEl=false&cjevent=9c5119d11e1311eb804100a20a24060b&d=Womens&product=KZOR-WD19&source=cj&utm_campaign=glob_p_4609662&utm_medium=affiliate&utm_source=cj&product=KZOR-WD19&",
+        avail: false
     }
     ]
 });
 
+// const outfit2 = new db.Outfit({
+//     outfitImage: "/assets/outfitImg/Outfit1.2.JPG",
+//     items: [ {
+//         image: "https://n.nordstrommedia.com/id/sr3/956c7594-0803-4f0c-8f72-abf40f7a6af3.webp?crop=pad&pad_color=FFF&format=jpeg&w=1318&h=2021",
+//         name: "ALICE + OLIVIA Willa Silk Blouse",
+//         url: "https://www.revolve.com/kenzo-all-over-rice-bag-dress-in-deep-fuchsia/dp/KZOR-WD19/?d=Womens&AID=11017645&PID=7900573&bneEl=false&cjevent=9c5119d11e1311eb804100a20a24060b&d=Womens&product=KZOR-WD19&source=cj&utm_campaign=glob_p_4609662&utm_medium=affiliate&utm_source=cj&product=KZOR-WD19&",
+//         avail: false
+//     }
+//     ]
+// });
+
+
 db.Outfit.remove({})
 .then( () => {
-    return db.Outfit.collection.insertMany([outfit1])
+    return db.Outfit.collection.insertMany([outfit])
 })
 .then( data => {
     mongoose.connection.close();
