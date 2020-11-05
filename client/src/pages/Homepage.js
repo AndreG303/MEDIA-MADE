@@ -8,11 +8,11 @@ import { useAllOutfits } from "../utils/OutfitAPICalls";
 
 function Outfit() {
     const [showOutfits] = useAllOutfits();
-    
+    console.log(showOutfits);
     return (
         <>
-        {showOutfits.map( outfit => <SingleOutfit outfit={outfit} />) }
-        
+        {/* {showOutfits.map( outfit => <SingleOutfit outfit={outfit} />) } */}
+        { (showOutfits.length > 0) ? <SingleOutfit showOutfits={showOutfits}/> : null}
         </>
     )
 }

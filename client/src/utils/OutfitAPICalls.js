@@ -14,41 +14,7 @@ const useAllOutfits = function() {
             console.log(err);
         });
 
-        // // FAKE data
-        // setshowOutfits([
-        //     {
-        //         oufitImage: "test/image",
-        //         items: [ {
-        //             image: "some/url/string",
-        //             name: "",
-        //             url: "product/url",
-        //             avail: true
-        //         },
-        //         {
-        //             image: "some/url/string",
-        //             name: "",
-        //             url: "product/url",
-        //             avail: true
-        //         }
-        //         ]
-        //     },
-        //     {
-        //         oufitImage: "test/image",
-        //         items: [ {
-        //             image: "some/url/string",
-        //             name: "",
-        //             url: "product/url",
-        //             avail: true
-        //         },
-        //         {
-        //             image: "some/url/string",
-        //             name: "",
-        //             url: "product/url",
-        //             avail: true
-        //         }
-        //         ]
-        //     }
-        // ])
+
     }, []);
 
     return [showOutfits];
