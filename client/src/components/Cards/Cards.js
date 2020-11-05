@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { Card, Button } from "react-bootstrap";
 
-function Cards() {
+function Cards(props) {
     const [widthState, setWidthState] = useState(
         [ 20, 20, 20, 20, 20]
     );
@@ -35,7 +35,7 @@ function Cards() {
                     console.log(nWidth);
                     setWidthState(nWidth); 
                 }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Img variant="top" src={process.env.PUBLIC_URL + props.outfit.outfitImage} />
                 <Card.Body>
                     <Card.Title>Card Title</Card.Title>
                     <Card.Text>
