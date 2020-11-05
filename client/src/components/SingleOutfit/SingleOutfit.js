@@ -2,32 +2,21 @@ import React, {useState} from "react";
 import {Card, Button} from "react-bootstrap";
 
 function OutfitCard(props) {
-    const [widthState, setWidthState] = useState(
-        [ 20, 20, 20, 20, 20]
-    );
+    const imageLength = props.showOutfits.map ( (imageEl) => 100 / props.showOutfits.length );
+    console.log("ImageLength:", imageLength);
+    const [widthState, setWidthState] = useState(imageLength);
+    console.log("showOutfits:", props.showOutfits);
     return (
         <>
-       {/* <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src={process.env.PUBLIC_URL + props.outfit.outfitImage} />
-  <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
-  </Card.Body>
-</Card> */}
 <div style={{display:"flex", justifyContent:"inlineBlock" }}>
             {widthState.map( (cardWidth, i) => 
                 <Card style={{width: cardWidth + "%", transition: "width 1s"}} onMouseOver={ () =>{ 
-                    //setWidthState([10, 20, 40, 20, 10]) 
-                    let min = 10;
+                    let min = 5;
                     let variance = 100 - widthState.length * min;
                     console.log(variance);
                     let nWidth = [];
                     let len = widthState.length;
-                    let maxValue = -1;
+                    let maxValue = -3;
                     widthState.forEach( (width, x) => {
                         console.log({x, len, i});
                         nWidth.push(Math.abs(x-i));
@@ -42,10 +31,10 @@ function OutfitCard(props) {
                     nWidth = nWidth.map( (nw, i) => {
                         return scale * nw + min;
                     });
-                    console.log(nWidth);
+                    console.log("nWidth:", nWidth);
                     setWidthState(nWidth); 
                 }}>
-                <Card.Img variant="top" src={process.env.PUBLIC_URL + props.outfit.outfitImage} />
+                <Card.Img variant="top" src={process.env.PUBLIC_URL + props.showOutfits[i].outfitImage} />
                 <Card.Body>
                     <Card.Title>Card Title</Card.Title>
                     <Card.Text>
@@ -55,7 +44,7 @@ function OutfitCard(props) {
                     <Button variant="primary">Go somewhere</Button>
                 </Card.Body>
             </Card>
-            )}
+            )} 
             
             
             </div>
