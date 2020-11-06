@@ -4,9 +4,11 @@ import { useAllOutfits } from "../utils/OutfitAPICalls";
 
 function Outfits(){
     const [showOutfits] = useAllOutfits();
+    console.log(showOutfits)
     return(
         <>
-        { (showOutfits.length > 0) ? <OutfitPage showOutfits={showOutfits}/> : null}
+        <OutfitPage
+        />
         </>
     )
 }
