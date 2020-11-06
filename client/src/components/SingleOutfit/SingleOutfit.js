@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {Card, Button} from "react-bootstrap";
+import "./SingleOutfit.css";
 
 function OutfitCard(props) {
     const imageLength = props.showOutfits.map ( (imageEl) => 100 / props.showOutfits.length );
@@ -34,16 +35,7 @@ function OutfitCard(props) {
                     console.log("nWidth:", nWidth);
                     setWidthState(nWidth); 
                 }}>
-                <Card.Img variant="top" src={process.env.PUBLIC_URL + props.showOutfits[i].outfitImage} />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
-    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-            </Card>
+                <Card.Img className="outfitCard" variant="top" src={process.env.PUBLIC_URL + props.showOutfits[i].outfitImage} /></Card>
             )} 
             
             
