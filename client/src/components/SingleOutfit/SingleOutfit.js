@@ -11,7 +11,7 @@ function OutfitCard(props) {
         <>
 <div style={{display:"flex", justifyContent:"inlineBlock" }}>
             {widthState.map( (cardWidth, i) => 
-                <Card style={{width: cardWidth + "%", transition: "width 1s"}} onMouseOver={ () =>{ 
+                <Card className="full-outfit" style={{width: cardWidth + "%", transition: "width 1s"}} onMouseOver={ () =>{ 
                     let min = 5;
                     let variance = 100 - widthState.length * min;
                     console.log(variance);
@@ -35,7 +35,9 @@ function OutfitCard(props) {
                     console.log("nWidth:", nWidth);
                     setWidthState(nWidth); 
                 }}>
-                <Card.Img className="outfitCard" variant="top" src={process.env.PUBLIC_URL + props.showOutfits[i].outfitImage} /></Card>
+                <Card.Img className="outfitCard hoverShow" variant="top" src={process.env.PUBLIC_URL + props.showOutfits[i].outfitImage} />
+                <Card.Img className="outfitCard hoverHide" variant="top" src={process.env.PUBLIC_URL + "/assets/outfitImg/SpongeBob_stock_art.png"} />
+                </Card>
             )} 
             
             

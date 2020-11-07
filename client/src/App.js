@@ -1,7 +1,5 @@
 import React, {useState} from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Books from "./pages/Books";
-import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import NavBar from "./components/NavBar/Navbar";
 import Footer from "./components/Footer/Footer"
@@ -28,12 +26,8 @@ function App() {
       <div>
         <NavBar />
         <Switch>
-
           <Route exact path="/">
             <Homepage />
-          </Route>
-          <Route exact path="/books/:bookid">
-            <Detail />
           </Route>
           <Route exact path="/login">
             <Login />

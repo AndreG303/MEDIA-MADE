@@ -5,17 +5,6 @@ import { useAllOutfits } from "../utils/OutfitAPICalls";
 import API from "../utils/API";
 
 function Outfits(props){
-    const [showOutfits, setShowOutfits] = useAllOutfits();
-   
-  
-
-    const {outfitsid} = useParams();
-
-    useEffect(() => {
-        API.getOutfit(outfitsid)
-        .then(res => setShowOutfits(res.data))   
-        .catch(err => console.log(err));
-    }, [])
 
     return(
         <>

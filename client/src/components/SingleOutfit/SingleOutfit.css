@@ -2,3 +2,15 @@
     
     object-fit: cover;
 }
+.hoverHide{
+    display: block;
+}
+.hoverShow{
+    display: none;
+}
+.full-outfit:hover > .hoverHide{
+    display: none;
+}
+.full-outfit:hover > .hoverShow{
+    display: block;
+}

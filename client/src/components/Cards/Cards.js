@@ -1,5 +1,6 @@
 import React, {useState} from "react";
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+import "./cards.css";
 
 function Cards(props) {
     const [widthState, setWidthState] = useState(
@@ -10,7 +11,7 @@ function Cards(props) {
     return (
         <div style={{display:"flex", justifyContent:"inlineBlock" }}>
             {widthState.map( (cardWidth, i) => 
-                <Card style={{width: cardWidth + "%", transition: "width 1s"}} onMouseOver={ () =>{ 
+                <Card style={{width: cardWidth + "%", transition: "width 1s", backgroundColor:"transparent"}} onMouseOver={ () =>{ 
                     //setWidthState([10, 20, 40, 20, 10]) 
                     let min = 10;
                     let variance = 100 - widthState.length * min;
@@ -35,20 +36,15 @@ function Cards(props) {
                     console.log(nWidth);
                     setWidthState(nWidth); 
                 }}>
-                <Card.Img variant="top" src={process.env.PUBLIC_URL + props.outfit.outfitImage} />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
-    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-            </Card>
+                <Card.Img className="show-outfit-img" variant="top" src={process.env.PUBLIC_URL + props.outfit.outfitImage} />
+                
+                 <Card.Img className="show-outfit-img" variant="top" src={"https://static.wikia.nocookie.net/spongebob/images/d/d7/SpongeBob_stock_art.png/revision/latest/scale-to-width-down/350?cb=20190921125147"} />
+                 </Card>
+                
             )}
             
             
-            </div>
+        </div>
     )
 };
 
