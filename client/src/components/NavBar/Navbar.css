@@ -5,15 +5,15 @@ a.brand-title.navbar-brand{
     font-style: italic;
     font-weight: normal;
     font-size: 30px;
-    color: #d8dbe2;
+    color: #373f51;
 }
 
 .navbar-light .navbar-nav.navbar-body .nav-link{
     font-family: 'Rubik', sans-serif;
-    font-weight: normal;
-    color: #d8dbe2;
+    font-weight: bold;
+    color: #373f51;
 }
 
 .navbar{
-    background-color: #373f51;
+    background-color: #a9bcd0;
 }
