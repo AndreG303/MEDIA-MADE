@@ -4,6 +4,7 @@ import API from "../utils/API";
 import {Row, Col} from "react-bootstrap";
 // import OutfitCard from "../components/SingleOutfit/SingleOutfit";
 
+
 function OutfitPage(props) {
 
     const [outfit, setOutfit] = useState({
@@ -40,6 +41,7 @@ function OutfitPage(props) {
                 </Col>
             </Row>
         )})
+        
         </>
     )
 }

@@ -1,21 +1,26 @@
-import React from "react";
+import React, {useState} from "react";
 import "./TopBtn.css";
+import { FaLongArrowAltUp } from 'react-icons/fa';
 
 function ScrolltoTop () {
-    <a href="#" class="myButton">↑Top</a>
-    window.onscroll = function() {scrollFunction()};
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          myButton.style.display = "block";
-        } else {
-          myButton.style.display = "none";
-        }
-      }
-      
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-      }
+    const [showScroll, setShowScroll] = useState(false)
+const checkScrollTop = () => {    
+   if (!showScroll && window.pageYOffset > 400){
+      setShowScroll(true)    
+   } else if (showScroll && window.pageYOffset <= 400){
+      setShowScroll(false)    
+   }  
+};
+const scrollTop = () =>{
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  };
+
+  window.addEventListener('scroll', checkScrollTop)
+
+  return (
+        <FaLongArrowAltUp className="scrollTop" onClick={scrollTop} style={{height: 40, display: showScroll ? 'flex' : 'none'}}/>
+  );
+
 }
 
 export default ScrolltoTop;
