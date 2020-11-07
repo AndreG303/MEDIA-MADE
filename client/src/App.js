@@ -47,12 +47,13 @@ function App() {
           <Route exact path="/outfits">
             <Outfits />
           </Route>
-          <Route>
-            <NoMatch />
-          </Route>
-          <Route exact path="/outfits">
+          <Route exact path="/outfits/:outfitid">
             <OutfitPage />
           </Route>
+          <Route>
+            {/* this is a 404, IT SHOULD ALWAYS BE AT THE BOTTOM */}
+            <NoMatch />
+          </Route>         
         </Switch>
         <Footer />
       </div>
