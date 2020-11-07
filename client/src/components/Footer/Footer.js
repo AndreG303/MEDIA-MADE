@@ -20,7 +20,7 @@ function Footer() {
       />{' '}
     </Navbar.Brand>
     <Nav className="mr-auto">
-      <Nav.Link href="">Coctact Us</Nav.Link>
+      <Nav.Link href="">Contact Us</Nav.Link>
     </Nav>
   </Navbar>
 </>
