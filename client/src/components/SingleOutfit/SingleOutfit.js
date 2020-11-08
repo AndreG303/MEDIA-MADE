@@ -35,12 +35,11 @@ function OutfitCard(props) {
                     console.log("nWidth:", nWidth);
                     setWidthState(nWidth); 
                 }}>
+                
                 <Card.Img className="outfitCard hoverShow" variant="top" src={process.env.PUBLIC_URL + props.showOutfits[i].outfitImage} />
                 <Card.Img className="outfitCard hoverHide" variant="top" src={process.env.PUBLIC_URL + "/assets/outfitImg/SpongeBob_stock_art.png"} />
                 </Card>
             )} 
-            
-            
             </div>
         
         </>
