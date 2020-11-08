@@ -3,6 +3,7 @@ import Typed from 'react-typed';
 import "./Typed.css"
  
 class BrandTyped extends Component {
+
     render() {
         return (
             <div className="typedLetters">

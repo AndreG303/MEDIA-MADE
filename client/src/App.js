@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NoMatch from "./pages/NoMatch";
 import NavBar from "./components/NavBar/Navbar";
@@ -22,35 +22,35 @@ function App() {
 
   return (
     <Router>
-      <UserContext.Provider value={{email, setEmail, loggedIn, setLoggedIn, username, setUsername}}>
-      <div>
-        <NavBar />
-        <Switch>
-          <Route exact path="/">
-            <Homepage />
-          </Route>
-          <Route exact path="/login">
-            <Login />
-          </Route>
-          <Route exact path="/signup">
-            <SignUp />
-          </Route>
-          <Route exact path="/logout">
-            <Logout />
-          </Route>
-          <Route exact path="/outfits">
-            <Outfits />
-          </Route>
-          <Route exact path="/outfits/:outfitid">
-            <OutfitPage />
-          </Route>
-          <Route>
-            {/* this is a 404, IT SHOULD ALWAYS BE AT THE BOTTOM */}
-            <NoMatch />
-          </Route>         
-        </Switch>
-        <Footer />
-      </div>
+      <UserContext.Provider value={{ email, setEmail, loggedIn, setLoggedIn, username, setUsername }}>
+        <div>
+          <NavBar />
+          <Switch>
+            <Route exact path="/">
+              <Homepage />
+            </Route>
+            <Route exact path="/login">
+              <Login />
+            </Route>
+            <Route exact path="/signup">
+              <SignUp />
+            </Route>
+            <Route exact path="/logout">
+              <Logout />
+            </Route>
+            <Route exact path="/outfits">
+              <Outfits />
+            </Route>
+            <Route exact path="/outfits/:outfitid">
+              <OutfitPage />
+            </Route>
+            <Route>
+              {/* this is a 404, IT SHOULD ALWAYS BE AT THE BOTTOM */}
+              <NoMatch />
+            </Route>
+          </Switch>
+          <Footer />
+        </div>
       </UserContext.Provider>
     </Router>
   );
