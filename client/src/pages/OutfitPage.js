@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { useParams } from "react-router-dom";
 import API from "../utils/API";
-import {Row, Col} from "react-bootstrap";
+import {Row, Col, Container } from "react-bootstrap";
 // import OutfitCard from "../components/SingleOutfit/SingleOutfit";
 
 
@@ -29,6 +29,7 @@ function OutfitPage(props) {
         <>
 
         <p style={{color:"white"}}>Outfit Card</p>
+        <Container>
         <img src={outfit.outfitImage} alt="outfit-image" />
         {outfit.items.map( (items) =>
             <Row>
@@ -41,7 +42,7 @@ function OutfitPage(props) {
                 </Col>
             </Row>
         )})
-        
+        </Container>
         </>
     )
 }
