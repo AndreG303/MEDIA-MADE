@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import LoginForm from "../components/LoginForm/LoginForm";
-import {Redirect} from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import UserContext from "../utils/UserContext";
 
-function Login(props){
+function Login() {
 
-    const {loggedIn} = useContext(UserContext);
+    const { loggedIn } = useContext(UserContext);
 
     let styles = {
         h1: {
@@ -18,9 +18,9 @@ function Login(props){
         }
     }
 
-    return(
+    return (
         <div className="container">
-            {loggedIn && <Redirect to="/"/>}
+            {loggedIn && <Redirect to="/" />}
             <h1 style={styles.h1}>Login</h1>
             <LoginForm />
         </div>

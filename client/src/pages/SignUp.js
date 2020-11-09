@@ -1,11 +1,11 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import SignUpForm from "../components/SignUpForm/SignUpForm";
-import {Redirect} from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import UserContext from "../utils/UserContext";
 
-function SignUp(props){
+function SignUp(props) {
 
-    const {loggedIn} = useContext(UserContext);
+    const { loggedIn } = useContext(UserContext);
 
     let styles = {
         h1: {
@@ -24,9 +24,9 @@ function SignUp(props){
         }
     }
 
-    return(
+    return (
         <div className="container">
-            {loggedIn && <Redirect to="/"/>}
+            {loggedIn && <Redirect to="/" />}
             <h1 style={styles.h1}>Sign-Up</h1>
             <p style={styles.p}>Create your account. It's free and only takes one minute.</p>
             <SignUpForm />
