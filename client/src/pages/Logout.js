@@ -1,23 +1,23 @@
-import React, {useEffect, useContext} from "react";
+import React, { useEffect, useContext } from "react";
 import API from "../utils/API";
 import UserContext from "../utils/UserContext";
 
-function Logout(props){
+function Logout() {
 
-    const {setLoggedIn, setEmail} = useContext(UserContext);
+    const { setLoggedIn, setEmail } = useContext(UserContext);
 
-    useEffect ( () => {
+    useEffect(() => {
         API.userLogout()
-        .then( data => {
-            setLoggedIn(false);
-            setEmail("");
-        })
-        .catch(err => {
-            console.log(err);
-        });
+            .then(data => {
+                setLoggedIn(false);
+                setEmail("");
+            })
+            .catch(err => {
+                console.log(err);
+            });
     }, [setLoggedIn, setEmail])
 
-    return(
+    return (
         <div>
             <h1>Logged Out</h1>
         </div>
