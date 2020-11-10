@@ -16,7 +16,7 @@ function NavBar() {
         <Nav className="mr-auto navbar-body">
           <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="">TV Shows</Nav.Link>
-          <Nav.Link href="">About Us</Nav.Link>
+          <Nav.Link href="/aboutus">About Us</Nav.Link>
           {(() => {
             if (loggedIn) {
               return (

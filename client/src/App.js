@@ -11,6 +11,7 @@ import SessionUser from "./utils/SessionUser";
 import OutfitPage from "./pages/OutfitPage";
 import Homepage from "./pages/Homepage"
 import Outfits from "./pages/Outfits";
+import AboutUs from "./pages/AboutUs";
 
 
 
@@ -43,6 +44,9 @@ function App() {
             </Route>
             <Route exact path="/outfits/:outfitid">
               <OutfitPage />
+            </Route>
+            <Route exact path="/aboutus">
+              <AboutUs />
             </Route>
             <Route>
               {/* this is a 404, IT SHOULD ALWAYS BE AT THE BOTTOM */}

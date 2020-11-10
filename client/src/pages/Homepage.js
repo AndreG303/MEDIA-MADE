@@ -16,4 +16,4 @@ function Outfit() {
     )
 }
 
-export default Outfit; 0
+export default Outfit; 
