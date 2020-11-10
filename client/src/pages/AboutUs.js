@@ -1,13 +1,10 @@
 import React from "react";
 
-function Closet() {
-
+function AboutUsPage(){
     return(
         <>
-        <h1>My Closet</h1>
         </>
     )
-
 }
 
-export default Closet;
+export default AboutUsPage;

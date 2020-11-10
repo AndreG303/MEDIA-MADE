@@ -27,5 +27,9 @@ export default {
 
   getOutfit: function (id) {
     return axios.get("/api/outfits/" + id);
+  },
+
+  updateUserOutfits: function (outfitid) {
+    return axios.put("/api/user/closet/" + outfitid);
   }
 };

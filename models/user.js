@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const ObjectId = mongoose.Schema.Types.ObjectId;
 const Schema = mongoose.Schema;
 const bcrypt = require("bcryptjs");
 const SALT_WORK_FACTOR = 10;
@@ -6,7 +7,13 @@ const SALT_WORK_FACTOR = 10;
 const userSchema = new Schema({
   username: {type: String, required: true, unique: true},
   email: { type: String, required: true, unique: true },
-  password: { type: String, required: true }
+  password: { type: String, required: true },
+  outfits: [
+      {
+        type: ObjectId, 
+        ref: "Outfit"
+      }
+  ]
 });
 
 userSchema.pre('save', function(next) {
