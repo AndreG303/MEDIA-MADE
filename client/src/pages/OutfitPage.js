@@ -47,7 +47,7 @@ function OutfitPage(props) {
                             <p className="itemName">{items.name}</p>
                             <p className="itemLink"><a href={items.url}>Click here to buy this product</a></p>
                         </Col>
-                        <Save />
+                    
                     </Row>
                 )})
         </Container>

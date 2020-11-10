@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import "./TopBtn.css";
+import "../../app.css";
 import { FaLongArrowAltUp } from 'react-icons/fa';
 
 function TopBtn () {

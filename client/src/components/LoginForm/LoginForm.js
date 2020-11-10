@@ -2,7 +2,7 @@ import React, { useRef, useContext } from "react";
 import API from "../../utils/API";
 import UserContext from "../../utils/UserContext";
 import { Form, Button } from 'react-bootstrap';
-import "./LoginForm.css";
+import "../../app.css";
 
 function LoginForm(props) {
 

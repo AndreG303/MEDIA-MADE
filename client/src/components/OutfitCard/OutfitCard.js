@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row, Container } from "../Grid";
-import "./OutfitCard.css";
+import "../../app.css";
 import { useAllOutfits } from "../../utils/OutfitAPICalls";
 
 function OutfitPage() {
