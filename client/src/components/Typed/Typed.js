@@ -9,7 +9,7 @@ class BrandTyped extends Component {
             <div className="typedLetters">
                 <Typed
                     strings={["MEDIA MADE"]}
-                    typeSpeed={60}
+                    typeSpeed={50}
                     backSpeed={80}
                     backDelay= {2000}
                     startDelay= {1000}
