@@ -2,8 +2,8 @@ const mongoose = require("mongoose");
 const db = require("../models");
 
 mongoose.connect(
-    process.env.MONGODB_URI ||
-    "mongodb://localhost/proj3",
+  ( process.env.MONGODB_URI ||
+    "mongodb://localhost/proj3"),
     {
   useNewUrlParser: true,
   useFindAndModify: false
@@ -21,7 +21,7 @@ const outfit = [{
     ]
 },
     {
-        outfitImage: "/assets/outfitImg/Outfit1.2.JPG",
+        outfitImage: "/assets/outfitImg/Outfit1.2.jpg",
         items: [{
             image: "https://n.nordstrommedia.com/id/sr3/956c7594-0803-4f0c-8f72-abf40f7a6af3.webp?crop=pad&pad_color=FFF&format=jpeg&w=1318&h=2021",
             name: "ALICE + OLIVIA Willa Silk Blouse",
@@ -31,7 +31,7 @@ const outfit = [{
         ]
     },
     {
-        outfitImage: "/assets/outfitImg/Outfit1.3.JPG",
+        outfitImage: "/assets/outfitImg/Outfit1.3.jpg",
         items: [{
             image: "https://www.yoox.com/images/items/12/12404009dp_14_f.jpg?width=387&height=490&impolicy=crop&gravity=Center",
             name: "GANNI Silk Mix Top",
@@ -59,7 +59,7 @@ const outfit = [{
         ]
     },
     {
-        outfitImage: "/assets/outfitImg/Outfit2.1.JPG",
+        outfitImage: "/assets/outfitImg/Outfit2.1.jpg",
         items: [{
             image: "https://cdn1.jolicloset.com/img4/fblink/2020/07/201967-1.jpg",
             name: "CHANEL Sky Blue Turquoise Jacket Cardigan Leather Chain 20C Cruise 2020",
@@ -81,7 +81,7 @@ const outfit = [{
     ]   
     },
     {
-        outfitImage: "/assets/outfitImg/Outfit2.2.JPG",
+        outfitImage: "/assets/outfitImg/Outfit2.2.jpg",
         items: [{
             image: "https://www.theoutnet.com/variants/images/210639989709/F/w1020_q80.jpg",
             name: "Alexandre Vauthier Strapless Draped Stretch-silk Satin Bustier Top",
@@ -104,7 +104,7 @@ const outfit = [{
         ]
     },
     {
-        outfitImage: "/assets/outfitImg/Outfit2.3.JPG",
+        outfitImage: "/assets/outfitImg/Outfit2.3.jpg",
         items: [{
             image: "https://cdn.modesens.com/product/10019621_46",
             name: "Keith Haring X Alice + Olivia Lonnie Graphic Reversible Silk Bomber Jacket In Black",
@@ -127,7 +127,7 @@ const outfit = [{
         ]
     },
     {
-        outfitImage: "/assets/outfitImg/Outfit2.4.JPG",
+        outfitImage: "/assets/outfitImg/Outfit2.4.jpg",
         items: [{
             image: "https://cdn.shopify.com/s/files/1/0040/5313/9523/products/Petal_Cami_Crop_Top-_Cream_1080x.jpg?v=1600198278",
             name: "the naked laundry Petal Cami Crop Top- Cream",
@@ -143,7 +143,7 @@ const outfit = [{
         ]
     },
     {
-        outfitImage: "/assets/outfitImg/Outfit2.5.JPG",
+        outfitImage: "/assets/outfitImg/Outfit2.5.jpg",
         items: [ {
             image: "https://images.lvrcdn.com/Big70I/B41/020_8bb728d9-d59b-4c14-ae0d-d7d7e9597df5.JPG",
             name: "DOLCE & GABBANA PRINTED OFF SHOULDER COTTON POPLIN DRESS",
@@ -159,7 +159,7 @@ const outfit = [{
         ]
     },
     {
-        outfitImage: "/assets/outfitImg/Outfit3.1.JPG",
+        outfitImage: "/assets/outfitImg/Outfit3.1.jpg",
         items: [ {
             image: "https://www.hartlyfashions.com/wp-content/uploads/2018/10/miller-dickey-jacket-black-white.png",
             name: "VERONICA BEARD Miller Dickey Checker Jacket",
@@ -187,7 +187,7 @@ const outfit = [{
         ]
     },
     {
-        outfitImage: "/assets/outfitImg/Outfit3.2.JPG",
+        outfitImage: "/assets/outfitImg/Outfit3.2.jpg",
         items: [ {
             image: "https://us.maje.com/dw/image/v2/AAON_PRD/on/demandware.static/-/Sites-maje-catalog-master-H13/default/dw5ce069b3/images/h13/Maje_E19RAPY-0071_H_P.jpg?sw=500&sh=500&sm=fit",
             name: "MAJE Rapy floral-print off-the-shoulder woven mini dress",
@@ -203,7 +203,7 @@ const outfit = [{
         ]
     },
     {
-        outfitImage: "/assets/outfitImg/Outfit3.3.JPG",
+        outfitImage: "/assets/outfitImg/Outfit3.3.jpg",
         items: [ {
             image: "https://cdn-images.farfetch-contents.com/13/93/35/54/13933554_17767917_1000.jpg",
             name: "Aje ‘Tilly” Dress",
