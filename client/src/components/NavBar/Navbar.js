@@ -16,13 +16,13 @@ function NavBar() {
         <Nav className="mr-auto navbar-body">
           <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="">TV Shows</Nav.Link>
-          <Nav.Link href="">About Us</Nav.Link>
+          <Nav.Link href="/aboutus">About Us</Nav.Link>
           {(() => {
             if (loggedIn) {
               return (
                 <Fragment>
                   <NavDropdown title={username} id="basic-nav-dropdown">
-                    <NavDropdown.Item href="/">My Closet</NavDropdown.Item>
+                    <NavDropdown.Item href="/closet">My Closet</NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="/logout">Log Out</NavDropdown.Item>
                   </NavDropdown>
