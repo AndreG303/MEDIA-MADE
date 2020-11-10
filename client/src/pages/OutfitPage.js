@@ -10,16 +10,28 @@ function OutfitPage(props) {
         outfitImage: "",
         items: []
     });
+
     const { outfitid } = useParams();
 
     useEffect(() => {
-        API.getOutfit(outfitid)
+        if(props.outfitid){
+            API.getOutfit(props.outfitid)
             .then(res => {
                 console.log(res);
                 setOutfit(res.data)
             })
             .catch(err => console.log(err));
-    }, [])
+        }
+        else{
+            API.getOutfit(outfitid)
+            .then(res => {
+                console.log(res);
+                setOutfit(res.data)
+            })
+            .catch(err => console.log(err));
+        }
+        
+    }, [props])
 
     return (
         <>
