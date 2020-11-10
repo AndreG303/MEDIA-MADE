@@ -1,1 +1,13 @@
-import React from "react"
+import React from "react";
+
+function Closet() {
+
+    return(
+        <>
+        <h1>My Closet</h1>
+        </>
+    )
+
+}
+
+export default Closet;

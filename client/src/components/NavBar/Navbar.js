@@ -22,7 +22,7 @@ function NavBar() {
               return (
                 <Fragment>
                   <NavDropdown title={username} id="basic-nav-dropdown">
-                    <NavDropdown.Item href="/">My Closet</NavDropdown.Item>
+                    <NavDropdown.Item href="/closet">My Closet</NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="/logout">Log Out</NavDropdown.Item>
                   </NavDropdown>

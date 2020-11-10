@@ -56,13 +56,39 @@ router.get("/data", (req, res) => {
         // The user is not logged in, send back an empty object
         res.json({});
     } else {
+        db.User.findById(user._id)
+        .then( results => {
+            res.json(results)
+        })
+        .catch(err => {
+            console.log(err)
+        })
         // Otherwise send back the user's email and id
         // Sending back a password, even a hashed password, isn't a good idea
         res.json({
             username: req.user.username,
             email: req.user.email,
-            _id: req.user._id
+            _id: req.user._id,
+            outfits: req.user.outfits
         });
     }
 });
+
+router.put("/closet/:outfitid", (req, res) => {
+    if (!req.user) {
+        // The user is not logged in, send back an empty object
+        res.json({});
+    } else {
+        // Otherwise send back the user's email and id
+        // Sending back a password, even a hashed password, isn't a good idea
+        db.User.findByIdAndUpdate( user._id, { "$push": {outfits: req.params.outfitid}} )
+        .then( results => {
+            res.json(results)
+        })
+      .catch(err => {
+          console.log(err)
+      })
+    }
+})
+
 module.exports = router;
