@@ -1,6 +1,11 @@
 .outfitCard {
     
     object-fit: cover;
+    
+}
+
+div.full-outfit.card{
+    background-color: transparent;
 }
 .hoverHide{
     display: block;

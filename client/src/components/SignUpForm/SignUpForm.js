@@ -2,7 +2,7 @@ import React, { useRef, useContext } from "react";
 import API from "../../utils/API";
 import UserContext from "../../utils/UserContext";
 import { Form, Button, Col } from 'react-bootstrap';
-import "./SignUpForm.css";
+import "../../app.css";
 
 function SignUpForm(props) {
 

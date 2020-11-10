@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Old+Standard+TT:ital@1&display=swap");
+
+body{
+    background-color: #1b1b1e;
+}
+/* navbar styling */
+a.brand-title.navbar-brand {
+  font-family: "Old Standard TT", serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 30px;
+  color: #373f51;
+}
+
+.navbar-light .navbar-nav.navbar-body .nav-link {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  color: #373f51;
+}
+
+.navbar {
+  background-color: #A9BCD0;
+  border-bottom: solid;
+  border-bottom-color: rgb(247, 159, 203);
+  border-width: 3px;
+}
+
+/* typed homepage styling */
+.typedLetters {
+    color: #d8dbe2;
+    font-size: 150px;
+    font-family: 'Old Standard TT', serif;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* signup and login form styling */
+
+form.form{
+    background-color: #bcd3ec4d;
+    padding: 50px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    color: #d8dbe2;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.form-text a{
+    color: #373f51;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* topbtn styling (scrolltotop) */
+App {
+    text-align: right;
+    height: 5000px;
+  }
+  
+  .scrollTop {
+    position: fixed; 
+    width: 100%;
+    bottom: 20px;
+    align-items: center;
+    height: 20px;
+    justify-content: right;
+    z-index: 1000;
+    cursor: pointer;
+    animation: fadeIn 0.3s;
+    transition: opacity 0.4s;
+    opacity: 0.8;
+    color: #58a4b0;
+  }
+  
+  .scrollTop:hover{
+    opacity: 1;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+
+/* outfit card styling */
+.outfitCont {
+    background-color: transparent;
+  
+  }
+  
+  .itemImg {
+    width: 200px;
+  }
+
+
+/* background stars twinkling */
+
+/* * {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color:rgba(33, 33, 33, 0.9);
+  color:#ffffff;
+  display:block;
+  font: 14px/1.3 Arial,sans-serif;
+  height:50px;
+  position:relative;
+  z-index:5;
+}
+h2{
+  margin-top: 30px;
+  text-align: center;
+}
+header h2{
+  font-size: 22px;
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 80%;
+  text-align: center;
+}
+header a, a:visited {
+  text-decoration:none;
+  color:#fcfcfc;
+}
+
+@keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+
+.stars, .twinkling, .clouds {
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+width:100%;
+height:100%;
+display:block;
+}
+
+.stars {
+background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+z-index:0;
+}
+
+.twinkling{
+background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+z-index:1;
+
+-moz-animation:move-twink-back 200s linear infinite;
+-ms-animation:move-twink-back 200s linear infinite;
+-o-animation:move-twink-back 200s linear infinite;
+-webkit-animation:move-twink-back 200s linear infinite;
+animation:move-twink-back 200s linear infinite;
+} */
+
