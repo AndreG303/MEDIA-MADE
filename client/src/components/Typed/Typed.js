@@ -1,6 +1,6 @@
 import React,{ Component } from 'react';
 import Typed from 'react-typed';
-import "./Typed.css"
+import "../../app.css"
  
 class BrandTyped extends Component {
 

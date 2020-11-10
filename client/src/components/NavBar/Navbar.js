@@ -1,7 +1,7 @@
 import React, { Fragment, useContext } from "react";
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import UserContext from "../../utils/UserContext";
-import './Navbar.css';
+import '../../app.css';
 
 function NavBar() {
 
