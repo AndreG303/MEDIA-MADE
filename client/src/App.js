@@ -38,10 +38,10 @@ function App() {
             <Route exact path="/logout">
               <Logout />
             </Route>
-            <Route exact path="/outfits">
+            <Route exact path={["/outfits", "/outfits/:outfitid"]}>
               <Outfits />
             </Route>
-            <Route exact path="/outfits/:outfitid">
+            <Route exact path="/outfitsdetail/:outfitid">
               <OutfitPage />
             </Route>
             <Route>
