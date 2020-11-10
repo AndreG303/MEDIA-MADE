@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import API from "../utils/API";
 import { Row, Col, Container } from "react-bootstrap";
+import Save from "../components/Starbtn/Starbtn";
 
 
 function OutfitPage(props) {
@@ -47,6 +48,7 @@ function OutfitPage(props) {
                             <p className="itemName">{items.name}</p>
                             <p className="itemLink"><a href={items.url}>Click here to buy this product</a></p>
                         </Col>
+                        <Save />
                     </Row>
                 )})
         </Container>
