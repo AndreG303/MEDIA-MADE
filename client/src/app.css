@@ -33,6 +33,7 @@ a.brand-title.navbar-brand {
     text-align: center;
     padding-top: 70px;
     padding-bottom: 70px;
+    z-index: 3;
 }
 
 /* signup and login form styling */
@@ -126,7 +127,7 @@ header h2{
   width: 80%;
   text-align: center;
 }
-header a, a:visited {
+header:visited {
   text-decoration:none;
   color:#fcfcfc;
 }
@@ -148,7 +149,7 @@ header a, a:visited {
   to {background-position:-10000px 5000px;}
 }
 
-.stars, .twinkling, .clouds {
+.stars, .twinkling {
 position:absolute;
 top:0;
 left:0;
@@ -161,12 +162,13 @@ display:block;
 
 .stars {
 background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
-z-index:0;
+z-index: 0;
+
 }
 
 .twinkling{
 background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
-z-index:1;
+
 
 -moz-animation:move-twink-back 200s linear infinite;
 -ms-animation:move-twink-back 200s linear infinite;
