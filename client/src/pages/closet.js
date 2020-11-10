@@ -11,3 +11,5 @@ function Closet() {
 }
 
 export default Closet;
+
+// translate session user information 

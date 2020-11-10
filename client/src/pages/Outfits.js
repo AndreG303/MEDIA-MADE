@@ -25,10 +25,13 @@ function Outfits(props) {
 
     const handleAddToCloset = () => {
         // let outfitid =event.target.getAttribute("data-outfitid").value();
+        console.log(outfitid)
         API.updateUserOutfits(outfitid).then(data =>{
             console.log(data);
         })
     }
+
+
 
     return (
         <>

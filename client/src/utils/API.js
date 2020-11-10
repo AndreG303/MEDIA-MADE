@@ -33,3 +33,4 @@ export default {
     return axios.put("/api/user/closet/" + outfitid);
   }
 };
+// axios get call and then post instead of put (updating and we are not updating).
