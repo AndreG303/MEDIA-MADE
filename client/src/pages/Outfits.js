@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import OutfitPage from "./OutfitPage";
-import TopScrollBtn from "../components/TopBtn/TopBtn";
+import TopScrollBtn from "../components/TopBtn/TopBtn.js";
 import SingleOutfit from "../components/SingleOutfit/SingleOutfit"
 import { useAllOutfits } from "../utils/OutfitAPICalls";
 import { useParams } from "react-router-dom";
