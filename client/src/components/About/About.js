@@ -16,12 +16,10 @@ function About(){
 
     </div>
     <ul className="social-icons">
-      <li><a href="#"><i className="fa fa-instagram"></i></a></li>
-      <li><a href="#"><i className="fa fa-github"></i></a></li>
-      <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/dlekwjd347"><i className="fa fa-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/elizabeth-lee2018/"><i className="fa fa-linkedin"></i></a></li>
     </ul>
-    <button className="btn draw-border">Follow</button>
-    <button className="btn draw-border">Message</button>
+    <a href="mailto:andreamgamez@gmail.com"><button className="btn draw-border">Message</button></a>
 
   </div>
   <div className="card">
@@ -35,12 +33,10 @@ function About(){
 
     </div>
     <ul className="social-icons">
-      <li><a href="#"><i className="fa fa-instagram"></i></a></li>
-      <li><a href="#"><i className="fa fa-github"></i></a></li>
-      <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/AndreG303"><i className="fa fa-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/andrea-gamez-b228901a9/"><i className="fa fa-linkedin"></i></a></li>
     </ul>
-    <button className="btn draw-border">Follow</button>
-    <button className="btn draw-border">Message</button>
+    <a href="mailto:dlekwjd347@gmail.com"><button className="btn draw-border">Message</button></a>
   </div>
   <div className="card">
     <img src="https://avatars3.githubusercontent.com/u/61949164?s=460&u=46ac2bb3b962ee705bb9d7f7fb9fd8d5a8db42d9&v=4" alt="Ashley Holanda" className="card__image"></img>
@@ -54,12 +50,10 @@ function About(){
 
     </div>
     <ul className="social-icons">
-      <li><a href="#"><i className="fa fa-instagram"></i></a></li>
-      <li><a href="#"><i className="fa fa-github"></i></a></li>
-      <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/aholanda12"><i className="fa fa-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/ashley-holanda-0585671a4/"><i className="fa fa-linkedin"></i></a></li>
     </ul>
-    <button className="btn draw-border">Follow</button>
-    <button className="btn draw-border">Message</button>
+    <a href="mailto:dlekwjd347@gmail.com"><button className="btn draw-border">Message</button></a>
   </div>
   <div className="card">
     <img src="https://avatars1.githubusercontent.com/u/64226204?s=460&u=44dd0fe627b9f38d703dd37a2b20e94edd248cb0&v=4" alt="Katelynn Nguyen" className="card__image"></img>
@@ -73,12 +67,10 @@ function About(){
 
     </div>
     <ul className="social-icons">
-      <li><a href="#"><i className="fa fa-instagram"></i></a></li>
-      <li><a href="#"><i className="fa fa-github"></i></a></li>
-      <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/ktlnn"><i className="fa fa-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/katelynn-nguyen-639aa4186/"><i className="fa fa-linkedin"></i></a></li>
     </ul>
-    <button className="btn draw-border">Follow</button>
-    <button className="btn draw-border">Message</button>
+    <a href="mailto:dlekwjd347@gmail.com"><button className="btn draw-border">Message</button></a>
   </div>
 </div>
 </>

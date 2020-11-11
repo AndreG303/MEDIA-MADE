@@ -2,11 +2,11 @@
 
 .container {
   display: grid;
-  grid-template-columns: 300px 300px;
+  grid-template-columns: 320px 320px;
   grid-gap: 50px;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 60px;
   font-family: 'Baloo Paaji 2', cursive;
   padding-top: 20px;
 
@@ -14,7 +14,7 @@
 
 .card {
   background-color: #222831;
-  height: 37rem;
+  height: 30rem;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
