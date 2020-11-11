@@ -15,7 +15,7 @@ function Jumbotron3() {
       padding: "20px",
       textAlign: "center",
       backgroundColor:"transparent",
-      fontSize: "14px",
+      fontSize: "10px",
       fontStyle:"italic"
     },
   }
