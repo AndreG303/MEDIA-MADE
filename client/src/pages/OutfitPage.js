@@ -13,10 +13,10 @@ function OutfitPage(props) {
     outfitCard: {
       backgroundColor: "#d8dbe2",
       color: "white",
-      padding: "40px",
+      paddingTop: "40px",
       width: "70vw",
       minHeight: "70vh",
-      marginTop: "100px",
+      marginTop: "0px",
     },
     outfitImg: {
       padding: "20px",
