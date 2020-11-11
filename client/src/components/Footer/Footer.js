@@ -16,8 +16,8 @@ function Footer() {
             className="d-inline-block"
           />{' '}
         </Navbar.Brand>
-        <Nav className="mr-auto">
-          <Nav.Link href="/aboutUs">MADE WITH LOVE ❤️</Nav.Link>
+        <Nav>
+          <Nav href="/aboutUs">MADE WITH LOVE ❤️</Nav>
         </Nav>
       </Navbar>
       </div>
