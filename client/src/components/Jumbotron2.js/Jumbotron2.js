@@ -14,17 +14,25 @@ function Jumbotron2() {
       justifyContent: "center",
       padding: "20px",
       textAlign: "center",
-      backgroundColor:"#d8dbe2",
+      backgroundColor:"#58a4b0",
     },
     jumbotronText: {
-      fontSize: "25px"
-    }
+      fontSize: "25px",
+      color: "#373f51"
+    },
+    eminParis: {
+      fontFamily: "Old Standard TT",
+      fontStyle: "italic",
+      fontWeight: "normal",
+      fontSize: "30px",
+      color: "#373f51"
+      }
   }
   return(
    
   <Jumbotron className="container" style={jumbotronStyles.jumbotron}>
   
-    <h1>Emily in Paris</h1>
+    <h1 style={jumbotronStyles.eminParis}>EMILY IN PARIS</h1>
     <p style={jumbotronStyles.jumbotronText}>
       Click and choose one of your favorite styles from this show to see more outfit details! 
     </p>
