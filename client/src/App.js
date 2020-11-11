@@ -13,6 +13,7 @@ import Homepage from "./pages/Homepage"
 import Outfits from "./pages/Outfits";
 import AboutUs from "./pages/AboutUs";
 import Closet from "./pages/closet";
+import "./app.css";
 
 function App() {
   const [email, setEmail] = useState("");
