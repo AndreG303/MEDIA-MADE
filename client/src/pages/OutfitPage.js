@@ -1,8 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import API from "../utils/API";
-import { Row, Col, Container, Button } from "react-bootstrap";
+import { Row, Col, Container } from "../components/Grid";
+import { Button } from "react-bootstrap"
 import UserContext from "../utils/UserContext";
+import TopScrollBtn from "../components/TopBtn/TopBtn.js";
 
 function OutfitPage(props) {
 
@@ -18,22 +20,24 @@ function OutfitPage(props) {
       color: "white",
       paddingTop: "40px",
       width: "70vw",
-      minHeight: "70vh",
+      minHeight: "850px",
       marginTop: "0px"
     },
     outfitImg: {
-      padding: "20px",
-      float: "right",
-      marginBottom: "20px"
+      padding: "20px"
     },
-    outfitText: {
-      fontFamily: "'Rubik', sans-serif",
+    outfitTextTitle: {
       fontSize: "25px",
-      float: "right",
+      fontFamily: "Old Standard TT",
+      textTransform: "uppercase",
+      paddingTop:"20px"
+    
     },
-    emily: {
-      float: "left",
-    }
+    outfitTextLink: {
+        fontFamily: "'Rubik', sans-serif",
+        fontSize: "25px",
+      color: "white"
+      }
   };
 
   const { outfitid } = useParams();
@@ -70,11 +74,15 @@ function OutfitPage(props) {
 
   return (
     <div>
-      <Container style={styles.outfitCard}>
+      <Container className="container-outfit">
+          <Row>
+          <Col size="md-4">
         <img style={styles.emily} src={outfit.outfitImage} alt="outfit-image" />
+        </Col>
+        <Col size="md-8">
         {outfit.items.map((items) => (
           <Row>
-            <Col size="md-3">
+            <Col size="md-4">
               <img
                 style={styles.outfitImg}
                 className="itemImg"
@@ -82,15 +90,17 @@ function OutfitPage(props) {
               ></img>
             </Col>
             <Col size="md-8">
-              <p style={styles.outfitText} className="itemName">
+              <p style={styles.outfitTextTitle} className="itemName">
                 {items.name}
               </p>
-              <p style={styles.outfitText} className="itemLink">
-                <a href={items.url}>Click here to buy this product</a>
+              <p style={styles.outfitTextLink} className="itemLink">
+                <a classname="itemLink" href={items.url} target='_blank'>Click here to buy this product</a>
               </p>
             </Col>
           </Row>
         ))}
+        </Col>
+        </Row>
         {(() => {
           if (props.showAddToCloset) {
             return <Button onClick={handleAddToCloset}>ADD TO CLOSET</Button>;
