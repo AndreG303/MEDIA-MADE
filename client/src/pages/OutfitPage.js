@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import API from "../utils/API";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col, Container, Button } from "react-bootstrap";
 
 
 function OutfitPage(props) {
@@ -10,6 +10,29 @@ function OutfitPage(props) {
         outfitImage: "",
         items: []
     });
+
+    let styles ={
+        outfitCard:{
+            backgroundColor: "#d8dbe2",
+            color: "white",
+            padding: "40px",
+            width: "70vw",
+            minHeight: "70vh",
+            marginTop: "100px"
+        },
+        outfitImg:{
+            padding: "20px",
+            display: "flex"
+        },
+        outfitText:{
+            fontFamily: "'Rubik', sans-serif",
+            fontSize: "25px",
+            display: "flex"
+        },
+        emily:{
+            display: "flex"
+        }
+    }
 
     const { outfitid } = useParams();
 
@@ -33,24 +56,32 @@ function OutfitPage(props) {
         
     }, [props])
 
+    const handleAddToCloset = () => {
+        // let outfitid =event.target.getAttribute("data-outfitid").value();
+        console.log(outfitid)
+        API.updateUserOutfits(outfitid).then(data =>{
+            console.log(data);
+        })
+    }
+
     return (
-        <>
-            <p style={{ color: "white" }}>Outfit Card</p>
-            <Container>
-                <img src={outfit.outfitImage} alt="outfit-image" />
+        <div>
+            <Container style={styles.outfitCard}>
+                <img style={styles.emily} src={outfit.outfitImage} alt="outfit-image" />
                 {outfit.items.map((items) =>
                     <Row>
                         <Col size="md-3">
-                            <img className="itemImg" src={process.env.PUBLIC_URL + items.image}></img>
+                            <img style={styles.outfitImg} className="itemImg" src={process.env.PUBLIC_URL + items.image}></img>
                         </Col>
                         <Col size="md-8">
-                            <p className="itemName">{items.name}</p>
-                            <p className="itemLink"><a href={items.url}>Click here to buy this product</a></p>
+                            <p style={styles.outfitText} className="itemName">{items.name}</p>
+                            <p style={styles.outfitText} className="itemLink"><a href={items.url}>Click here to buy this product</a></p>
                         </Col>
                     </Row>
-                )})
-        </Container>
-        </>
+                )}
+                <Button onClick={handleAddToCloset}>ADD TO CLOSET</Button>
+            </Container>
+        </div>
     )
 }
 

@@ -5,14 +5,14 @@ function Footer() {
 
   return (
     <>
-      <Navbar >
+      <Navbar fixed="bottom">
         <Navbar.Brand href="#home">
           <img
             alt=""
             src="/logo.svg"
             width="30"
             height="30"
-            className="d-inline-block align-top"
+            className="d-inline-block"
           />{' '}
         </Navbar.Brand>
         <Nav className="mr-auto">

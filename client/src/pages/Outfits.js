@@ -23,13 +23,7 @@ function Outfits(props) {
         }
     }
 
-    const handleAddToCloset = () => {
-        // let outfitid =event.target.getAttribute("data-outfitid").value();
-        console.log(outfitid)
-        API.updateUserOutfits(outfitid).then(data =>{
-            console.log(data);
-        })
-    }
+    
 
 
 
@@ -40,7 +34,7 @@ function Outfits(props) {
                 <OutfitPage outfitid={showOutfitBottom} />
                 
             )}
-           <Button onClick={handleAddToCloset}>ADD TO CLOSET</Button>
+           
 
             <TopScrollBtn />
         </>
