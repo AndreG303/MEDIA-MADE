@@ -33,13 +33,12 @@ function Outfits(props) {
             <Jumbotron />
             {(showOutfits.length > 0) ? <SingleOutfit showOutfits={showOutfits} handleChangeOfPage={handleChangeOfPage} /> : null}
             { showOutfitBottom && (
-                <OutfitPage outfitid={showOutfitBottom} />
-
+      
+                <OutfitPage showAddToCloset={true} outfitid={showOutfitBottom} />
+                
             )}
 
-
-
-            <TopScrollBtn />
+            {/* <TopScrollBtn /> */}
         </>
     )
 }
