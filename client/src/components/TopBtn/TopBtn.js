@@ -5,9 +5,9 @@ import { FaLongArrowAltUp } from 'react-icons/fa';
 function TopBtn () {
     const [showScroll, setShowScroll] = useState(false)
 const checkScrollTop = () => {    
-   if (!showScroll && window.pageYOffset > 400){
+   if (!showScroll && window.pageYOffset > 200){
       setShowScroll(true)    
-   } else if (showScroll && window.pageYOffset <= 400){
+   } else if (showScroll && window.pageYOffset <= 200){
       setShowScroll(false)    
    }  
 };
