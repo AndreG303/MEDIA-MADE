@@ -56,7 +56,7 @@ router.get("/data", (req, res) => {
         // The user is not logged in, send back an empty object
         res.json({});
     } else {
-        db.User.findById(user._id)
+        db.User.findById(req.user._id)
         .then( results => {
             res.json(results)
         })
