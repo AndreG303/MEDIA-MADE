@@ -21,9 +21,9 @@ body{
 
 .navbar {
   background-color: #A9BCD0;
-  /* border-bottom: solid;
-  border-bottom-color: rgb(247, 159, 203);
-  border-width: 3px; */
+  border-bottom: solid;
+  border-bottom-color:#58a4b0;
+  border-width: 5px;
 }
 
 /* typed homepage styling */
@@ -33,7 +33,7 @@ body{
     font-family: 'Old Standard TT', serif;
     text-align: center;
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
     z-index: 3;
 }
 
