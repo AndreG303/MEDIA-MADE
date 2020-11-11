@@ -7,7 +7,7 @@ import API from "../utils/API";
 
 function Closet() {
 
-    const { loggedIn } = useContext(UserContext);
+    const { loggedIn, updateUserCloset } = useContext(UserContext);
     // const showUserOutfits = useUserOutfits();
     const [showUserOutfits, setShowUserOutfits] = useState([]);
 
@@ -24,7 +24,7 @@ function Closet() {
         .catch((err) => {
           console.log(err);
         });
-    }, [setShowUserOutfits]);
+    }, [updateUserCloset]);
 
     if(!showUserOutfits){
       console.log("not defined yet")

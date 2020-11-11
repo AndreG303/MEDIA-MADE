@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import API from "../utils/API";
 import { Row, Col, Container, Button } from "react-bootstrap";
+import UserContext from "../utils/UserContext";
 
 function OutfitPage(props) {
+
+  const { updateUserCloset, setUpdateUserCloset } = useContext(UserContext);
   const [outfit, setOutfit] = useState({
     outfitImage: "",
     items: [],
@@ -54,7 +57,9 @@ function OutfitPage(props) {
     console.log(outfitid);
     API.updateUserOutfits(outfitid).then((data) => {
       console.log(data);
+      setUpdateUserCloset(updateUserCloset => !updateUserCloset);
     });
+
   };
 
   const handleDelete = () => {
