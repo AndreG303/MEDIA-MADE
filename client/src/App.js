@@ -20,6 +20,7 @@ function App() {
   const [loggedIn, setLoggedIn] = useState(false);
   SessionUser(setEmail, setLoggedIn);
 
+
   return (
     <Router>
       <UserContext.Provider value={{ email, setEmail, loggedIn, setLoggedIn, username, setUsername }}>

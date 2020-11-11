@@ -1,36 +1,21 @@
-import React, { Fragment, useContext, useEffect } from "react";
+import React, { Fragment, useContext, useState} from "react";
 import UserContext from "../utils/UserContext";
-import API from "../utils/API";
 import { useUserOutfits } from "../utils/ClosetAPICalls";
+import { Container } from "../components/Grid";
+import OutfitPage from "../pages/OutfitPage";
 
 function Closet() {
 
     const { loggedIn } = useContext(UserContext);
     const showUserOutfits = useUserOutfits();
+
     if(!showUserOutfits){
       console.log("not defined yet")
     }
     else{
       console.log(showUserOutfits);
     }
-    
-    // showUserOutfits.map(outfitid => {API.getOutfit(outfitid).then((outfitdata) => {console.log(outfitdata)})});
-    
 
-    // useEffect(() => {
-    //   API.getUser()
-    //   .then( async userData => {
-    //     console.log(userData);
-    //     console.log(Object.prototype.toString.call(userData.data.outfits));
-    //   //   const closetOutfits = (userData.data.outfits);
-    //   //   // let closetOutfits = [];
-    //   //   // closetOutfits = userData.data.outfits;
-    //   //   const outfitData = await API.getOutfit(closetOutfits);
-    //   //   console.log(outfitData);
-    //   //   // closetOutfits = userData.data.outfits;
-    //   })
-    // }, [])
-    
 
 
     return(
@@ -40,7 +25,9 @@ function Closet() {
               return (
                 <Fragment>
                   <h1>My Closet</h1>
-                {/* {showUserOutfits.map((outfit) => console.log(outfit))} */}
+                <Container>
+                {showUserOutfits.map((outfit) => <OutfitPage showAddToCloset={false} outfitid={outfit._id} />)}
+                </Container>
                 </Fragment>
               )
             }
