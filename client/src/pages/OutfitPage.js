@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import API from "../utils/API";
+<<<<<<< HEAD
 import { Row, Col, Container, Button } from "react-bootstrap";
+=======
+import { Row, Col, Container } from "../components/Grid";
+import { Button } from "react-bootstrap"
+import UserContext from "../utils/UserContext";
+>>>>>>> 829c8e94ab471629d3d4d72fc23dbdf46a252356
 
 function OutfitPage(props) {
 
@@ -17,21 +23,18 @@ function OutfitPage(props) {
       color: "white",
       paddingTop: "40px",
       width: "70vw",
-      minHeight: "70vh",
+      minHeight: "850px",
       marginTop: "0px"
     },
     outfitImg: {
       padding: "20px",
-      float: "right",
+    //   float: "right",
       marginBottom: "20px"
     },
     outfitText: {
       fontFamily: "'Rubik', sans-serif",
       fontSize: "25px",
-      float: "right",
-    },
-    emily: {
-      float: "left",
+    //   float: "right",
     }
   };
 
@@ -79,10 +82,14 @@ function OutfitPage(props) {
 
   return (
     <div>
-      <Container style={styles.outfitCard}>
+      <Container className="container-outfit">
+          <Row>
+          <Col size="md-4">
         <img style={styles.emily} src={outfit.outfitImage} alt="outfit-image" />
-        {outfit.items.map((items, index) => (
-          <Row key={"row-" + index}>
+        </Col>
+        <Col size="md-8">
+        {outfit.items.map((items) => (
+          <Row>
             <Col size="md-3">
               <img
                 style={styles.outfitImg}
@@ -100,6 +107,8 @@ function OutfitPage(props) {
             </Col>
           </Row>
         ))}
+        </Col>
+        </Row>
         {(() => {
           if (props.showAddToCloset) {
             return <Button onClick={handleAddToCloset}>ADD TO CLOSET</Button>;

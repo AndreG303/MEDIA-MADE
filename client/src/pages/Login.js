@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import LoginForm from "../components/LoginForm/LoginForm";
 import { Redirect } from "react-router-dom";
 import UserContext from "../utils/UserContext";
+import { Container } from "react-bootstrap"
 
 function Login() {
 
@@ -15,15 +16,18 @@ function Login() {
             fontFamily: "'Old Standard TT', serif",
             padding: "20px",
             marginTop: "20px"
+        },
+        container: {
+            backgroundColor: "rgba(0,0,255,0)"
         }
     }
 
     return (
-        <div className="container">
+        <Container style={styles.container}>
             {loggedIn && <Redirect to="/" />}
             <h1 style={styles.h1}>Login</h1>
             <LoginForm />
-        </div>
+            </Container>
     )
 }
 
