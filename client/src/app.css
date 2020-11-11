@@ -2,7 +2,15 @@
 
 body{
     background-color: #1b1b1e;
+    margin-bottom: 60px;
 }
+
+#root > div:after {
+  content: " ";
+  height:100px;
+  display: block;
+}
+
 /* navbar styling */
 .brand-title a {
   font-family: "Old Standard TT", serif;
@@ -21,9 +29,9 @@ body{
 
 .navbar {
   background-color: #A9BCD0;
-  /* border-bottom: solid;
-  border-bottom-color: rgb(247, 159, 203);
-  border-width: 3px; */
+  border-bottom: solid;
+  border-bottom-color: #58a4b0;
+  border-width: 4px;
 }
 
 /* typed homepage styling */
@@ -33,7 +41,8 @@ body{
     font-family: 'Old Standard TT', serif;
     text-align: center;
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 10px;
+
     z-index: 3;
 }
 
@@ -95,10 +104,12 @@ App {
 .outfitCont {
     background-color: transparent;
   
+  
   }
   
 .itemImg {
     width: 200px;
+    padding: 100px;
 }
 
 div.full-outfit.card{
@@ -109,10 +120,28 @@ div.full-outfit.card{
   background-color: #d8dbe2;
 }
 
+.container {
+  background-color: #d8dbe2;
+  padding: 30px;
+      /* color: white;
+      padding-top: 40px;
+      width: 70vw;
+      min-height: 850px;
+      margin-top: 0px; */
+}
+
+a {
+  color: #58a4b0;
+}
+
+a:hover {
+  color: #A9BCD0;
+  text-decoration: none;
+}
 
 /* background stars twinkling */
 
-/* * {
+* {
   margin: 0;
   padding: 0;
 }
@@ -141,24 +170,7 @@ header:visited {
   color:#fcfcfc;
 }
 
-@keyframes move-twink-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
-}
-@-webkit-keyframes move-twink-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
-}
-@-moz-keyframes move-twink-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
-}
-@-ms-keyframes move-twink-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
-}
-
-.stars, .twinkling {
+.stars {
 position:absolute;
 top:0;
 left:0;
@@ -170,19 +182,8 @@ display:block;
 }
 
 .stars {
-background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+background:#000 url(https://cdn.shopify.com/s/files/1/0437/1116/8667/t/4/assets/root-gif-bcg---black.gif?v=13827766089771535840) repeat top center;
 z-index: 0;
 
 }
-
-.twinkling{
-background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
-
-
--moz-animation:move-twink-back 200s linear infinite;
--ms-animation:move-twink-back 200s linear infinite;
--o-animation:move-twink-back 200s linear infinite;
--webkit-animation:move-twink-back 200s linear infinite;
-animation:move-twink-back 200s linear infinite;
-} */
 

@@ -12,7 +12,7 @@ function OutfitCard(props) {
 
     return (
         <>
-            <div style={{ display: "flex", justifyContent: "inlineBlock" }}>
+            <div style={{ display: "flex", justifyContent: "inlineBlock", marginBottom:"20px"}}>
                 {widthState.map((cardWidth, i) =>
                     <Card className="full-outfit" style={{ width: cardWidth + "%", transition: "width 1s" }} onMouseOver={() => {
                         let min = 5;

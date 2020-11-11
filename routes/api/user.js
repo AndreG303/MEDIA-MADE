@@ -56,21 +56,23 @@ router.get("/data", (req, res) => {
         // The user is not logged in, send back an empty object
         res.json({});
     } else {
-        db.User.findById(user._id)
-        .then( results => {
-            res.json(results)
+        db.User.findById(req.user._id)
+        .then( results => {            
+            // res.json(results);
+            console.log(results);
+            res.json({
+                username: results.username,
+                email: results.email,
+                _id: results._id,
+                outfits: results.outfits
+            });
         })
         .catch(err => {
             console.log(err)
         })
         // Otherwise send back the user's email and id
         // Sending back a password, even a hashed password, isn't a good idea
-        res.json({
-            username: req.user.username,
-            email: req.user.email,
-            _id: req.user._id,
-            outfits: req.user.outfits
-        });
+        
     }
 });
 
@@ -89,6 +91,25 @@ router.put("/closet/:outfitid", (req, res) => {
           console.log(err)
       })
     }
-})
+});
+
+router.delete("/closet/:outfitid", (req, res) => {
+    if (!req.user) {
+        // The user is not logged in, send back an empty object
+        res.json({});
+    } else {
+        // Otherwise send back the user's email and id
+        // Sending back a password, even a hashed password, isn't a good idea
+        db.User.findByIdAndUpdate( req.user._id, { "$pull": {outfits: req.params.outfitid}} )
+        .then( results => {
+            res.json(results)
+        })
+      .catch(err => {
+          console.log(err)
+      })
+    }
+});
+
+
 
 module.exports = router;

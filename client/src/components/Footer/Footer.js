@@ -1,25 +1,26 @@
 import React from "react";
 import { Navbar, Nav } from 'react-bootstrap';
+import "./Footer.css";
 
 function Footer() {
 
   return (
-    <>
-      <Navbar fixed="bottom">
+    <div className="fixed-bottom"style={{display:"flex", justifyContent:"center"}}>
+      <Navbar className="footer" fixed="bottom" style={{marginTop: "50px"}}>
         <Navbar.Brand href="#home">
-          {/* <img
-            alt=""
-            src="/logo.svg"
-            width="30"
-            height="30"
+          <img
+            alt="logo"
+            src="../assets/logo/media-made.png"
+            width="60"
+            height="40"
             className="d-inline-block"
           />{' '} */}
         </Navbar.Brand>
         <Nav className="mr-auto">
-          <Nav.Link href="mailto:andreamgamez@gmail.com">Contact Us</Nav.Link>
+          <Nav.Link href="/aboutUs">Contact Us</Nav.Link>
         </Nav>
       </Navbar>
-    </>
+      </div>
   )
 }
 
