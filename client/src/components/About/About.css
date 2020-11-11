@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
 
 .aboutContainer {
   display: grid;
@@ -168,4 +168,4 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   font-size: 1.2em;
-} */
+}

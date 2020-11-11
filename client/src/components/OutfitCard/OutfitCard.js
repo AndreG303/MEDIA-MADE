@@ -4,6 +4,7 @@ import "../../app.css";
 import { useAllOutfits } from "../../utils/OutfitAPICalls";
 
 function OutfitPage() {
+    
     const [showOutfits] = useAllOutfits();
 
     return (
