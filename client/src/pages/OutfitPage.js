@@ -109,7 +109,9 @@ function OutfitPage(props) {
           }
         })()}
       </Container>
+      <TopScrollBtn />
     </div>
+    
   );
 }
 
