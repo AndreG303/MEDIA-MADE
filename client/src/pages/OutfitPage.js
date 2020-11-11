@@ -17,7 +17,8 @@ function OutfitPage(props) {
             color: "white",
             padding: "40px",
             backgroundSize: "cover",
-            marginBottom: "20px"
+            width: "70vw",
+            minHeight: "70vh"
         },
         outfitImg:{
             padding: "20px",
