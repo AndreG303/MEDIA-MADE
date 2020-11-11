@@ -17,9 +17,8 @@ function About(){
     </div>
     <ul className="social-icons">
       <li><a href="#"><i className="fa fa-instagram"></i></a></li>
-      <li><a href="#"><i className="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i className="fa fa-github"></i></a></li>
       <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
-      <li><a href="#"><i className="fa fa-codepen"></i></a></li>
     </ul>
     <button className="btn draw-border">Follow</button>
     <button className="btn draw-border">Message</button>
@@ -37,9 +36,8 @@ function About(){
     </div>
     <ul className="social-icons">
       <li><a href="#"><i className="fa fa-instagram"></i></a></li>
-      <li><a href="#"><i className="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i className="fa fa-github"></i></a></li>
       <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
-      <li><a href="#"><i className="fa fa-codepen"></i></a></li>
     </ul>
     <button className="btn draw-border">Follow</button>
     <button className="btn draw-border">Message</button>
@@ -57,9 +55,8 @@ function About(){
     </div>
     <ul className="social-icons">
       <li><a href="#"><i className="fa fa-instagram"></i></a></li>
-      <li><a href="#"><i className="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i className="fa fa-github"></i></a></li>
       <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
-      <li><a href="#"><i className="fa fa-codepen"></i></a></li>
     </ul>
     <button className="btn draw-border">Follow</button>
     <button className="btn draw-border">Message</button>
@@ -77,9 +74,8 @@ function About(){
     </div>
     <ul className="social-icons">
       <li><a href="#"><i className="fa fa-instagram"></i></a></li>
-      <li><a href="#"><i className="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i className="fa fa-github"></i></a></li>
       <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
-      <li><a href="#"><i className="fa fa-codepen"></i></a></li>
     </ul>
     <button className="btn draw-border">Follow</button>
     <button className="btn draw-border">Message</button>
