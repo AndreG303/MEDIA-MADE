@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import API from "../utils/API";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col, Container, Button } from "react-bootstrap";
 
 
 function OutfitPage(props) {
@@ -16,7 +16,8 @@ function OutfitPage(props) {
             backgroundColor: "#d8dbe2",
             color: "white",
             padding: "40px",
-            backgroundSize: "cover"
+            backgroundSize: "cover",
+            marginBottom: "20px"
         },
         outfitImg:{
             padding: "20px",
@@ -54,6 +55,14 @@ function OutfitPage(props) {
         
     }, [props])
 
+    const handleAddToCloset = () => {
+        // let outfitid =event.target.getAttribute("data-outfitid").value();
+        console.log(outfitid)
+        API.updateUserOutfits(outfitid).then(data =>{
+            console.log(data);
+        })
+    }
+
     return (
         <div>
             <Container style={styles.outfitCard}>
@@ -69,6 +78,7 @@ function OutfitPage(props) {
                         </Col>
                     </Row>
                 )}
+                <Button onClick={handleAddToCloset}>ADD TO CLOSET</Button>
             </Container>
         </div>
     )
