@@ -40,7 +40,7 @@ function OutfitPage(props) {
         if(props.outfitid){
             API.getOutfit(props.outfitid)
             .then(res => {
-                console.log(res);
+                // console.log(res);
                 setOutfit(res.data)
             })
             .catch(err => console.log(err));
@@ -48,7 +48,7 @@ function OutfitPage(props) {
         else{
             API.getOutfit(outfitid)
             .then(res => {
-                console.log(res);
+                // console.log(res);
                 setOutfit(res.data)
             })
             .catch(err => console.log(err));

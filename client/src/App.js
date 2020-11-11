@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NoMatch from "./pages/NoMatch";
 import NavBar from "./components/NavBar/Navbar";
+import Jumbotron from "./components/Jumbotron2.js/Jumbotron2"
 import Footer from "./components/Footer/Footer"
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
@@ -14,8 +15,6 @@ import Outfits from "./pages/Outfits";
 import AboutUs from "./pages/AboutUs";
 import Closet from "./pages/closet";
 
-
-
 function App() {
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
@@ -27,6 +26,7 @@ function App() {
       <UserContext.Provider value={{ email, setEmail, loggedIn, setLoggedIn, username, setUsername }}>
         <div>
           <NavBar />
+          <Jumbotron />
           <Switch>
             <Route exact path="/">
               <Homepage />

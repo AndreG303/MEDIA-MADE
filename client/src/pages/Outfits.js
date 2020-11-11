@@ -34,7 +34,7 @@ function Outfits(props) {
                 <OutfitPage outfitid={showOutfitBottom} />
                 
             )}
-           
+           <Button onClick={handleAddToCloset}>ADD TO CLOSET</Button>
 
             <TopScrollBtn />
         </>
