@@ -5,9 +5,9 @@ import { FaLongArrowAltUp } from "react-icons/fa";
 function TopBtn () {
     const [showScroll, setShowScroll] = useState(false)
 const checkScrollTop = () => {    
-   if (!showScroll && window.pageYOffset > 200){
+   if (!showScroll && window.pageYOffset > 50){
       setShowScroll(true)    
-   } else if (showScroll && window.pageYOffset <= 200){
+   } else if (showScroll && window.pageYOffset <= 50){
       setShowScroll(false)    
    }  
 };
@@ -20,11 +20,8 @@ const scrollTop = () =>{
   });
 
   return (
-    <FaLongArrowAltUp
-      className="scrollTop"
-      onClick={scrollTop}
-      style={{ height: 40, display: showScroll ? "flex" : "none" }}
-    />
+        <FaLongArrowAltUp className="scrollTop" onClick={scrollTop} style={{margingBottom: "50px", color: "pink", height: 40, display: showScroll ? 'flex' : 'none'}}/>
+
   );
 }
 
