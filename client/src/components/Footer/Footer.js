@@ -5,14 +5,14 @@ import "./Footer.css";
 function Footer() {
 
   return (
-    <div className="fixed-bottom">
+    <div className="fixed-bottom"style={{display:"flex", justifyContent:"center"}}>
       <Navbar className="footer" fixed="bottom" style={{marginTop: "50px"}}>
         <Navbar.Brand href="#home">
           <img
-            alt=""
-            src="/logo.svg"
-            width="30"
-            height="30"
+            alt="logo"
+            src="../assets/logo/media-made.png"
+            width="60"
+            height="40"
             className="d-inline-block"
           />{' '}
         </Navbar.Brand>

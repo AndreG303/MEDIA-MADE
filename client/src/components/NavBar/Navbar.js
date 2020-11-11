@@ -11,7 +11,15 @@ function NavBar() {
   return (
 
     <Navbar className="navbar" expand="lg">
-      <Navbar.Brand className="brand-title"><Link to="/">MEDIA MADE</Link></Navbar.Brand>
+      <Navbar.Brand href="#home">
+          <img
+            alt="logo"
+            src="../assets/logo/media-made.png"
+            width="80"
+            height="50"
+            className="d-inline-block"
+          />{' '}
+        </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto navbar-body">
