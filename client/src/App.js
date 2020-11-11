@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NoMatch from "./pages/NoMatch";
 import NavBar from "./components/NavBar/Navbar";
-import Footer from "./components/Footer/Footer"
+import Footer from "./components/Footer/Footer";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import Logout from "./pages/Logout";
 import UserContext from "./utils/UserContext";
 import SessionUser from "./utils/SessionUser";
 import OutfitPage from "./pages/OutfitPage";
-import Homepage from "./pages/Homepage"
+import Homepage from "./pages/Homepage";
 import Outfits from "./pages/Outfits";
 import AboutUs from "./pages/AboutUs";
 import Closet from "./pages/closet";
@@ -20,10 +20,18 @@ function App() {
   const [loggedIn, setLoggedIn] = useState(false);
   SessionUser(setEmail, setLoggedIn);
 
-
   return (
     <Router>
-      <UserContext.Provider value={{ email, setEmail, loggedIn, setLoggedIn, username, setUsername }}>
+      <UserContext.Provider
+        value={{
+          email,
+          setEmail,
+          loggedIn,
+          setLoggedIn,
+          username,
+          setUsername
+        }}
+      >
         <div>
           <NavBar />
           <Switch>
@@ -45,8 +53,8 @@ function App() {
             <Route exact path="/outfitsdetail/:outfitid">
               <OutfitPage />
             </Route>
-            <Route exact path={["/closet", "/closet/:outfitid"]}> 
-            {/* user id instead of outfit id  */}
+            <Route exact path={["/closet", "/closet/:outfitid"]}>
+              {/* user id instead of outfit id  */}
               <Closet />
             </Route>
             <Route exact path="/aboutus">

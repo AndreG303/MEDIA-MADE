@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import API from "../utils/API";
 import { Row, Col, Container, Button } from "react-bootstrap";
+import UserContext from "../utils/UserContext";
 
 function OutfitPage(props) {
+
+  const { updateUserCloset, setUpdateUserCloset } = useContext(UserContext);
   const [outfit, setOutfit] = useState({
     outfitImage: "",
     items: [],
@@ -16,7 +19,7 @@ function OutfitPage(props) {
       paddingTop: "40px",
       width: "70vw",
       minHeight: "70vh",
-      marginTop: "0px",
+      marginTop: "0px"
     },
     outfitImg: {
       padding: "20px",
@@ -29,7 +32,7 @@ function OutfitPage(props) {
     },
     emily: {
       float: "left",
-    },
+    }
   };
 
   const { outfitid } = useParams();
@@ -50,10 +53,11 @@ function OutfitPage(props) {
     }
   }, [props]);
 
-  const handleAddToCloset = () => {
+  const handleAddToCloset = async () => {
     console.log(outfitid);
-    API.updateUserOutfits(outfitid).then((data) => {
+    await API.updateUserOutfits(outfitid).then((data) => {
       console.log(data);
+      
     });
   };
 

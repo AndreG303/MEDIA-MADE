@@ -6,9 +6,7 @@ const UserContext = createContext({
     username: "",
     setUsername: () => { },
     loggedIn: false,
-    setLoggedIn: () => { },
-    showUserOutfits: [],
-    setShowUserOutfits: () => { }
+    setLoggedIn: () => { }
 });
 
 export default UserContext;
