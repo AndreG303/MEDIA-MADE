@@ -1,10 +1,10 @@
 import React, { Fragment, useContext, useState, useEffect} from "react";
 import UserContext from "../utils/UserContext";
-// import { useUserOutfits } from "../utils/ClosetAPICalls";
 import { Container } from "../components/Grid";
 import OutfitPage from "../pages/OutfitPage";
 import API from "../utils/API";
-import "../app.css"
+import "../app.css";
+
 
 function Closet() {
 
@@ -25,7 +25,7 @@ function Closet() {
         .catch((err) => {
           console.log(err);
         });
-    }, [updateUserCloset]);
+    }, []);
 
     if(!showUserOutfits){
       console.log("not defined yet")
@@ -42,16 +42,16 @@ function Closet() {
             if (loggedIn) {
               return (
                 <Fragment>
-                  <h1>My Closet</h1>
+                  <h1 className="my-closet">My Closet</h1>
                 <Container>
-                {showUserOutfits.map((outfit) => <OutfitPage showAddToCloset={false} outfitid={outfit._id} />)}
+                {showUserOutfits.map((outfit, index) => <OutfitPage key={"outfitpage-" + index} showAddToCloset={false} setShowUserOutfits={setShowUserOutfits} outfitid={outfit._id} />)}
                 </Container>
                 </Fragment>
               )
             }
             else {
               return (
-                <h1>Please Login to Access Your Closet</h1>
+                <h1 className="my-closet">Please Login to Access Your Closet</h1>
               )
             }
 
