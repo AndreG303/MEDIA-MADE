@@ -33,7 +33,8 @@ body{
     font-family: 'Old Standard TT', serif;
     text-align: center;
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
+
     z-index: 3;
 }
 
