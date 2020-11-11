@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import API from "../utils/API";
 import { Row, Col, Container } from "../components/Grid";
 import { Button } from "react-bootstrap"
@@ -104,7 +104,7 @@ function OutfitPage(props) {
                 {items.name}
               </p>
               <p style={styles.outfitTextLink} className="itemLink">
-                <Link to={items.url} className="itemLink" target='_blank'>Click here to buy this product</Link>
+                <a href={items.url} className="itemLink" target='_blank'>Click here to buy this product</a>
               </p>
             </Col>
           </Row>
