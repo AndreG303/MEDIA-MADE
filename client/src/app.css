@@ -27,6 +27,10 @@ body{
   padding: 15px;
 }
 
+.navbar-body a:hover {
+  color: #58a4b0;
+}
+
 .navbar {
   background-color: #A9BCD0;
   border-bottom: solid;
@@ -168,6 +172,15 @@ header h2{
 header:visited {
   text-decoration:none;
   color:#fcfcfc;
+}
+
+.backText {
+  color: #d8dbe2;
+  font-family: "Old Standard TT", serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
 }
 
 .stars {

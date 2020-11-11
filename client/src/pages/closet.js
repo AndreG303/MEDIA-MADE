@@ -41,7 +41,7 @@ function Closet() {
             if (loggedIn) {
               return (
                 <Fragment>
-                  <h1>My Closet</h1>
+                  <h1 className="backText">My Closet</h1>
                 <Container>
                 {showUserOutfits.map((outfit) => <OutfitPage showAddToCloset={false} outfitid={outfit._id} />)}
                 </Container>
@@ -50,7 +50,7 @@ function Closet() {
             }
             else {
               return (
-                <h1>Please Login to Access Your Closet</h1>
+                <h1 className="backText">Please Login to Access Your Closet</h1>
               )
             }
 

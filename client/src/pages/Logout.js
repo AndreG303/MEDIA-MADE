@@ -19,7 +19,7 @@ function Logout() {
 
     return (
         <div>
-            <h1>Logged Out</h1>
+            <h1 className="backText">Logged Out</h1>
         </div>
     )
 }
