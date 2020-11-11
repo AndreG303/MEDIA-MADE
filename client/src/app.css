@@ -27,6 +27,10 @@ body{
   padding: 15px;
 }
 
+.navbar-body a:hover {
+  color: #58a4b0;
+}
+
 .navbar {
   background-color: #A9BCD0;
   border-bottom: solid;
@@ -130,6 +134,25 @@ div.full-outfit.card{
       margin-top: 0px; */
 }
 
+/* Clost Page Styling */
+.my-closet{
+  color: #d8dbe2;
+  text-align: center;
+  font-family: "Old Standard TT", serif;
+  font-size: 80px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+/* button styling */
+button.buttons.btn.btn-outline-light{
+  border-style: solid;
+  border-color: white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
 a {
   color: #58a4b0;
 }
@@ -137,6 +160,7 @@ a {
 a:hover {
   color: #A9BCD0;
   text-decoration: none;
+
 }
 
 /* background stars twinkling */
@@ -168,6 +192,15 @@ header h2{
 header:visited {
   text-decoration:none;
   color:#fcfcfc;
+}
+
+.backText {
+  color: #d8dbe2;
+  font-family: "Old Standard TT", serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
 }
 
 .stars {
