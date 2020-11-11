@@ -1,4 +1,4 @@
-# MEDIA MADE
+# MEDIA MADE [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Have you ever found yourself watching your favorite TV show and wish you could wear a piece of clothing one of the characters is wearing? Well this application is perfect for you! Look no further! We have done all the research and provided all the outfits of your favorite tv show! 
 
@@ -21,7 +21,8 @@ When people go on our application, we are providing an easy to use platform that
 
 
 ## License 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+MIT License 
 
 ## Technology
 ```
