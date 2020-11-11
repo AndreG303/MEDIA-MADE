@@ -14,7 +14,7 @@ function OutfitCard(props) {
         <>
             <div style={{ display: "flex", justifyContent: "inlineBlock", marginBottom:"20px"}}>
                 {widthState.map((cardWidth, i) =>
-                    <Card className="full-outfit" style={{ width: cardWidth + "%", transition: "width 1s" }} onMouseOver={() => {
+                    <Card key={"card-" + i} className="full-outfit" style={{ width: cardWidth + "%", transition: "width 1s" }} onMouseOver={() => {
                         let min = 5;
                         let variance = 100 - widthState.length * min;
                         let nWidth = [];
@@ -37,7 +37,6 @@ function OutfitCard(props) {
                     }}>
                         <Link to={"/outfits/" + outfitArray[i]} onClick={(props.handleChangeOfPage && (() => props.handleChangeOfPage(outfitArray[i]))) || (() => {})}>
                             <Card.Img variant="top" src={process.env.PUBLIC_URL + props.showOutfits[i].outfitImage} />
-                            {/* <Card.Img className="outfitCard hoverHide" variant="top" src={process.env.PUBLIC_URL + "/assets/outfitImg/SpongeBob_stock_art.png"} /> */}
                         </Link>
                     </Card>
                 )}
