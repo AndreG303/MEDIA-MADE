@@ -7,16 +7,16 @@ function Footer() {
     <>
       <Navbar fixed="bottom">
         <Navbar.Brand href="#home">
-          <img
+          {/* <img
             alt=""
             src="/logo.svg"
             width="30"
             height="30"
             className="d-inline-block"
-          />{' '}
+          />{' '} */}
         </Navbar.Brand>
         <Nav className="mr-auto">
-          <Nav.Link href="">Contact Us</Nav.Link>
+          <Nav.Link href="mailto:andreamgamez@gmail.com">Contact Us</Nav.Link>
         </Nav>
       </Navbar>
     </>
