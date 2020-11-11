@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import API from "../utils/API";
-<<<<<<< HEAD
-import { Row, Col, Container, Button } from "react-bootstrap";
-=======
 import { Row, Col, Container } from "../components/Grid";
 import { Button } from "react-bootstrap"
 import UserContext from "../utils/UserContext";
->>>>>>> 829c8e94ab471629d3d4d72fc23dbdf46a252356
 
 function OutfitPage(props) {
 
@@ -88,8 +84,8 @@ function OutfitPage(props) {
         <img style={styles.emily} src={outfit.outfitImage} alt="outfit-image" />
         </Col>
         <Col size="md-8">
-        {outfit.items.map((items) => (
-          <Row>
+        {outfit.items.map((items, index) => (
+          <Row key={"row-" + index}>
             <Col size="md-3">
               <img
                 style={styles.outfitImg}
