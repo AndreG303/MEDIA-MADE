@@ -96,9 +96,17 @@ App {
   
   }
   
-  .itemImg {
+.itemImg {
     width: 200px;
-  }
+}
+
+div.full-outfit.card{
+  background-color: transparent;
+}
+
+.container-outfit{
+  background-color: #d8dbe2;
+}
 
 
 /* background stars twinkling */
