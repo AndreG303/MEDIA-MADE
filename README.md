@@ -1,6 +1,6 @@
 # MEDIA MADE
 
-I created a employee directory with React breaking the application's UI into components, managing component state, and responding to user events.
+Have you ever found yourself watching your favorite TV show and wish you could wear a piece of clothing one of the characters is wearing? Well this application is perfect for you! Look no further! We have done all the research and provided all the outfits of your favorite tv show! 
 
 ### Link to Deployed app: https://damp-ocean-72048.herokuapp.com/
 
@@ -9,6 +9,8 @@ I created a employee directory with React breaking the application's UI into com
 
 ## User Story
 
+Be inspired by your favorite TV shows and curate your own personal closet.
+When people go on our application, we are providing an easy to use platform that aggregates outfits and brands based on TV shows that may otherwise be difficult to find. People will feel inspired and learn how to create their own outfits. Given our society’s climate today, online shopping is becoming more prevalent as buyers are turning towards e-commerce sources. 
 
 
 ## Business Context
@@ -16,12 +18,7 @@ I created a employee directory with React breaking the application's UI into com
 
 ## Acceptance Criteria
 
-Given a table of random users, when the user loads the page, a table of employees should render. 
 
-The user should be able to:
-
-  * Sort the table by at least one category
-  * Filter the users by at least one property.
 
 ## License 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
