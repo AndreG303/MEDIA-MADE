@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NoMatch from "./pages/NoMatch";
 import NavBar from "./components/NavBar/Navbar";
-import Jumbotron from "./components/Jumbotron2.js/Jumbotron2"
+
 import Footer from "./components/Footer/Footer"
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
@@ -26,7 +26,6 @@ function App() {
       <UserContext.Provider value={{ email, setEmail, loggedIn, setLoggedIn, username, setUsername }}>
         <div>
           <NavBar />
-          <Jumbotron />
           <Switch>
             <Route exact path="/">
               <Homepage />

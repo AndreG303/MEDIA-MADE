@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 
 export function Container({ fluid, children }) {
-  return <div className={`container${fluid ? "-fluid" : ""}`}>{children}</div>;
+  return <div className={`container${fluid ? "-fluid" : ""}`}  >{children}</div>;
 }
 
 export function Row({ fluid, children }) {
