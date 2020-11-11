@@ -4,6 +4,7 @@ import UserContext from "../utils/UserContext";
 import { Container } from "../components/Grid";
 import OutfitPage from "../pages/OutfitPage";
 import API from "../utils/API";
+import "../app.css"
 
 function Closet() {
 
