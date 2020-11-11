@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NoMatch from "./pages/NoMatch";
 import NavBar from "./components/NavBar/Navbar";
-
 import Footer from "./components/Footer/Footer"
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
@@ -45,7 +44,7 @@ function App() {
             <Route exact path="/outfitsdetail/:outfitid">
               <OutfitPage />
             </Route>
-            <Route exact path="/closet"> 
+            <Route exact path={["/closet", "/closet/:outfitid"]}> 
             {/* user id instead of outfit id  */}
               <Closet />
             </Route>

@@ -22,15 +22,15 @@ function OutfitPage(props) {
         },
         outfitImg:{
             padding: "20px",
-            display: "flex"
+            float: "right"
         },
         outfitText:{
             fontFamily: "'Rubik', sans-serif",
             fontSize: "25px",
-            display: "flex"
+            float: "right"
         },
         emily:{
-            display: "flex"
+            float: "left"    
         }
     }
 
@@ -59,7 +59,8 @@ function OutfitPage(props) {
     const handleAddToCloset = () => {
         // let outfitid =event.target.getAttribute("data-outfitid").value();
         console.log(outfitid)
-        API.updateUserOutfits(outfitid).then(data =>{
+        API.updateUserOutfits(outfitid)
+            .then(data =>{
             console.log(data);
         })
     }

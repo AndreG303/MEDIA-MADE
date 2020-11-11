@@ -13,8 +13,6 @@ const useAllOutfits = function () {
             .catch(err => {
                 console.log(err);
             });
-
-
     }, []);
 
     return [showOutfits];

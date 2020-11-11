@@ -17,8 +17,8 @@ export default {
     return axios.get("/api/user/logout");
   },
 
-  getUser: function (userData) {
-    return axios.get("/api/user/data", userData);
+  getUser: function() {
+    return axios.get("/api/user/data");
   },
 
   getOutfits: function () {
@@ -30,7 +30,8 @@ export default {
   },
 
   updateUserOutfits: function (outfitid) {
+    console.log("REQUEST OBJECT", outfitid);
     return axios.put("/api/user/closet/" + outfitid);
-  },
+  }
 };
 // axios get call and then post instead of put (updating and we are not updating).
