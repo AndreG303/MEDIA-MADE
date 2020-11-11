@@ -88,8 +88,8 @@ function OutfitPage(props) {
         <img style={styles.emily} src={outfit.outfitImage} alt="outfit-image" />
         </Col>
         <Col size="md-8">
-        {outfit.items.map((items) => (
-          <Row>
+        {outfit.items.map((items, index) => (
+          <Row key={"row-", index}>
             <Col size="md-4">
               <img
                 style={styles.outfitImg}

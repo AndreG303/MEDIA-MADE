@@ -130,6 +130,23 @@ div.full-outfit.card{
       margin-top: 0px; */
 }
 
+/* Clost Page Styling */
+.my-closet{
+  color: #d8dbe2;
+  text-align: center;
+  font-family: "Old Standard TT", serif;
+  font-size: 80px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+/* button styling */
+button.buttons.btn.btn-outline-light{
+  border-style: solid;
+  border-color: white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 
 
 a {
