@@ -16,21 +16,21 @@ function OutfitPage(props) {
             backgroundColor: "#d8dbe2",
             color: "white",
             padding: "40px",
-            backgroundSize: "cover",
             width: "70vw",
-            minHeight: "70vh"
+            minHeight: "70vh",
+            marginTop: "100px"
         },
         outfitImg:{
             padding: "20px",
-            float: "right"
+            display: "flex"
         },
         outfitText:{
             fontFamily: "'Rubik', sans-serif",
             fontSize: "25px",
-            float: "right"
+            display: "flex"
         },
         emily:{
-            float: "left"    
+            display: "flex"
         }
     }
 
