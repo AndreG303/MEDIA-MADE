@@ -53,7 +53,7 @@ function SignUpForm(props) {
                 <Form.Label>Password</Form.Label>
                 <Form.Control ref={passwordInput} type="password" placeholder="Password" />
             </Form.Group>
-            <Button variant="outline-light" type="submit">
+            <Button className="buttons" variant="outline-light" type="submit">
                 Submit
             </Button>
         </Form>

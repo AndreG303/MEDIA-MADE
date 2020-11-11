@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import API from "../utils/API";
 import { Row, Col, Container } from "../components/Grid";
@@ -8,7 +8,7 @@ import TopScrollBtn from "../components/TopBtn/TopBtn.js";
 
 function OutfitPage(props) {
 
-  const { updateUserCloset, setUpdateUserCloset } = useContext(UserContext);
+ 
   const [outfit, setOutfit] = useState({
     outfitImage: "",
     items: [],
@@ -66,10 +66,20 @@ function OutfitPage(props) {
     });
   };
 
-  const handleDelete = () => {
+  const handleDelete = (event, outfitid) => {
     API.deleteUserOutfit(outfitid).then((data) => {
       console.log(data);
+      if(props.setShowUserOutfits){
+        data.data.outfits.map((outfitid) => {
+          let showUserOutfits = [];
+          API.getOutfit(outfitid).then((outfitdata) => {
+            showUserOutfits = [...showUserOutfits, outfitdata.data];
+            props.setShowUserOutfits(showUserOutfits);
+          });
+        });
+      }
     });
+    
   };
 
   return (
@@ -80,8 +90,8 @@ function OutfitPage(props) {
         <img style={styles.emily} src={outfit.outfitImage} alt="outfit-image" />
         </Col>
         <Col size="md-8">
-        {outfit.items.map((items) => (
-          <Row>
+        {outfit.items.map((items, index) => (
+          <Row key={"row-", index}>
             <Col size="md-4">
               <img
                 style={styles.outfitImg}
@@ -103,9 +113,9 @@ function OutfitPage(props) {
         </Row>
         {(() => {
           if (props.showAddToCloset) {
-            return <Button onClick={handleAddToCloset}>ADD TO CLOSET</Button>;
+            return <Button className="buttons" variant="outline-light" onClick={handleAddToCloset}>ADD TO CLOSET</Button>;
           } else {
-            return <Button onClick={handleDelete}>DELETE OUTFIT</Button>;
+            return <Button className="buttons" variant="outline-light" onClick={event => handleDelete(event, outfit._id)}>DELETE OUTFIT</Button>;
           }
         })()}
       </Container>
