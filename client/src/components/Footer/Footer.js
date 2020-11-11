@@ -14,7 +14,7 @@ function Footer() {
             width="60"
             height="40"
             className="d-inline-block"
-          />{' '} */}
+          />{' '}
         </Navbar.Brand>
         <Nav className="mr-auto">
           <Nav.Link href="/aboutUs">Contact Us</Nav.Link>
