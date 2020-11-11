@@ -3,7 +3,7 @@ import {Jumbotron, Container} from 'react-bootstrap';
 
 function Jumbotron3() {
 
-  let jumbotronStyles = {
+  let jumbotronStyles3 = {
     jumbotron: {
       width: "100%",
       display: "block",
@@ -15,13 +15,13 @@ function Jumbotron3() {
       padding: "20px",
       textAlign: "center",
       backgroundColor:"transparent",
-      fontSize: "12px",
+      fontSize: "1px",
       fontStyle:"italic"
     },
   }
   return(
    
-  <Jumbotron className="container" style={jumbotronStyles.jumbotron}>
+  <Jumbotron className="container-fluid" style={jumbotronStyles3.jumbotron}>
   
     <h1>Be inspired by your favorite TV shows and curate your own personal closet!</h1>
 
