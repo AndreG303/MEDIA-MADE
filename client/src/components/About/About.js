@@ -35,12 +35,8 @@ function About(){
     <p className="card__name">Andrea Gamez</p>
     <div className="grid-container">
 
-      <div className="grid-child-posts">
+      <div className="">
         305 Post
-      </div>
-
-      <div className="grid-child-followers">
-        2643 Likes
       </div>
 
     </div>
