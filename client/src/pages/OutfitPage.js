@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import API from "../utils/API";
 import { Row, Col, Container } from "../components/Grid";
 import { Button } from "react-bootstrap"
-import UserContext from "../utils/UserContext";
 
 function OutfitPage(props) {
 
@@ -107,9 +106,9 @@ function OutfitPage(props) {
         </Row>
         {(() => {
           if (props.showAddToCloset) {
-            return <Button onClick={handleAddToCloset}>ADD TO CLOSET</Button>;
+            return <Button className="buttons" variant="outline-light" onClick={handleAddToCloset}>ADD TO CLOSET</Button>;
           } else {
-            return <Button onClick={event => handleDelete(event, outfit._id)}>DELETE OUTFIT</Button>;
+            return <Button className="buttons" variant="outline-light" onClick={event => handleDelete(event, outfit._id)}>DELETE OUTFIT</Button>;
           }
         })()}
       </Container>

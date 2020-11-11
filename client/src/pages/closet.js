@@ -1,6 +1,5 @@
 import React, { Fragment, useContext, useState, useEffect} from "react";
 import UserContext from "../utils/UserContext";
-// import { useUserOutfits } from "../utils/ClosetAPICalls";
 import { Container } from "../components/Grid";
 import OutfitPage from "../pages/OutfitPage";
 import API from "../utils/API";
@@ -51,7 +50,7 @@ function Closet() {
             }
             else {
               return (
-                <h1>Please Login to Access Your Closet</h1>
+                <h1 className="my-closet">Please Login to Access Your Closet</h1>
               )
             }
 

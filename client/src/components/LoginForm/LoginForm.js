@@ -41,7 +41,7 @@ function LoginForm(props) {
                     Or Sign-Up <a href="/signup">HERE</a>
                 </Form.Text>
             </Form.Group>
-            <Button variant="outline-light" type="submit">
+            <Button className="buttons" variant="outline-light" type="submit">
                 Submit
             </Button>
         </Form>
