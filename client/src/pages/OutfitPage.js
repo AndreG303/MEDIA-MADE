@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import API from "../utils/API";
 import { Row, Col, Container } from "../components/Grid";
 import { Button } from "react-bootstrap"
+import UserContext from "../utils/UserContext";
+import TopScrollBtn from "../components/TopBtn/TopBtn.js";
 
 function OutfitPage(props) {
 
