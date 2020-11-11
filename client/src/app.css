@@ -4,7 +4,7 @@ body{
     background-color: #1b1b1e;
 }
 /* navbar styling */
-a.brand-title.navbar-brand {
+.brand-title {
   font-family: "Old Standard TT", serif;
   font-style: italic;
   font-weight: normal;

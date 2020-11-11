@@ -44,7 +44,7 @@ function App() {
             <Route exact path="/outfitsdetail/:outfitid">
               <OutfitPage />
             </Route>
-            <Route exact path="/closet/:outfitid"> 
+            <Route exact path="/closet"> 
             {/* user id instead of outfit id  */}
               <Closet />
             </Route>
