@@ -32,6 +32,10 @@ export default {
   updateUserOutfits: function (outfitid) {
     console.log("REQUEST OBJECT", outfitid);
     return axios.put("/api/user/closet/" + outfitid);
+  },
+
+  deleteUserOutfit: function(outfitid){
+    return axios.delete("/api/user/closet/" + outfitid);
   }
 };
 // axios get call and then post instead of put (updating and we are not updating).

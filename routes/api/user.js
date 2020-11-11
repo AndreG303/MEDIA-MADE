@@ -89,6 +89,25 @@ router.put("/closet/:outfitid", (req, res) => {
           console.log(err)
       })
     }
-})
+});
+
+router.delete("/closet/:outfitid", (req, res) => {
+    if (!req.user) {
+        // The user is not logged in, send back an empty object
+        res.json({});
+    } else {
+        // Otherwise send back the user's email and id
+        // Sending back a password, even a hashed password, isn't a good idea
+        db.User.findByIdAndUpdate( req.user._id, { "$pull": {outfits: req.params.outfitid}} )
+        .then( results => {
+            res.json(results)
+        })
+      .catch(err => {
+          console.log(err)
+      })
+    }
+});
+
+
 
 module.exports = router;
