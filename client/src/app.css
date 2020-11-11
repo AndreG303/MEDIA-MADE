@@ -110,6 +110,11 @@ App {
 .itemImg {
     width: 200px;
     padding: 100px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    box-shadow: 0 8px 6px -6px black;
 }
 
 div.full-outfit.card{
