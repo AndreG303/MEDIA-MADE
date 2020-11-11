@@ -8,11 +8,13 @@ function Jumbotron2() {
       width: "100%",
       display: "block",
       marginBottom: "60px",
+      marginTop:"20px",
       height: "120px",
       color: "black",
       justifyContent: "center",
       padding: "20px",
-      textAlign: "center"
+      textAlign: "center",
+      backgroundColor:"#d8dbe2",
     },
     jumbotronText: {
       fontSize: "25px"
