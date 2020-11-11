@@ -15,8 +15,6 @@ import Outfits from "./pages/Outfits";
 import AboutUs from "./pages/AboutUs";
 import Closet from "./pages/closet";
 
-
-
 function App() {
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
