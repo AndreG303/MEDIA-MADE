@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import API from "../utils/API";
 import { Row, Col, Container, Button } from "react-bootstrap";
 
-
 function OutfitPage(props) {
 
  

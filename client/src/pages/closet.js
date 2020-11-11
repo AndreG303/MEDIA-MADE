@@ -4,6 +4,7 @@ import UserContext from "../utils/UserContext";
 import { Container } from "../components/Grid";
 import OutfitPage from "../pages/OutfitPage";
 import API from "../utils/API";
+import "../app.css";
 
 function Closet() {
 
@@ -41,7 +42,7 @@ function Closet() {
             if (loggedIn) {
               return (
                 <Fragment>
-                  <h1>My Closet</h1>
+                  <h1 className="my-closet">My Closet</h1>
                 <Container>
                 {showUserOutfits.map((outfit, index) => <OutfitPage key={"outfitpage-" + index} showAddToCloset={false} setShowUserOutfits={setShowUserOutfits} outfitid={outfit._id} />)}
                 </Container>

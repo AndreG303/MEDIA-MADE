@@ -119,6 +119,15 @@ div.full-outfit.card{
   background-color: #d8dbe2;
 }
 
+/* Clost Page Styling */
+.my-closet{
+  color: white;
+  text-align: center;
+  font-family: "Old Standard TT", serif;
+  font-size: 80px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
 
 /* background stars twinkling */
 
