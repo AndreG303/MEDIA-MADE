@@ -14,7 +14,7 @@ function OutfitCard(props) {
         <>
             <div style={{ display: "flex", justifyContent: "inlineBlock", marginBottom:"200px"}}>
                 {widthState.map((cardWidth, i) =>
-                    <Card className="full-outfit" style={{ width: cardWidth + "%", transition: "width 1s" }} onMouseOver={() => {
+                    <Card key={"card-" + i} className="full-outfit" style={{ width: cardWidth + "%", transition: "width 1s" }} onMouseOver={() => {
                         let min = 5;
                         let variance = 100 - widthState.length * min;
                         let nWidth = [];

@@ -12,8 +12,8 @@ function OutfitPage() {
             <h1>OUTFIT PAGE</h1>
             <div>
                 <Container>
-                    {showOutfits.map((outfit) => outfit.items.map((items) =>
-                        <Row>
+                    {showOutfits.map((outfit) => outfit.items.map((items, index) =>
+                        <Row key={"row-" + index}>
                             <Col size="md-3">
                                 <img className="itemImg" src={process.env.PUBLIC_URL + items.image} />
                             </Col>

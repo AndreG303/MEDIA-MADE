@@ -24,7 +24,7 @@ function Closet() {
         .catch((err) => {
           console.log(err);
         });
-    }, [updateUserCloset]);
+    }, []);
 
     if(!showUserOutfits){
       console.log("not defined yet")
@@ -43,7 +43,7 @@ function Closet() {
                 <Fragment>
                   <h1>My Closet</h1>
                 <Container>
-                {showUserOutfits.map((outfit) => <OutfitPage showAddToCloset={false} outfitid={outfit._id} />)}
+                {showUserOutfits.map((outfit, index) => <OutfitPage key={"outfitpage-" + index} showAddToCloset={false} setShowUserOutfits={setShowUserOutfits} outfitid={outfit._id} />)}
                 </Container>
                 </Fragment>
               )

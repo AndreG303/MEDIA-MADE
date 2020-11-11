@@ -1,12 +1,12 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import API from "../utils/API";
 import { Row, Col, Container, Button } from "react-bootstrap";
-import UserContext from "../utils/UserContext";
+
 
 function OutfitPage(props) {
 
-  const { updateUserCloset, setUpdateUserCloset } = useContext(UserContext);
+ 
   const [outfit, setOutfit] = useState({
     outfitImage: "",
     items: [],
@@ -61,18 +61,28 @@ function OutfitPage(props) {
     });
   };
 
-  const handleDelete = () => {
+  const handleDelete = (event, outfitid) => {
     API.deleteUserOutfit(outfitid).then((data) => {
       console.log(data);
+      if(props.setShowUserOutfits){
+        data.data.outfits.map((outfitid) => {
+          let showUserOutfits = [];
+          API.getOutfit(outfitid).then((outfitdata) => {
+            showUserOutfits = [...showUserOutfits, outfitdata.data];
+            props.setShowUserOutfits(showUserOutfits);
+          });
+        });
+      }
     });
+    
   };
 
   return (
     <div>
       <Container style={styles.outfitCard}>
         <img style={styles.emily} src={outfit.outfitImage} alt="outfit-image" />
-        {outfit.items.map((items) => (
-          <Row>
+        {outfit.items.map((items, index) => (
+          <Row key={"row-" + index}>
             <Col size="md-3">
               <img
                 style={styles.outfitImg}
@@ -94,7 +104,7 @@ function OutfitPage(props) {
           if (props.showAddToCloset) {
             return <Button onClick={handleAddToCloset}>ADD TO CLOSET</Button>;
           } else {
-            return <Button onClick={handleDelete}>DELETE OUTFIT</Button>;
+            return <Button onClick={event => handleDelete(event, outfit._id)}>DELETE OUTFIT</Button>;
           }
         })()}
       </Container>
