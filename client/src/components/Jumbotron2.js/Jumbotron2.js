@@ -14,7 +14,7 @@ function Jumbotron2() {
       justifyContent: "center",
       padding: "20px",
       textAlign: "center",
-      backgroundColor: "#d8dbe2",
+      backgroundColor:"#d8dbe2",
     },
     jumbotronText: {
       fontSize: "25px"
