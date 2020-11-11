@@ -2,6 +2,7 @@ import React, { Fragment, useContext } from "react";
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import UserContext from "../../utils/UserContext";
 import '../../app.css';
+import { Link } from "react-router-dom";
 
 function NavBar() {
 
@@ -10,30 +11,27 @@ function NavBar() {
   return (
 
     <Navbar className="navbar" expand="lg">
-      <Navbar.Brand className="brand-title" href="/">MEDIA MADE</Navbar.Brand>
+      <Navbar.Brand className="brand-title"><Link to="/">MEDIA MADE</Link></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto navbar-body">
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="">TV Shows</Nav.Link>
-          <Nav.Link href="/aboutus">About Us</Nav.Link>
+          <Link to="/">Home</Link>
+          <Link to="/outfits">TV Shows</Link>
+          <Link to="/aboutus">About Us</Link>
           {(() => {
             if (loggedIn) {
               return (
                 <Fragment>
-                  <NavDropdown title={username} id="basic-nav-dropdown">
-                    <NavDropdown.Item href="/closet">My Closet</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="/logout">Log Out</NavDropdown.Item>
-                  </NavDropdown>
+                    <Link to="/closet">Closet</Link>
+                    <Link to="/logout">Log Out</Link>
                 </Fragment>
               )
             }
             else {
               return (
-                <Nav.Link href="/login" variant="secondary" size="lg">
+                <Link to="/login" variant="secondary" size="lg">
                   Login
-                </Nav.Link>
+                </Link>
               )
             }
 
