@@ -81,7 +81,7 @@ router.put("/closet/:outfitid", (req, res) => {
     } else {
         // Otherwise send back the user's email and id
         // Sending back a password, even a hashed password, isn't a good idea
-        db.User.findByIdAndUpdate( user._id, { "$push": {outfits: req.params.outfitid}} )
+        db.User.findByIdAndUpdate( req.user._id, { "$push": {outfits: req.params.outfitid}} )
         .then( results => {
             res.json(results)
         })

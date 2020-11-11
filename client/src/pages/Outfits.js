@@ -40,7 +40,7 @@ function Outfits(props) {
                 <OutfitPage outfitid={showOutfitBottom} />
                 
             )}
-           <Button data-outfitid="5fa6bf29549d4e44809f42f0" onClick={handleAddToCloset}>ADD TO CLOSET</Button>
+           <Button onClick={handleAddToCloset}>ADD TO CLOSET</Button>
 
             <TopScrollBtn />
         </>
