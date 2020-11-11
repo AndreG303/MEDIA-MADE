@@ -2,7 +2,15 @@
 
 body{
     background-color: #1b1b1e;
+    margin-bottom: 60px;
 }
+
+#root > div:after {
+  content: " ";
+  height:100px;
+  display: block;
+}
+
 /* navbar styling */
 .brand-title a {
   font-family: "Old Standard TT", serif;

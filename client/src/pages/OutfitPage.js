@@ -24,6 +24,7 @@ function OutfitPage(props) {
     outfitImg: {
       padding: "20px",
       float: "right",
+      marginBottom: "20px"
     },
     outfitText: {
       fontFamily: "'Rubik', sans-serif",
