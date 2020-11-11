@@ -19,7 +19,7 @@ function OutfitPage(props) {
       paddingTop: "40px",
       width: "70vw",
       minHeight: "70vh",
-      marginTop: "0px",
+      marginTop: "0px"
     },
     outfitImg: {
       padding: "20px",
@@ -32,7 +32,7 @@ function OutfitPage(props) {
     },
     emily: {
       float: "left",
-    },
+    }
   };
 
   const { outfitid } = useParams();
@@ -59,7 +59,6 @@ function OutfitPage(props) {
       console.log(data);
       
     });
-    setUpdateUserCloset(updateUserCloset => !updateUserCloset);
   };
 
   const handleDelete = () => {

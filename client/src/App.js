@@ -18,7 +18,6 @@ function App() {
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [loggedIn, setLoggedIn] = useState(false);
-  const [updateUserCloset, setUpdateUserCloset] = useState(false);
   SessionUser(setEmail, setLoggedIn);
 
   return (
@@ -30,9 +29,7 @@ function App() {
           loggedIn,
           setLoggedIn,
           username,
-          setUsername,
-          updateUserCloset,
-          setUpdateUserCloset,
+          setUsername
         }}
       >
         <div>

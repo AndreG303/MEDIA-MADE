@@ -57,20 +57,22 @@ router.get("/data", (req, res) => {
         res.json({});
     } else {
         db.User.findById(req.user._id)
-        .then( results => {
-            res.json(results)
+        .then( results => {            
+            // res.json(results);
+            console.log(results);
+            res.json({
+                username: results.username,
+                email: results.email,
+                _id: results._id,
+                outfits: results.outfits
+            });
         })
         .catch(err => {
             console.log(err)
         })
         // Otherwise send back the user's email and id
         // Sending back a password, even a hashed password, isn't a good idea
-        res.json({
-            username: req.user.username,
-            email: req.user.email,
-            _id: req.user._id,
-            outfits: req.user.outfits
-        });
+        
     }
 });
 
