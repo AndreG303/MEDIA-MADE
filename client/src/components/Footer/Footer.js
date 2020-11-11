@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className="fixed-bottom"style={{display:"flex", justifyContent:"center"}}>
       <Navbar className="footer" fixed="bottom" style={{marginTop: "50px"}}>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand>
           <img
             alt="logo"
             src="../assets/logo/media-made.png"
