@@ -4,8 +4,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 function Footer() {
 
   return (
-    <>
-      <Navbar fixed="bottom">
+      <Navbar className="footer" fixed="bottom" style={{marginTop: "50px"}}>
         <Navbar.Brand href="#home">
           <img
             alt=""
@@ -19,7 +18,6 @@ function Footer() {
           <Nav.Link href="/aboutUs">Contact Us</Nav.Link>
         </Nav>
       </Navbar>
-    </>
   )
 }
 

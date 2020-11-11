@@ -7,7 +7,7 @@ function Jumbotron3() {
     jumbotron: {
       width: "100%",
       display: "block",
-      marginBottom: "60px",
+      marginBottom: "80px",
       marginTop:"5px",
       height: "120px",
       color: "#d8dbe2",
