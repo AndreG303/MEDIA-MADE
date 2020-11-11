@@ -109,6 +109,7 @@ App {
   
 .itemImg {
     width: 200px;
+    padding: 100px;
 }
 
 div.full-outfit.card{
@@ -121,6 +122,7 @@ div.full-outfit.card{
 
 .container {
   background-color: #d8dbe2;
+  padding: 30px;
       /* color: white;
       padding-top: 40px;
       width: 70vw;
@@ -128,6 +130,14 @@ div.full-outfit.card{
       margin-top: 0px; */
 }
 
+a {
+  color: #58a4b0;
+}
+
+a:hover {
+  color: #A9BCD0;
+  text-decoration: none;
+}
 
 /* background stars twinkling */
 

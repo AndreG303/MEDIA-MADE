@@ -23,15 +23,20 @@ function OutfitPage(props) {
       marginTop: "0px"
     },
     outfitImg: {
-      padding: "20px",
-    //   float: "right",
-      marginBottom: "20px"
+      padding: "20px"
     },
-    outfitText: {
-      fontFamily: "'Rubik', sans-serif",
+    outfitTextTitle: {
       fontSize: "25px",
-    //   float: "right",
-    }
+      fontFamily: "Old Standard TT",
+      textTransform: "uppercase",
+      paddingTop:"20px"
+    
+    },
+    outfitTextLink: {
+        fontFamily: "'Rubik', sans-serif",
+        fontSize: "25px",
+      color: "white"
+      }
   };
 
   const { outfitid } = useParams();
@@ -76,7 +81,7 @@ function OutfitPage(props) {
         <Col size="md-8">
         {outfit.items.map((items) => (
           <Row>
-            <Col size="md-3">
+            <Col size="md-4">
               <img
                 style={styles.outfitImg}
                 className="itemImg"
@@ -84,11 +89,11 @@ function OutfitPage(props) {
               ></img>
             </Col>
             <Col size="md-8">
-              <p style={styles.outfitText} className="itemName">
+              <p style={styles.outfitTextTitle} className="itemName">
                 {items.name}
               </p>
-              <p style={styles.outfitText} className="itemLink">
-                <a href={items.url}>Click here to buy this product</a>
+              <p style={styles.outfitTextLink} className="itemLink">
+                <a classname="itemLink" href={items.url} target='_blank'>Click here to buy this product</a>
               </p>
             </Col>
           </Row>
