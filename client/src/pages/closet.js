@@ -5,6 +5,7 @@ import OutfitPage from "../pages/OutfitPage";
 import API from "../utils/API";
 import "../app.css";
 
+
 function Closet() {
 
     const { loggedIn, updateUserCloset } = useContext(UserContext);
