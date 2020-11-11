@@ -27,6 +27,10 @@ body{
   padding: 15px;
 }
 
+.navbar-body a:hover {
+  color: #58a4b0;
+}
+
 .navbar {
   background-color: #A9BCD0;
   border-bottom: solid;
@@ -61,7 +65,7 @@ form.form{
 }
 
 .form-text a{
-    color: #373f51;
+    color: #d8dbe2;
     font-weight: bold;
     font-size: 18px;
 }
@@ -194,6 +198,16 @@ header:visited {
   text-decoration:none;
   color:#fcfcfc;
 }
+
+.backText {
+  color: #d8dbe2;
+  font-family: "Old Standard TT", serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
+}
+
 
 .stars {
 position:absolute;

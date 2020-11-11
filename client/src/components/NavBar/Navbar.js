@@ -11,7 +11,7 @@ function NavBar() {
   return (
 
     <Navbar className="navbar" expand="lg">
-      <Navbar.Brand href="#home">
+      <Navbar.Brand>
           <img
             alt="logo"
             src="../assets/logo/media-made.png"
