@@ -119,10 +119,19 @@ div.full-outfit.card{
   background-color: #d8dbe2;
 }
 
+.container {
+  background-color: #d8dbe2;
+      /* color: white;
+      padding-top: 40px;
+      width: 70vw;
+      min-height: 850px;
+      margin-top: 0px; */
+}
+
 
 /* background stars twinkling */
 
-/* * {
+* {
   margin: 0;
   padding: 0;
 }
@@ -151,24 +160,7 @@ header:visited {
   color:#fcfcfc;
 }
 
-@keyframes move-twink-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
-}
-@-webkit-keyframes move-twink-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
-}
-@-moz-keyframes move-twink-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
-}
-@-ms-keyframes move-twink-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
-}
-
-.stars, .twinkling {
+.stars {
 position:absolute;
 top:0;
 left:0;
@@ -180,19 +172,8 @@ display:block;
 }
 
 .stars {
-background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+background:#000 url(https://cdn.shopify.com/s/files/1/0437/1116/8667/t/4/assets/root-gif-bcg---black.gif?v=13827766089771535840) repeat top center;
 z-index: 0;
 
 }
-
-.twinkling{
-background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
-
-
--moz-animation:move-twink-back 200s linear infinite;
--ms-animation:move-twink-back 200s linear infinite;
--o-animation:move-twink-back 200s linear infinite;
--webkit-animation:move-twink-back 200s linear infinite;
-animation:move-twink-back 200s linear infinite;
-} */
 
