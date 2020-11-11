@@ -12,10 +12,10 @@ function Jumbotron3() {
       height: "120px",
       color: "#d8dbe2",
       justifyContent: "center",
-      padding: "20px",
+      padding: "10px",
       textAlign: "center",
       backgroundColor:"transparent",
-      fontSize: "1px",
+      fontSize: "10px",
       fontStyle:"italic"
     },
   }
