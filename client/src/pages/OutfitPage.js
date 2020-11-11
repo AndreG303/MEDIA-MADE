@@ -53,13 +53,13 @@ function OutfitPage(props) {
     }
   }, [props]);
 
-  const handleAddToCloset = () => {
+  const handleAddToCloset = async () => {
     console.log(outfitid);
-    API.updateUserOutfits(outfitid).then((data) => {
+    await API.updateUserOutfits(outfitid).then((data) => {
       console.log(data);
-      setUpdateUserCloset(updateUserCloset => !updateUserCloset);
+      
     });
-
+    setUpdateUserCloset(updateUserCloset => !updateUserCloset);
   };
 
   const handleDelete = () => {
