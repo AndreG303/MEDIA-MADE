@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.css";
+import "../../app.css";
 
 function About(){
     return (
@@ -44,7 +44,7 @@ function About(){
     <div>
 
       <div className="usTitle">
-      Back-end &amp; authentication
+      Back-end, Front-end &amp; authentication
       </div>
 
 
@@ -61,7 +61,7 @@ function About(){
     <div>
 
       <div className="usTitle">
-      Back-end &amp; Digital drawing
+      Back-end, Front-end &amp; Digital drawing
       </div>
 
 

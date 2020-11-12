@@ -79,7 +79,7 @@ function OutfitPage(props) {
       <Container className="container-outfit">
           <Row>
           <Col size="md-4">
-        <img style={styles.emily} src={outfit.outfitImage} alt="outfit-image" />
+        <img className="show-outfit-img" style={styles.emily} src={outfit.outfitImage} alt="outfit-image" />
         </Col>
         <Col size="md-8">
         {outfit.items.map((items, index) => (
