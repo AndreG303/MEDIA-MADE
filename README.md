@@ -4,21 +4,13 @@ Have you ever found yourself watching your favorite TV show and wish you could w
 
 ### Link to Deployed app: https://damp-ocean-72048.herokuapp.com/
 
+![Screenshot (116)](https://user-images.githubusercontent.com/65183415/98880659-12af1080-243d-11eb-9add-9decfb412231.png)
 
-![Screenshot (112)](https://user-images.githubusercontent.com/65183415/98872724-e2ab4180-242b-11eb-82b4-850bcdb8c5bb.png)
 
 ## User Story
 
 Be inspired by your favorite TV shows and curate your own personal closet.
 When people go on our application, we are providing an easy to use platform that aggregates outfits and brands based on TV shows that may otherwise be difficult to find. People will feel inspired and learn how to create their own outfits. Given our society’s climate today, online shopping is becoming more prevalent as buyers are turning towards e-commerce sources. 
-
-
-## Business Context
-
-
-## Acceptance Criteria
-
-
 
 ## License 
 
