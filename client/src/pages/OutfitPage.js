@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import API from "../utils/API";
 import { Row, Col, Container } from "../components/Grid";
 import { Button } from "react-bootstrap"
-import UserContext from "../utils/UserContext";
 import TopBtn from "../components/TopBtn/TopBtn.js";
 
 function OutfitPage(props) {
@@ -69,17 +68,10 @@ function OutfitPage(props) {
   const handleDelete = (event, outfitid) => {
     API.deleteUserOutfit(outfitid).then((data) => {
       console.log(data);
-      if(props.setShowUserOutfits){
-        data.data.outfits.map((outfitid) => {
-          let showUserOutfits = [];
-          API.getOutfit(outfitid).then((outfitdata) => {
-            showUserOutfits = [...showUserOutfits, outfitdata.data];
-            props.setShowUserOutfits(showUserOutfits);
-          });
-        });
+      if(props.deleteOutfit){
+        props.deleteOutfit(outfitid);
       }
-    });
-    
+    }); 
   };
 
   return (

@@ -8,8 +8,7 @@ import "../app.css";
 
 function Closet() {
 
-    const { loggedIn, updateUserCloset } = useContext(UserContext);
-    // const showUserOutfits = useUserOutfits();
+    const { loggedIn } = useContext(UserContext);
     const [showUserOutfits, setShowUserOutfits] = useState([]);
 
     useEffect(() => {
@@ -34,6 +33,11 @@ function Closet() {
       console.log(showUserOutfits);
     }
 
+    const deleteOutfit = (outfitid) => {
+      let changedOutfits = [...showUserOutfits];
+      changedOutfits = changedOutfits.filter(o => o._id !== outfitid);
+      setShowUserOutfits(changedOutfits);
+    }
 
 
     return(
@@ -44,7 +48,7 @@ function Closet() {
                 <Fragment>
                   <h1 className="backText">My Closet</h1>
                 <Container>
-                {showUserOutfits.map((outfit, index) => <OutfitPage key={"outfitpage-" + index} showAddToCloset={false} setShowUserOutfits={setShowUserOutfits} outfitid={outfit._id} />)}
+                {showUserOutfits.map((outfit, index) => <OutfitPage key={"outfitpage-" + index} deleteOutfit={deleteOutfit} showUserOutfits={showUserOutfits} showAddToCloset={false} setShowUserOutfits={setShowUserOutfits} outfitid={outfit._id} />)}
                 </Container>
                 </Fragment>
               )
