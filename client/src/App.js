@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import NoMatch from "./pages/noMatch";
 import NavBar from "./components/NavBar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Login from "./pages/login";
@@ -60,10 +59,6 @@ function App() {
             </Route>
             <Route exact path="/aboutus">
               <AboutUs />
-            </Route>
-            <Route>
-              {/* this is a 404, IT SHOULD ALWAYS BE AT THE BOTTOM */}
-              <NoMatch />
             </Route>
           </Switch>
           <Footer />
