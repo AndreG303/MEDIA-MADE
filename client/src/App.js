@@ -2,15 +2,16 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from "./components/NavBar/Navbar";
 import Footer from "./components/Footer/Footer";
-import Login from "./pages/login";
-import SignUp from "./pages/signUp";
-import Logout from "./pages/logout";
+import NoMatch from "./pages/NoMatch";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+import Logout from "./pages/Logout";
 import UserContext from "./utils/UserContext";
 import SessionUser from "./utils/SessionUser";
-import OutfitPage from "./pages/outfitPage";
-import Homepage from "./pages/homepage";
-import Outfits from "./pages/outfits";
-import AboutUs from "./pages/aboutUs";
+import OutfitPage from "./pages/OutfitPage";
+import Homepage from "./pages/Homepage";
+import Outfits from "./pages/Outfits";
+import AboutUs from "./pages/AboutUs";
 import Closet from "./pages/closet";
 import "./app.css";
 
@@ -59,6 +60,9 @@ function App() {
             </Route>
             <Route exact path="/aboutus">
               <AboutUs />
+            </Route>
+            <Route>
+              <NoMatch />
             </Route>
           </Switch>
           <Footer />
