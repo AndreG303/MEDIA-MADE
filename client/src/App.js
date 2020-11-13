@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import NoMatch from "./pages/noMatch";
+import NoMatch from "./pages/noMatch";
 import NavBar from "./components/NavBar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Login from "./pages/login";
