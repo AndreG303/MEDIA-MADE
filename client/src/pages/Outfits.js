@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import OutfitPage from "./outfitPage";
+import OutfitPage from "./OutfitPage";
 import SingleOutfit from "../components/SingleOutfit/SingleOutfit";
 import { useAllOutfits } from "../utils/OutfitAPICalls";
 import Jumbotron from "../components/Jumbotron2.js/Jumbotron2";
