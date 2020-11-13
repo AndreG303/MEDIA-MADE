@@ -2,9 +2,7 @@ import React from "react";
 import About from "../components/About/About";
 
 function AboutUs() {
-    return (
-        <About />
-    )
+  return <About />;
 }
 
 export default AboutUs;

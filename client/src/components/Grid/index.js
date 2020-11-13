@@ -1,7 +1,7 @@
 import React from "react";
 
 export function Container({ fluid, children }) {
-  return <div className={`container${fluid ? "-fluid" : ""}`}  >{children}</div>;
+  return <div className={`container${fluid ? "-fluid" : ""}`}>{children}</div>;
 }
 
 export function Row({ fluid, children }) {
@@ -13,7 +13,7 @@ export function Col({ size, children }) {
     <div
       className={size
         .split(" ")
-        .map(size => "col-" + size)
+        .map((size) => "col-" + size)
         .join(" ")}
     >
       {children}

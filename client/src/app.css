@@ -339,6 +339,16 @@ a:hover {
 
 }
 
+/* footer styling */
+.footer {
+  margin: auto;
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+
 /* background stars twinkling */
 
 * {
