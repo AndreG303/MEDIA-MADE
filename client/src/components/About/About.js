@@ -81,7 +81,7 @@ function About() {
               </a>
             </li>
           </ul>
-          <a href="mailto:ashleyholanda12@gmail.com">
+          <a href="mailto:aholanda12@gmail.com">
             <button className="btn draw-border">Message</button>
           </a>
         </div>
