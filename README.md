@@ -4,7 +4,7 @@ Have you ever found yourself watching your favorite TV show and wish you could w
 
 ### Link to Deployed app: https://damp-ocean-72048.herokuapp.com/
 
-![Screenshot (116)](https://user-images.githubusercontent.com/65183415/98880659-12af1080-243d-11eb-9add-9decfb412231.png)
+![Screen Shot 2020-11-14 at 7 53 28 AM](https://user-images.githubusercontent.com/65183415/99151240-8a07be80-264e-11eb-9961-9b1c72a72c7a.png)
 
 ## Table of Contents
 - [User Story](#user-story)
@@ -22,6 +22,18 @@ SO THAT I can purchase these clothing items with ease
 
 ## Acceptance Criteria
 
+```
+GIVEN a fashion application
+WHEN I pick a TV show
+THEN I am presented with different outfits from that TV show
+WHEN I click on a particular outfit 
+THEN I am presented with the description and where to buy the pieces of clothing
+WHEN I log in 
+THEN I am presented with my closet page 
+WHEN I save an outfit 
+THEN I am presented with the saved outfits in my closet page 
+```
+
 ## Business Context
 Be inspired by your favorite TV shows and curate your own personal closet.
 When people go on our application, we are providing an easy to use platform that aggregates outfits and brands based on TV shows that may otherwise be difficult to find. People will feel inspired and learn how to create their own outfits. Given our society’s climate today, online shopping is becoming more prevalent as buyers are turning towards e-commerce sources. 
@@ -33,6 +45,8 @@ Axios
 React - Bootstrap
 Typed
 React - Icons 
+MongoDB
+Mongoose
 ProCreate
 ```
 
