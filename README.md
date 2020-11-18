@@ -56,7 +56,7 @@ If you have any questions about Media Made, feel free to contact any of the foll
     - Email: andreamgamez@gmail.com
     - GitHub: https://github.com/AndreG303
 - Ashley Holanda || Front-end Developer & Back-end Developer
-    - Email: ashleyholanda12@gmail.com
+    - Email: aholanda12@gmail.com
     - GitHub: https://github.com/aholanda12
 - Elizabeth Lee || Front-end Developer & Back-end Developer
     - Email: dlekwjd347@gmail.com
