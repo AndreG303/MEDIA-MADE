@@ -28,13 +28,13 @@ body{
 }
 
 .navbar-body a:hover {
-  color: #58a4b0;
+  color: rgb(251, 184, 218);
 }
 
 .navbar {
-  background-color: #A9BCD0;
+  background-color: #6e9ebe;
   border-bottom: solid;
-  border-bottom-color: #58a4b0;
+  border-bottom-color: rgb(251, 184, 218);
   border-width: 4px;
 }
 
@@ -226,7 +226,7 @@ body{
 
 /* signup and login form styling */
 form.form{
-    background-color: #bcd3ec4d;
+    background-color: #232833;
     padding: 50px;
     font-family: 'Rubik', sans-serif;
     font-weight: normal;
@@ -242,6 +242,18 @@ form.form{
     font-weight: bold;
     font-size: 18px;
 }
+
+h1.form-header{
+  color: #89CFF0;
+  text-shadow: -1px 0 hotpink, 0 1px black, 1px 0 black, 0 -1px hotpink;
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Old Standard TT', serif;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
 
 /* topbtn styling (scrolltotop) */
 App {
@@ -306,7 +318,7 @@ div.full-outfit.card{
 }
 
 .container {
-  background-color: #d8dbe2;
+  background-color: #F8F8FF;
   padding: 30px;
 }
 
@@ -337,6 +349,59 @@ a:hover {
   color: #A9BCD0;
   text-decoration: none;
 
+}
+
+
+
+/* tv show jumbotron styling */
+div.tvShow1Title.jumbotron{
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  height: 100px;
+  color: #89CFF0;
+  padding: 20px;
+  text-align: center;
+  background-color:transparent;
+  opacity: 0.8;
+}
+
+div.tvShow1Title.jumbotron h1{
+  font-family: 'Old Standard TT';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 60px;
+  text-shadow: -1px 0 hotpink, 0 1px black, 1px 0 black, 0 -1px hotpink;
+}
+
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  top: 0;
+  width: 600px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
 }
 
 /* footer styling */

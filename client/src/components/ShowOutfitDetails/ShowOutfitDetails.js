@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import API from "../utils/API";
-import { Row, Col, Container } from "../components/Grid";
+import API from "../../utils/API";
+import { Row, Col, Container } from "../Grid";
 import { Button } from "react-bootstrap";
-import TopBtn from "../components/TopBtn/TopBtn.js";
+import TopBtn from "../TopBtn/TopBtn.js";
 
 function OutfitPage(props) {
   const [outfit, setOutfit] = useState({
