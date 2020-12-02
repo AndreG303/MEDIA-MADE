@@ -1,7 +1,7 @@
 import React, { Fragment, useContext, useState, useEffect } from "react";
 import UserContext from "../utils/UserContext";
 import { Container } from "../components/Grid";
-import OutfitPage from "./OutfitPage";
+import OutfitPage from "../components/ShowOutfitDetails/ShowOutfitDetails";
 import API from "../utils/API";
 import "../app.css";
 

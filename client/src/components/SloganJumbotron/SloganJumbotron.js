@@ -17,6 +17,10 @@ function Jumbotron3() {
       fontSize: "10px",
       fontStyle: "italic",
     },
+    jumbotronText: {
+      fontSize: "25px",
+      color: "#d8dbe2"
+    }
   };
   return (
     <Jumbotron className="container-fluid" style={jumbotronStyles3.jumbotron}>
@@ -24,6 +28,7 @@ function Jumbotron3() {
         Be inspired by your favorite TV shows and curate your own personal
         closet!
       </h1>
+      <p style={jumbotronStyles3.jumbotronText}>Click and choose one of your favorite styles from this show to see more outfit details!</p>
     </Jumbotron>
   );
 }

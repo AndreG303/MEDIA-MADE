@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import OutfitPage from "./OutfitPage";
+import ShowOutfitDetails from "../components/ShowOutfitDetails/ShowOutfitDetails";
 import SingleOutfit from "../components/SingleOutfit/SingleOutfit";
 import { useAllOutfits } from "../utils/OutfitAPICalls";
-import Jumbotron from "../components/Jumbotron2.js/Jumbotron2";
+import Jumbotron from "../components/TvShow1Jumbotron/TvShow1Jumbotron";
 
 function Outfits(props) {
   const [showOutfits] = useAllOutfits();
@@ -26,7 +26,7 @@ function Outfits(props) {
         />
       ) : null}
       {showOutfitBottom && (
-        <OutfitPage showAddToCloset={true} outfitid={showOutfitBottom} />
+        <ShowOutfitDetails showAddToCloset={true} outfitid={showOutfitBottom} />
       )}
     </>
   );

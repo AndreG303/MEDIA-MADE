@@ -2,8 +2,8 @@ import React from "react";
 import SingleOutfit from "../components/SingleOutfit/SingleOutfit";
 import { useAllOutfits } from "../utils/OutfitAPICalls";
 import Typed from "../components/Typed/Typed";
-import Jumbotron from "../components/Jumbotron2.js/Jumbotron2";
-import Jumbotron3 from "../components/Jumbotron3.js/Jumbotron3";
+import TvShow1Jumbotron from "../components/TvShow1Jumbotron/TvShow1Jumbotron";
+import SloganJumbotron from "../components/SloganJumbotron/SloganJumbotron";
 
 function Outfit() {
   const [showOutfits] = useAllOutfits();
@@ -12,8 +12,8 @@ function Outfit() {
   return (
     <>
       <Typed />
-      <Jumbotron3 />
-      <Jumbotron />
+      <SloganJumbotron />
+      <TvShow1Jumbotron />
       {showOutfits.length > 0 ? (
         <SingleOutfit showOutfits={showOutfits} />
       ) : null}

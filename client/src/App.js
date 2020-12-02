@@ -8,11 +8,10 @@ import SignUp from "./pages/SignUp";
 import Logout from "./pages/Logout";
 import UserContext from "./utils/UserContext";
 import SessionUser from "./utils/SessionUser";
-import OutfitPage from "./pages/OutfitPage";
 import Homepage from "./pages/Homepage";
-import Outfits from "./pages/Outfits";
+import OutfitDetailsPage from "./pages/OutfitDetailsPage";
 import AboutUs from "./pages/AboutUs";
-import Closet from "./pages/closet";
+import UserCloset from "./pages/UserCloset";
 import "./app.css";
 
 function App() {
@@ -49,14 +48,10 @@ function App() {
               <Logout />
             </Route>
             <Route exact path={["/outfits", "/outfits/:outfitid"]}>
-              <Outfits />
-            </Route>
-            <Route exact path="/outfitsdetail/:outfitid">
-              <OutfitPage />
+              <OutfitDetailsPage />
             </Route>
             <Route exact path={["/closet", "/closet/:outfitid"]}>
-              {/* user id instead of outfit id  */}
-              <Closet />
+              <UserCloset />
             </Route>
             <Route exact path="/aboutus">
               <AboutUs />
