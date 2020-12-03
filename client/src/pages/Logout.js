@@ -16,12 +16,7 @@ function Logout() {
       });
   }, [setLoggedIn, setEmail]);
 
-  return (
-    <div>
-      <h1 className="backText">Logged Out</h1>
-      
-    </div>
-  );
+
 }
 
 export default Logout;
