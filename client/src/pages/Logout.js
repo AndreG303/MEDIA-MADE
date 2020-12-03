@@ -20,7 +20,7 @@ function Logout() {
     return (
         <div>
             <h1 className="backText">Logged Out</h1>
-            <a href="./pages/Homepage"><h2>Go home</h2></a>
+            <a href="./pages/Homepage"><h2>Go Home</h2></a>
         </div>
     )
 }
