@@ -1,18 +1,17 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import NoMatch from "./pages/NoMatch";
 import NavBar from "./components/NavBar/Navbar";
 import Footer from "./components/Footer/Footer";
+import NoMatch from "./pages/NoMatch";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import Logout from "./pages/Logout";
 import UserContext from "./utils/UserContext";
 import SessionUser from "./utils/SessionUser";
-import OutfitPage from "./pages/OutfitPage";
 import Homepage from "./pages/Homepage";
-import Outfits from "./pages/Outfits";
+import OutfitDetailsPage from "./pages/OutfitDetailsPage";
 import AboutUs from "./pages/AboutUs";
-import Closet from "./pages/closet";
+import UserCloset from "./pages/UserCloset";
 import "./app.css";
 
 function App() {
@@ -49,20 +48,15 @@ function App() {
               <Logout />
             </Route>
             <Route exact path={["/outfits", "/outfits/:outfitid"]}>
-              <Outfits />
-            </Route>
-            <Route exact path="/outfitsdetail/:outfitid">
-              <OutfitPage />
+              <OutfitDetailsPage />
             </Route>
             <Route exact path={["/closet", "/closet/:outfitid"]}>
-              {/* user id instead of outfit id  */}
-              <Closet />
+              <UserCloset />
             </Route>
             <Route exact path="/aboutus">
               <AboutUs />
             </Route>
             <Route>
-              {/* this is a 404, IT SHOULD ALWAYS BE AT THE BOTTOM */}
               <NoMatch />
             </Route>
           </Switch>
