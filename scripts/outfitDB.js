@@ -365,9 +365,8 @@ const outfit = [{
         name: "Anthropologie Wool Blend Linda Plaid Pea Coat",
         url: "https://www.ebay.com/i/283906077588?chn=ps&mkevt=1&mkcid=28",
         avail: True
-    }
-    ]
- },
+    },
+    
  {
     image: "https://www.jcrew.com/s7-img-facade/K4227_BK0001_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=850&hei=850",
     name: "Tissue turtleneck",
@@ -380,12 +379,24 @@ const outfit = [{
     url: "https://www.aritzia.com/us/en/product/modern-mini-skirt/68692089.html?gclid=CjwKCAiAwrf-BRA9EiwAUWwKXsew0kFpQ4Tpvyqb2o_OTr_Uct0pOrvoBmpzrBwibqYTLetmUV_7uxoCVfkQAvD_BwE",
     avail: True
 },
+    ]
+},
 {
     outfitImage: "/assets/QueensGambitOutfits/6.4.jpg",
     items: [ {
-        image: "",
-        name: "",
-        url: "",
+        image: "https://bananarepublicfactory.gapfactory.com/webcontent/0019/576/524/cn19576524.jpg",
+        name: "Textured Fit-and-Flare Sweater Dress",
+        url: "https://bananarepublicfactory.gapfactory.com/browse/product.do?vid=1&pid=594267#pdp-page-content",
+        avail: True
+    }
+    ]
+ },
+ {
+    outfitImage: "/assets/QueensGambitOutfits/6.5.jpg",
+    items: [ {
+        image: "https://slimages.macys.com/is/image/MCY/products/8/optimized/9810258_fpx.tif?op_sharpen=1&wid=1230&hei=1500&fit=fit,1&$filterxlrg$",
+        name: "Sunburst Sheath Dress",
+        url: "https://www.macys.com/shop/product/calvin-klein-sunburst-sheath-dress?ID=2755347&pla_country=US",
         avail: True
     }
     ]
