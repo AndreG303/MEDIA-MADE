@@ -365,9 +365,8 @@ const outfit = [{
         name: "Anthropologie Wool Blend Linda Plaid Pea Coat",
         url: "https://www.ebay.com/i/283906077588?chn=ps&mkevt=1&mkcid=28",
         avail: true
-    }
-    ]
- },
+    },
+    
  {
     image: "https://www.jcrew.com/s7-img-facade/K4227_BK0001_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=850&hei=850",
     name: "Tissue turtleneck",
@@ -379,6 +378,8 @@ const outfit = [{
     name: "Babaton Modern Mini Skirt",
     url: "https://www.aritzia.com/us/en/product/modern-mini-skirt/68692089.html?gclid=CjwKCAiAwrf-BRA9EiwAUWwKXsew0kFpQ4Tpvyqb2o_OTr_Uct0pOrvoBmpzrBwibqYTLetmUV_7uxoCVfkQAvD_BwE",
     avail: true
+},
+    ]
 },
 {
     outfitImage: "/assets/QueensGambitOutfits/6.4.jpg",
