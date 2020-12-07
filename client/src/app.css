@@ -395,7 +395,7 @@ div.tvShow1Title.jumbotron h1 {
   border-bottom: 1px solid white;
   border-top: 1px solid white;
   margin-top: 20px;
-  width:600px;
+  width:300px;
 }
 .fancy span:before {
   right: 100%;
@@ -491,14 +491,10 @@ z-index: 0;
   text-align:center;
 }
 
-
 @media (max-width: 767px) {
   .slogan {
     font-size:24px;
   }
-  
-}
-@media (max-width: 767px) {
   .slogan {
     font-size:30px;
   }
@@ -518,10 +514,9 @@ z-index: 0;
   .fancy span:after {
   content: "";
   position: absolute;
-  height: 15px;
+  height: 10px;
   border-bottom: 1px solid white;
   border-top: 1px solid white;
-  top: 0;
   width:100px;
 }
 .fancy span:before {
