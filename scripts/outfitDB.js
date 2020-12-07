@@ -340,7 +340,58 @@ const outfit = [{
         avail: True
     }
     ]
+ },
+ {
+    outfitImage: "/assets/QueensGambitOutfits/6.2.jpg",
+    items: [ {
+        image: "https://images-na.ssl-images-amazon.com/images/I/71v9xnE9JdL._AC_UY1000_.jpg",
+        name: "Sash Belt/Hair tie/Scarf Black",
+        url: "https://www.amazon.com/Sash-Belt-Scarf-Black-Georgette/dp/B001OOCFOU",
+        avail: True
+    },
+    {
+        image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcScvXDhUJrMNsJs2_inGQF89TlpJ8ASuI6uMwJZI2y7ez1ML-im79Zr_CbceGjjZoryyeOoVfX1uxTiZCJsXQ8EdGsdLMSptuY0lCaJH2E&usqp=CAY",
+        name: "Contrast Detail Button-Up Blouse",
+        url: "https://www.nordstrom.com/S/5496003?country=US&currency=USD&utm_channel=low_nd_seo_shopping&utm_source=google&sp_source=google",
+        avail: True
+    }
+
+    ]
+ },
+ {
+    outfitImage: "/assets/QueensGambitOutfits/6.3.jpg",
+    items: [ {
+        image: "https://i.ebayimg.com/images/g/cfUAAOSwcpJe3WkD/s-l640.jpg",
+        name: "Anthropologie Wool Blend Linda Plaid Pea Coat",
+        url: "https://www.ebay.com/i/283906077588?chn=ps&mkevt=1&mkcid=28",
+        avail: True
+    }
+    ]
+ },
+ {
+    image: "https://www.jcrew.com/s7-img-facade/K4227_BK0001_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=850&hei=850",
+    name: "Tissue turtleneck",
+    url: "https://www.jcrew.com/us/p/womens_category/maternity/tshirts_tanktops/tissue-turtleneck/K4227?color_name=black&noPopUp=true",
+    avail: True
+},
+{
+    image: "https://aritzia.scene7.com/is/image/Aritzia/zoom/f19_01_a07_68692_17573_on_c.jpg",
+    name: "Babaton Modern Mini Skirt",
+    url: "https://www.aritzia.com/us/en/product/modern-mini-skirt/68692089.html?gclid=CjwKCAiAwrf-BRA9EiwAUWwKXsew0kFpQ4Tpvyqb2o_OTr_Uct0pOrvoBmpzrBwibqYTLetmUV_7uxoCVfkQAvD_BwE",
+    avail: True
+},
+{
+    outfitImage: "/assets/QueensGambitOutfits/6.4.jpg",
+    items: [ {
+        image: "",
+        name: "",
+        url: "",
+        avail: True
+    }
+    ]
  }
+
+
 ];
 
 db.Outfit.deleteMany({})
