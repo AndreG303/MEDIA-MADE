@@ -66,7 +66,7 @@ function Closet() {
                 ))
                 }
                 {(showUserOutfits.length === 0) &&
-                  <div>No user outfits!</div>
+                  <div>No items in your closet</div>
                 }
               </Container>
             </Fragment>
