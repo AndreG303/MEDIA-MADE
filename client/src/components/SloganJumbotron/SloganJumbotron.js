@@ -2,26 +2,6 @@ import React from "react";
 import { Jumbotron } from "react-bootstrap";
 
 function Jumbotron3() {
-//   let jumbotronStyles3 = {
-//     jumbotron: {
-//       width: "100%",
-//       display: "block",
-//       marginBottom: "80px",
-//       marginTop: "5px",
-//       height: "120px",
-//       color: "#d8dbe2",
-//       justifyContent: "center",
-//       padding: "10px",
-//       textAlign: "center",
-//       backgroundColor: "transparent",
-//       fontSize: "10px",
-//       fontStyle: "italic",
-//     },
-//     jumbotronText: {
-//       fontSize: "25px",
-//       color: "#d8dbe2"
-//     }
-//   };
   return (
     <Jumbotron className="container-fluid sloganJ">
       <h1 class="slogan">
