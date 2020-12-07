@@ -383,9 +383,9 @@ const outfit = [{
 {
     outfitImage: "/assets/QueensGambitOutfits/6.4.jpg",
     items: [ {
-        image: "",
-        name: "",
-        url: "",
+        image: "https://bananarepublicfactory.gapfactory.com/webcontent/0019/576/524/cn19576524.jpg",
+        name: "Textured Fit-and-Flare Sweater Dress",
+        url: "https://bananarepublicfactory.gapfactory.com/browse/product.do?vid=1&pid=594267#pdp-page-content",
         avail: True
     }
     ]
