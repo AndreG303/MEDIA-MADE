@@ -10,12 +10,12 @@ function Closet() {
   const [showUserOutfits, setShowUserOutfits] = useState([]);
 
 
-// this holds the API call that will get the users' data 
-// grab the array in the user model that holds the oufit ids
-// then map through it 
-// second API call gets the outfit data based on id
-// new outfits uses a spread operator to copy and replace with the users' saved outfits
-// then it will set showUserOutfits to new outfits
+  // this holds the API call that will get the users' data 
+  // grab the array in the user model that holds the oufit ids
+  // then map through it 
+  // second API call gets the outfit data based on id
+  // new outfits uses a spread operator to copy and replace with the users' saved outfits
+  // then it will set showUserOutfits to new outfits
   useEffect(() => {
     API.getUser()
       .then((userData) => {
@@ -54,7 +54,7 @@ function Closet() {
             <Fragment>
               <h1 className="backText">My Closet</h1>
               <Container>
-                {showUserOutfits.map((outfit, index) => (
+                {(showUserOutfits.length > 0) && showUserOutfits.map((outfit, index) => (
                   <OutfitPage
                     key={"outfitpage-" + index}
                     deleteOutfit={deleteOutfit}
@@ -63,7 +63,11 @@ function Closet() {
                     setShowUserOutfits={setShowUserOutfits}
                     outfitid={outfit._id}
                   />
-                ))}
+                ))
+                }
+                {(showUserOutfits.length === 0) &&
+                  <div>No user outfits!</div>
+                }
               </Container>
             </Fragment>
           );

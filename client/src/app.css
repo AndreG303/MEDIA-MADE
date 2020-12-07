@@ -49,6 +49,11 @@ body{
 
     z-index: 3;
 }
+@media (max-width: 767px) {
+  .typedLetters {
+    font-size: 50px;
+  }
+}
 
 /* about us page styling */
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
@@ -364,19 +369,17 @@ a:hover {
 div.tvShow1Title.jumbotron{
   width: 50%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
-  margin-top: 20px;
+  margin: 60px auto;
   height: 100px;
   color: #89CFF0;
   padding: 20px;
   text-align: center;
   background-color:transparent;
   opacity: 0.8;
+  margin-top: 100px;
 }
 
-div.tvShow1Title.jumbotron h1{
+div.tvShow1Title.jumbotron h1 {
   font-family: 'Old Standard TT';
   font-style: italic;
   font-weight: 600;
@@ -385,7 +388,6 @@ div.tvShow1Title.jumbotron h1{
 }
 
 .fancy {
-  line-height: 0.5;
   text-align: center;
 }
 .fancy span {
@@ -399,8 +401,8 @@ div.tvShow1Title.jumbotron h1{
   height: 15px;
   border-bottom: 1px solid white;
   border-top: 1px solid white;
-  top: 0;
-  width: 600px;
+  margin-top: 20px;
+  width:600px;
 }
 .fancy span:before {
   right: 100%;
@@ -478,4 +480,67 @@ background:#000 url(https://cdn.shopify.com/s/files/1/0437/1116/8667/t/4/assets/
 z-index: 0;
 
 }
+
+.sloganJ {
+  width: 100%;
+  display: block;
+  margin-bottom: 80px;
+  margin-top: 5px;
+  height: 120px;
+  color: #d8dbe2;
+  justify-content: center;
+  padding: 10px;
+  padding-bottom: 25px;
+  text-align: "center";
+  background-color: transparent;
+  font-size: 25px;
+  font-style: italic;
+  text-align:center;
+}
+
+
+@media (max-width: 767px) {
+  .slogan {
+    font-size:24px;
+  }
+  
+}
+@media (max-width: 767px) {
+  .slogan {
+    font-size:30px;
+  }
+  .slogan2 {
+    font-size:18px;
+  }
+  div.tvShow1Title.jumbotron h1{
+    font-size:25px;
+    line-height: 22px;
+    padding:10px
+  }
+  div.tvShow1Title.jumbotron {
+   padding:0px;
+   margin-bottom:0px;
+  }
+  .fancy span:before,
+  .fancy span:after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  top: 0;
+  width:100px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 0px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 0px;
+}
+}
+
+
+
 
