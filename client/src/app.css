@@ -253,7 +253,12 @@ h1.form-header{
   margin-top: 20px;
 }
 
-
+p.sign-up-text {
+  color: #d8dbe2;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  margin-bottom: 30px;
+}
 
 /* topbtn styling (scrolltotop) */
 App {
@@ -315,12 +320,14 @@ div.full-outfit.card{
 
 .container-outfit{
   background-color: #d8dbe2;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 2%;
 }
 
-.container {
-  background-color: #F8F8FF;
-  padding: 30px;
-}
 
 /* Clost Page Styling */
 .my-closet{

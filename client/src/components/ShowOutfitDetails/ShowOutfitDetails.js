@@ -1,15 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import API from "../../utils/API";
 import { Row, Col, Container } from "../Grid";
 import { Button } from "react-bootstrap";
 import TopBtn from "../TopBtn/TopBtn.js";
+import UserContext from "../../utils/UserContext";
 
 function OutfitPage(props) {
   const [outfit, setOutfit] = useState({
     outfitImage: "",
     items: [],
   });
+
+  const { loggedIn } = useContext(UserContext);
 
   let styles = {
     outfitCard: {
@@ -77,8 +80,8 @@ function OutfitPage(props) {
   };
 
   return (
-    <div>
-      <Container className="container-outfit">
+    <div className="container-outfit">
+      <Container >
         <Row>
           <Col size="md-4">
             <img
@@ -119,7 +122,7 @@ function OutfitPage(props) {
           </Col>
         </Row>
         {(() => {
-          if (props.showAddToCloset) {
+          if (props.showAddToCloset && loggedIn) {
             return (
               <Button
                 className="buttons"
@@ -129,7 +132,7 @@ function OutfitPage(props) {
                 ADD TO CLOSET
               </Button>
             );
-          } else {
+          } else if (loggedIn)  {
             return (
               <Button
                 className="buttons"
