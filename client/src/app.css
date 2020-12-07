@@ -369,6 +369,7 @@ div.tvShow1Title.jumbotron{
   text-align: center;
   background-color:transparent;
   opacity: 0.8;
+  margin-top: 100px;
 }
 
 div.tvShow1Title.jumbotron h1 {
@@ -389,20 +390,20 @@ div.tvShow1Title.jumbotron h1 {
 .fancy span:before,
 .fancy span:after {
   content: "";
-  /* position: absolute; */
+  position: absolute;
   height: 15px;
   border-bottom: 1px solid white;
   border-top: 1px solid white;
-  top: 0;
-  /* width:600px; */
+  margin-top: 20px;
+  width:600px;
 }
 .fancy span:before {
-  /* right: 100%; */
-  /* margin-right: 15px; */
+  right: 100%;
+  margin-right: 15px;
 }
 .fancy span:after {
-  /* left: 100%; */
-  /* margin-left: 15px; */
+  left: 100%;
+  margin-left: 15px;
 }
 
 /* footer styling */
@@ -489,10 +490,7 @@ z-index: 0;
   font-style: italic;
   text-align:center;
 }
-div.tvShow1Title.jumbotron {
-  padding:0px;
-  margin-bottom:0px;
- }
+
 
 @media (max-width: 767px) {
   .slogan {
@@ -516,6 +514,24 @@ div.tvShow1Title.jumbotron {
    padding:0px;
    margin-bottom:0px;
   }
+  .fancy span:before,
+  .fancy span:after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  top: 0;
+  width:100px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 0px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 0px;
+}
 }
 
 
