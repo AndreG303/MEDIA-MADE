@@ -10,7 +10,6 @@ function OutfitCard(props) {
     (imageEl) => 100 / props.showOutfits.length
   );
   const [widthState, setWidthState] = useState(imageLength);
-
   
 
   return (
