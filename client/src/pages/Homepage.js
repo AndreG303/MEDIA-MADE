@@ -1,5 +1,6 @@
 import React from "react";
-import SingleOutfit from "../components/SingleOutfit/SingleOutfit";
+import EmilyOutfitCard from "../components/TvShowOutfitCards/EmilyOutfitCard";
+import QueensOutfitCard from "../components/TvShowOutfitCards/QueensOutfitCard";
 import { useAllOutfits } from "../utils/OutfitAPICalls";
 import Typed from "../components/Typed/Typed";
 import SloganJumbotron from "../components/SloganJumbotron/SloganJumbotron";
@@ -13,7 +14,10 @@ function Outfit() {
       <Typed />
       <SloganJumbotron />
       {showOutfits.length > 0 ? (
-        <SingleOutfit showOutfits={showOutfits} />
+        <EmilyOutfitCard showOutfits={showOutfits} />
+      ) : null}
+      {showOutfits.length > 0 ? (
+        <QueensOutfitCard showOutfits={showOutfits} />
       ) : null}
     </>
   );
