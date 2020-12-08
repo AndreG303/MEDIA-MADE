@@ -400,6 +400,26 @@ const outfit = [{
         avail: True
     }
     ]
+ },
+ {
+    outfitImage: "/assets/QueensGambitOutfits/6.6.jpg",
+    items: [ {
+        image: "https://static.zara.net/photos///2020/I/0/1/p/5646/123/501/2/w/1143/5646123501_6_1_1.jpg?ts=1602660817960",
+        name: "HIGH COLLAR KNIT SWEATER",
+        url: "https://www.zara.com/us/en/high-collar-knit-sweater-p05646123.html?v1=79333638",
+        avail: True
+    }
+    ]
+ },
+ {
+    outfitImage: "/assets/QueensGambitOutfits/6.7.jpg",
+    items: [ {
+        image: "https://images.asos-media.com/products/other-stories-satin-short-sleeve-midaxi-dress-in-dusty-green/20109760-4?$XXL$&wid=513&fit=constrain",
+        name: "& Other Stories satin short sleeve midaxi dress in dusty green",
+        url: "https://www.asos.com/us/other-stories/other-stories-satin-short-sleeve-midaxi-dress-in-dusty-green/prd/20109760?affid=25714&_cclid=Google_CjwKCAiAwrf-BRA9EiwAUWwKXpgk9gWFCo0kQ7S4GjoTBQlnkkDmNclfqN87L1B_tDDVZhiO9RmcCxoCfo0QAvD_BwE&channelref=product+search&mk=abc&ppcadref=10104919891%7c106779534892%7cpla-294682000766&cpn=10104919891&gclid=CjwKCAiAwrf-BRA9EiwAUWwKXpgk9gWFCo0kQ7S4GjoTBQlnkkDmNclfqN87L1B_tDDVZhiO9RmcCxoCfo0QAvD_BwE&gclsrc=aw.ds",
+        avail: True
+    }
+    ]
  }
 
 
