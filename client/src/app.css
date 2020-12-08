@@ -463,9 +463,6 @@ header:visited {
   color:#fcfcfc;
 }
 
-
-
-
 .stars {
 position:absolute;
 top:0;
@@ -509,6 +506,10 @@ z-index: 0;
   font-family: 'Rubik';
   font-style: italic;
   font-size: 28px;
+}
+
+.navbar-toggler-icon{
+  background-color: white;
 }
 
 
