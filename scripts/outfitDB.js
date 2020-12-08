@@ -13,16 +13,18 @@ mongoose.connect(
 const outfit = [{
 //Emily in Paris Outfits
     outfitImage: "/assets/EmInParisOutfits/Outfit1.1.jpg",
+    category: "emily",
     items: [{
         image: "https://s1.thcdn.com/productimg/1600/1600/12081059-1064677155724591.jpg",
         name: "KENZO Women's Allover Flower Rice Bag Cotton Poplin Dress - Deep Fuschia",
         url: "https://www.revolve.com/kenzo-all-over-rice-bag-dress-in-deep-fuchsia/dp/KZOR-WD19/?d=Womens&AID=11017645&PID=7900573&bneEl=false&cjevent=9c5119d11e1311eb804100a20a24060b&d=Womens&product=KZOR-WD19&source=cj&utm_campaign=glob_p_4609662&utm_medium=affiliate&utm_source=cj&product=KZOR-WD19&",
-        avail: false
+        avail: false,
     }
     ]
 },
     {
         outfitImage: "/assets/EmInParisOutfits/Outfit1.2.jpg",
+        category: "emily",
         items: [{
             image: "https://n.nordstrommedia.com/id/sr3/956c7594-0803-4f0c-8f72-abf40f7a6af3.webp?crop=pad&pad_color=FFF&format=jpeg&w=1318&h=2021",
             name: "ALICE + OLIVIA Willa Silk Blouse",
@@ -33,6 +35,7 @@ const outfit = [{
     },
     {
         outfitImage: "/assets/EmInParisOutfits/Outfit1.3.jpg",
+        category: "emily",
         items: [{
             image: "https://www.yoox.com/images/items/12/12404009dp_14_f.jpg?width=387&height=490&impolicy=crop&gravity=Center",
             name: "GANNI Silk Mix Top",
@@ -61,6 +64,7 @@ const outfit = [{
     },
     {
         outfitImage: "/assets/EmInParisOutfits/Outfit2.1.jpg",
+        category: "emily",
         items: [{
             image: "https://cdn1.jolicloset.com/img4/fblink/2020/07/201967-1.jpg",
             name: "CHANEL Sky Blue Turquoise Jacket Cardigan Leather Chain 20C Cruise 2020",
@@ -83,6 +87,7 @@ const outfit = [{
     },
     {
         outfitImage: "/assets/EmInParisOutfits/Outfit2.2.jpg",
+        category: "emily",
         items: [{
             image: "https://www.theoutnet.com/variants/images/210639989709/F/w1020_q80.jpg",
             name: "Alexandre Vauthier Strapless Draped Stretch-silk Satin Bustier Top",
@@ -106,6 +111,7 @@ const outfit = [{
     },
     {
         outfitImage: "/assets/EmInParisOutfits/Outfit2.3.jpg",
+        category: "emily",
         items: [{
             image: "https://cdn.modesens.com/product/10019621_46",
             name: "Keith Haring X Alice + Olivia Lonnie Graphic Reversible Silk Bomber Jacket In Black",
@@ -129,6 +135,7 @@ const outfit = [{
     },
     {
         outfitImage: "/assets/EmInParisOutfits/Outfit2.4.jpg",
+        category: "emily",
         items: [{
             image: "https://cdn.shopify.com/s/files/1/0040/5313/9523/products/Petal_Cami_Crop_Top-_Cream_1080x.jpg?v=1600198278",
             name: "the naked laundry Petal Cami Crop Top- Cream",
@@ -145,6 +152,7 @@ const outfit = [{
     },
     {
         outfitImage: "/assets/EmInParisOutfits/Outfit2.5.jpg",
+        category: "emily",
         items: [ {
             image: "https://images.lvrcdn.com/Big70I/B41/020_8bb728d9-d59b-4c14-ae0d-d7d7e9597df5.JPG",
             name: "DOLCE & GABBANA PRINTED OFF SHOULDER COTTON POPLIN DRESS",
@@ -161,6 +169,7 @@ const outfit = [{
     },
     {
         outfitImage: "/assets/EmInParisOutfits/Outfit3.1.jpg",
+        category: "emily",
         items: [ {
             image: "https://www.hartlyfashions.com/wp-content/uploads/2018/10/miller-dickey-jacket-black-white.png",
             name: "VERONICA BEARD Miller Dickey Checker Jacket",
@@ -189,6 +198,7 @@ const outfit = [{
     },
     {
         outfitImage: "/assets/EmInParisOutfits/Outfit3.2.jpg",
+        category: "emily",
         items: [ {
             image: "https://us.maje.com/dw/image/v2/AAON_PRD/on/demandware.static/-/Sites-maje-catalog-master-H13/default/dw5ce069b3/images/h13/Maje_E19RAPY-0071_H_P.jpg?sw=500&sh=500&sm=fit",
             name: "MAJE Rapy floral-print off-the-shoulder woven mini dress",
@@ -205,6 +215,7 @@ const outfit = [{
     },
     {
         outfitImage: "/assets/EmInParisOutfits/Outfit3.3.jpg",
+        category: "emily",
         items: [ {
             image: "https://cdn-images.farfetch-contents.com/13/93/35/54/13933554_17767917_1000.jpg",
             name: "Aje ‘Tilly” Dress",
@@ -236,6 +247,7 @@ const outfit = [{
   
  {
     outfitImage: "/assets/QueensGambitOutfits/4.4.jpg",
+    category: "queens",
     items: [ {
         image: "https://images.asos-media.com/products/accessorize-button-up-beach-midi-dress-in-white/13655190-1-white?$XXL$&wid=513&fit=constrain",
         name: "Accessorize button up beach midi dress in white",
@@ -246,6 +258,7 @@ const outfit = [{
  },
  {
     outfitImage: "/assets/QueensGambitOutfits/4.5.jpg",
+    category: "queens",
     items: [ {
         image: "https://www.forever21.com/dw/image/v2/BFKH_PRD/on/demandware.static/-/Sites-f21-master-catalog/default/dw1725e9ff/1_front_750/00387705-08.jpg?sw=500&sh=750",
         name: "Crepe Pussycat Bow Top",
@@ -262,6 +275,7 @@ const outfit = [{
  },
  {
     outfitImage: "/assets/QueensGambitOutfits/4.6.jpg",
+    category: "queens",
     items: [ {
         image: "https://d1flfk77wl2xk4.cloudfront.net/Assets/GalleryImage/42/360/L_g0104336042.jpg",
         name: "petitkura - Peter Pan Collar Sleeveless Chiffon Top",
@@ -278,6 +292,7 @@ const outfit = [{
  },
  {
     outfitImage: "/assets/QueensGambitOutfits/5.1.jpg",
+    category: "queens",
     items: [ {
         image: "https://cdn.shopify.com/s/files/1/0274/7331/3863/products/pearly-dot-triple-pleat-cinnamon-black_10771184-P68_flat_1_2000x.jpg?v=1597253291",
         name: "Pearly Dot Triple Pleat",
@@ -288,6 +303,7 @@ const outfit = [{
  },
  {
     outfitImage: "/assets/QueensGambitOutfits/5.2.jpg",
+    category: "queens",
     items: [ {
         image: "https://i.etsystatic.com/25429554/r/il/a9d116/2708392629/il_794xN.2708392629_snr1.jpg",
         name: "Red and Black Chess Board Women's T-shirt",
@@ -305,6 +321,7 @@ const outfit = [{
  },
  {
     outfitImage: "/assets/QueensGambitOutfits/5.3.jpg",
+    category: "queens",
     items: [ {
         image: "https://www.forever21.com/dw/image/v2/BFKH_PRD/on/demandware.static/-/Sites-f21-master-catalog/default/dwb3eb72a9/1_front_750/00402423-04.jpg?sw=500&sh=750",
         name: "Paisley Print Shirt",
@@ -315,6 +332,7 @@ const outfit = [{
  },
  {
     outfitImage: "/assets/QueensGambitOutfits/5.4.jpg",
+    category: "queens",
     items: [ {
         image: "https://cdn.shopify.com/s/files/1/0150/1528/products/A-12-0015-000-SEDONA-SUNGLASSES-BLACK-1390_985x.jpg?v=1578423971",
         name: "SEDONA SUNGLASSES",
@@ -343,6 +361,7 @@ const outfit = [{
  },
  {
     outfitImage: "/assets/QueensGambitOutfits/6.2.jpg",
+    category: "queens",
     items: [ {
         image: "https://images-na.ssl-images-amazon.com/images/I/71v9xnE9JdL._AC_UY1000_.jpg",
         name: "Sash Belt/Hair tie/Scarf Black",
@@ -360,6 +379,7 @@ const outfit = [{
  },
  {
     outfitImage: "/assets/QueensGambitOutfits/6.3.jpg",
+    category: "queens",
     items: [ {
         image: "https://i.ebayimg.com/images/g/cfUAAOSwcpJe3WkD/s-l640.jpg",
         name: "Anthropologie Wool Blend Linda Plaid Pea Coat",
@@ -383,6 +403,7 @@ const outfit = [{
 },
 {
     outfitImage: "/assets/QueensGambitOutfits/6.4.jpg",
+    category: "queens",
     items: [ {
         image: "",
         name: "",
