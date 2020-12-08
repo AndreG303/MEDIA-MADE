@@ -1,12 +1,12 @@
 import React from "react";
 import { Jumbotron } from "react-bootstrap";
 
-function Jumbotron2() {
+function Jumbotron2(props) {
 
   return (
     <Jumbotron className="tvShow1Title">
 
-      <h1 className="fancy"><span>EMILY IN PARIS</span></h1>
+      <h1 className="fancy"><span>{props.children}</span></h1>
       
     </Jumbotron>
   );

@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { Card } from "react-bootstrap";
 import "../../app.css";
 import { Link } from "react-router-dom";
+import TvShow1Jumbotron from "../TvShow1Jumbotron/TvShow1Jumbotron";
 
 function OutfitCard(props) {
   const emilyArray = props.showOutfits.filter((i) => {return i.category === "emily"});
   const queensArray = props.showOutfits.filter((i) => {return i.category === "queens"});
-  const emilyLength = emilyArray.map((imageEl) => 100);
-  const queensLength = queensArray.map((imageEl) => 100);
+  const emilyLength = emilyArray.map((imageEl) => 100 / emilyArray);
+  const queensLength = queensArray.map((imageEl) => 100 / queensArray);
   const [emilyWidthState, setEmilyWidthState] = useState(emilyLength);
   const [queenWidthState, setQueenWidthState] = useState(queensLength);
   const outfitArray = props.showOutfits.map((e) => e._id);
@@ -17,7 +18,7 @@ function OutfitCard(props) {
 
   return (
     <>
-
+<TvShow1Jumbotron>Emily in Paris</TvShow1Jumbotron>
     {/* Emily in Paris */}
       <div
         style={{
@@ -71,6 +72,7 @@ function OutfitCard(props) {
       </div>
 
     {/* Queen's Gambit */}
+    <TvShow1Jumbotron>Queen's Gambit</TvShow1Jumbotron>
       <div
         style={{
           display: "flex",
