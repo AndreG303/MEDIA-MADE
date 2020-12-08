@@ -5,7 +5,7 @@ import OutfitPage from "../components/ShowOutfitDetails/ShowOutfitDetails";
 import API from "../utils/API";
 import "../app.css";
 
-function Closet() {
+function UserCloset() {
   const { loggedIn } = useContext(UserContext);
   const [showUserOutfits, setShowUserOutfits] = useState([]);
 
@@ -19,6 +19,7 @@ function Closet() {
   useEffect(() => {
     API.getUser()
       .then((userData) => {
+        console.log(userData);
         userData.data.outfits.map((outfitid) => {
           return API.getOutfit(outfitid).then((outfitdata) => {
             const newOutfits = (showUserOutfits) => [
@@ -81,6 +82,6 @@ function Closet() {
   );
 }
 
-export default Closet;
+export default UserCloset;
 
 

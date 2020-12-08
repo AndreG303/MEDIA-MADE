@@ -375,7 +375,7 @@ a:hover {
 }
 
 /* tv show jumbotron styling */
-div.tvShow1Title.jumbotron{
+div.tvShowTitle.jumbotron{
   width: 50%;
   display: block;
   margin: 60px auto;
@@ -388,7 +388,7 @@ div.tvShow1Title.jumbotron{
   margin-top: 100px;
 }
 
-div.tvShow1Title.jumbotron h1 {
+div.tvShowTitle.jumbotron h1 {
   font-family: 'Old Standard TT';
   font-style: italic;
   font-weight: 600;
@@ -525,12 +525,12 @@ z-index: 0;
   .slogan2 {
     font-size:18px;
   }
-  div.tvShow1Title.jumbotron h1{
+  div.tvShowTitle.jumbotron h1{
     font-size:25px;
     line-height: 22px;
     padding:10px
   }
-  div.tvShow1Title.jumbotron {
+  div.tvShowTitle.jumbotron {
    padding:0px;
    margin-bottom:0px;
   }
