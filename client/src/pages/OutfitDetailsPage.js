@@ -1,31 +1,52 @@
 import React, { useState } from "react";
 import ShowOutfitDetails from "../components/ShowOutfitDetails/ShowOutfitDetails";
-import SingleOutfit from "../components/SingleOutfit/SingleOutfit";
+import EmilyOutfitCard from "../components/TvShowOutfitCards/EmilyOutfitCard";
+import QueensOutfitCard from "../components/TvShowOutfitCards/QueensOutfitCard";
 import { useAllOutfits } from "../utils/OutfitAPICalls";
 
 
 function Outfits(props) {
   const [showOutfits] = useAllOutfits();
-  const [showOutfitBottom, setShowOutfitBottom] = useState(false);
-  const handleChangeOfPage = (outfitid) => {
+  const [showEmilyOutfitBottom, setEmilyShowOutfitBottom] = useState(false);
+  const [showQueensOutfitBottom, setQueensShowOutfitBottom] = useState(false);
+
+  const handleEmilyChangeOfPage = (outfitid) => {
     if (outfitid) {
       console.log(outfitid);
-      setShowOutfitBottom(outfitid);
+      setEmilyShowOutfitBottom(outfitid);
     } else {
-      setShowOutfitBottom(false);
+      setEmilyShowOutfitBottom(false);
+    }
+  };
+
+  const handleQueensChangeOfPage = (outfitid) => {
+    if (outfitid) {
+      console.log(outfitid);
+      setQueensShowOutfitBottom(outfitid);
+    } else {
+      setQueensShowOutfitBottom(false);
     }
   };
 
   return (
     <>
       {showOutfits.length > 0 ? (
-        <SingleOutfit
+        <EmilyOutfitCard
           showOutfits={showOutfits}
-          handleChangeOfPage={handleChangeOfPage}
+          handleEmilyChangeOfPage={handleEmilyChangeOfPage}
         />
       ) : null}
-      {showOutfitBottom && (
-        <ShowOutfitDetails showAddToCloset={true} outfitid={showOutfitBottom} />
+      {showEmilyOutfitBottom && (
+        <ShowOutfitDetails showAddToCloset={true} outfitid={showEmilyOutfitBottom} />
+      )}
+      {showOutfits.length > 0 ? (
+        <QueensOutfitCard
+          showOutfits={showOutfits}
+          handleQueensChangeOfPage={handleQueensChangeOfPage}
+        />
+      ) : null}
+      {showQueensOutfitBottom && (
+        <ShowOutfitDetails showAddToCloset={true} outfitid={showQueensOutfitBottom} />
       )}
     </>
   );
