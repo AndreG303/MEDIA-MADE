@@ -1,10 +1,10 @@
 import React from "react";
 import { Jumbotron } from "react-bootstrap";
 
-function Jumbotron2(props) {
+function TvShowJumbotron(props) {
 
   return (
-    <Jumbotron className="tvShow1Title">
+    <Jumbotron className="tvShowTitle">
 
       <h1 className="fancy"><span>{props.children}</span></h1>
       
@@ -12,4 +12,4 @@ function Jumbotron2(props) {
   );
 }
 
-export default Jumbotron2;
+export default TvShowJumbotron;
