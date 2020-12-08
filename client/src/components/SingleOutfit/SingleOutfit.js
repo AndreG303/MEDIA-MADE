@@ -16,7 +16,6 @@ function OutfitCard(props) {
   const queensLength = queensArray.map((imageEl) => 100 / queensArray);
   const [emilyWidthState, setEmilyWidthState] = useState(emilyLength);
   const [queenWidthState, setQueenWidthState] = useState(queensLength);
-  const outfitArray = props.showOutfits.map((e) => e._id);
   const emilyiD = emilyArray.map((e) => e._id);
   const queensiD = queensArray.map((e) => e._id);
 
@@ -24,7 +23,7 @@ function OutfitCard(props) {
 
   return (
     <>
-      <TvShowJumbotron>Emily in Paris</TvShowJumbotron>
+      <TvShowJumbotron>EMILY IN PARIS</TvShowJumbotron>
       {/* Emily in Paris */}
       <div
         style={{
@@ -61,7 +60,7 @@ function OutfitCard(props) {
             }}
           >
             <Link
-              to={"/outfits/" + outfitArray[i]}
+              to={"/outfits/" + emilyiD[i]}
               onClick={
                 (props.handleChangeOfPage &&
                   (() => props.handleChangeOfPage(emilyiD[i]))) ||
@@ -78,7 +77,7 @@ function OutfitCard(props) {
       </div>
 
       {/* Queen's Gambit */}
-      <TvShowJumbotron>Queen's Gambit</TvShowJumbotron>
+      <TvShowJumbotron>QUEEN'S GAMBIT</TvShowJumbotron>
       <div
         style={{
           display: "flex",
@@ -114,7 +113,7 @@ function OutfitCard(props) {
             }}
           >
             <Link
-              to={"/outfits/" + outfitArray[i]}
+              to={"/outfits/" + queensiD[i]}
               onClick={
                 (props.handleChangeOfPage &&
                   (() => props.handleChangeOfPage(queensiD[i]))) ||
