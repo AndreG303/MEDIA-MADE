@@ -14,6 +14,7 @@ function OutfitCard(props) {
   const outfitArray = props.showOutfits.map((e) => e._id);
   const emilyiD = emilyArray.map((e) => e._id);
   const queensiD = queensArray.map((e) => e._id);
+
   
 
   return (

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ShowOutfitDetails from "../components/ShowOutfitDetails/ShowOutfitDetails";
 import SingleOutfit from "../components/SingleOutfit/SingleOutfit";
 import { useAllOutfits } from "../utils/OutfitAPICalls";
-import Jumbotron from "../components/TvShow1Jumbotron/TvShow1Jumbotron";
+
 
 function Outfits(props) {
   const [showOutfits] = useAllOutfits();
@@ -18,7 +18,6 @@ function Outfits(props) {
 
   return (
     <>
-      <Jumbotron />
       {showOutfits.length > 0 ? (
         <SingleOutfit
           showOutfits={showOutfits}
