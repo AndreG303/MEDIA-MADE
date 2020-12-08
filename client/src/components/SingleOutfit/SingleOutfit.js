@@ -2,24 +2,29 @@ import React, { useState } from "react";
 import { Card } from "react-bootstrap";
 import "../../app.css";
 import { Link } from "react-router-dom";
-import TvShow1Jumbotron from "../TvShow1Jumbotron/TvShow1Jumbotron";
+import TvShowJumbotron from "../TvShowJumbotron/TvShowJumbotron";
 
 function OutfitCard(props) {
-  const emilyArray = props.showOutfits.filter((i) => {return i.category === "emily"});
-  const queensArray = props.showOutfits.filter((i) => {return i.category === "queens"});
+  const emilyArray = props.showOutfits.filter((i) => {
+    return i.category === "emily";
+  });
+  const queensArray = props.showOutfits.filter((i) => {
+    return i.category === "queens";
+  });
+  console.log(queensArray);
   const emilyLength = emilyArray.map((imageEl) => 100 / emilyArray);
   const queensLength = queensArray.map((imageEl) => 100 / queensArray);
   const [emilyWidthState, setEmilyWidthState] = useState(emilyLength);
   const [queenWidthState, setQueenWidthState] = useState(queensLength);
   const outfitArray = props.showOutfits.map((e) => e._id);
   const emilyiD = emilyArray.map((e) => e._id);
-  const queensiD = queensArray.map((e) => e._id);
-  
+  const queensiD = queensArray.map((q) => q._id);
+
 
   return (
     <>
-<TvShow1Jumbotron>Emily in Paris</TvShow1Jumbotron>
-    {/* Emily in Paris */}
+      <TvShowJumbotron>Emily in Paris</TvShowJumbotron>
+      {/* Emily in Paris */}
       <div
         style={{
           display: "flex",
@@ -71,8 +76,8 @@ function OutfitCard(props) {
         ))}
       </div>
 
-    {/* Queen's Gambit */}
-    <TvShow1Jumbotron>Queen's Gambit</TvShow1Jumbotron>
+      {/* Queen's Gambit */}
+      <TvShowJumbotron>Queen's Gambit</TvShowJumbotron>
       <div
         style={{
           display: "flex",
@@ -123,7 +128,6 @@ function OutfitCard(props) {
           </Card>
         ))}
       </div>
-      
     </>
   );
 }
