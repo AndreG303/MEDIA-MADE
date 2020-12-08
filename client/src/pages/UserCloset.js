@@ -66,7 +66,7 @@ function Closet() {
                 ))
                 }
                 {(showUserOutfits.length === 0) &&
-                  <div>No items in your closet</div>
+                  <p className="no-items-text">No items in your closet</p>
                 }
               </Container>
             </Fragment>
@@ -83,4 +83,4 @@ function Closet() {
 
 export default Closet;
 
-// translate session user information
+

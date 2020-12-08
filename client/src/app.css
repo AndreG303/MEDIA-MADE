@@ -23,7 +23,7 @@ body{
 .navbar-body a {
   font-family: "Rubik", sans-serif;
   font-weight: bold;
-  color: #373f51;
+  color: #d8dbe2;
   padding: 15px;
 }
 
@@ -32,10 +32,10 @@ body{
 }
 
 .navbar {
-  background-color: #6e9ebe;
+  background-color: #0e0e0e;
   border-bottom: solid;
-  border-bottom-color: rgb(251, 184, 218);
-  border-width: 4px;
+  border-bottom-color: rgb(255, 118, 187);
+  border-width: 2.5px;
 }
 
 /* typed homepage styling */
@@ -249,8 +249,8 @@ form.form{
 }
 
 h1.form-header{
-  color: #89CFF0;
-  text-shadow: -1px 0 hotpink, 0 1px black, 1px 0 black, 0 -1px hotpink;
+  color: white;
+  text-shadow: -2px 0 hotpink, 0 2px black, 2px 0 black, 0 -2px hotpink;
   text-align: center;
   font-size: 100px;
   font-family: 'Old Standard TT', serif;
@@ -342,6 +342,7 @@ div.full-outfit.card{
   font-size: 80px;
   padding-top: 40px;
   padding-bottom: 20px;
+  
 }
 
 /* button styling */
@@ -363,7 +364,15 @@ a:hover {
 
 }
 
-
+.backText {
+  color: #d8dbe2;
+  font-family: "Old Standard TT", serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+  font-size: 70px;
+  text-shadow: -1px 0 hotpink, 0 1px black, 1px 0 black, 0 -1px hotpink;
+}
 
 /* tv show jumbotron styling */
 div.tvShow1Title.jumbotron{
@@ -371,7 +380,7 @@ div.tvShow1Title.jumbotron{
   display: block;
   margin: 60px auto;
   height: 100px;
-  color: #89CFF0;
+  color: white;
   padding: 20px;
   text-align: center;
   background-color:transparent;
@@ -384,7 +393,7 @@ div.tvShow1Title.jumbotron h1 {
   font-style: italic;
   font-weight: 600;
   font-size: 60px;
-  text-shadow: -1px 0 hotpink, 0 1px black, 1px 0 black, 0 -1px hotpink;
+  text-shadow: -2px 0 rgb(255, 118, 187), 0 2px black, 2px 0 black, 0 -2px rgb(255, 118, 187);
 }
 
 .fancy {
@@ -454,14 +463,7 @@ header:visited {
   color:#fcfcfc;
 }
 
-.backText {
-  color: #d8dbe2;
-  font-family: "Old Standard TT", serif;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 20px;
-  font-size: 50px;
-}
+
 
 
 .stars {
@@ -496,6 +498,17 @@ z-index: 0;
   font-size: 25px;
   font-style: italic;
   text-align:center;
+}
+
+/* logout text & no items in closet text */
+.logout-text,
+.no-items-text{
+  text-align: center;
+  padding: 15px;
+  color: #a6a9af;
+  font-family: 'Rubik';
+  font-style: italic;
+  font-size: 28px;
 }
 
 
@@ -540,6 +553,8 @@ z-index: 0;
   margin-left: 0px;
 }
 }
+
+
 
 
 

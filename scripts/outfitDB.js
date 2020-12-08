@@ -13,16 +13,18 @@ mongoose.connect(
 const outfit = [{
 //Emily in Paris Outfits
     outfitImage: "/assets/EmInParisOutfits/Outfit1.1.jpg",
+    category: "emily",
     items: [{
         image: "https://s1.thcdn.com/productimg/1600/1600/12081059-1064677155724591.jpg",
         name: "KENZO Women's Allover Flower Rice Bag Cotton Poplin Dress - Deep Fuschia",
         url: "https://www.revolve.com/kenzo-all-over-rice-bag-dress-in-deep-fuchsia/dp/KZOR-WD19/?d=Womens&AID=11017645&PID=7900573&bneEl=false&cjevent=9c5119d11e1311eb804100a20a24060b&d=Womens&product=KZOR-WD19&source=cj&utm_campaign=glob_p_4609662&utm_medium=affiliate&utm_source=cj&product=KZOR-WD19&",
-        avail: false
+        avail: false,
     }
     ]
 },
     {
         outfitImage: "/assets/EmInParisOutfits/Outfit1.2.jpg",
+        category: "emily",
         items: [{
             image: "https://n.nordstrommedia.com/id/sr3/956c7594-0803-4f0c-8f72-abf40f7a6af3.webp?crop=pad&pad_color=FFF&format=jpeg&w=1318&h=2021",
             name: "ALICE + OLIVIA Willa Silk Blouse",
@@ -33,6 +35,7 @@ const outfit = [{
     },
     {
         outfitImage: "/assets/EmInParisOutfits/Outfit1.3.jpg",
+        category: "emily",
         items: [{
             image: "https://www.yoox.com/images/items/12/12404009dp_14_f.jpg?width=387&height=490&impolicy=crop&gravity=Center",
             name: "GANNI Silk Mix Top",
@@ -61,6 +64,7 @@ const outfit = [{
     },
     {
         outfitImage: "/assets/EmInParisOutfits/Outfit2.1.jpg",
+        category: "emily",
         items: [{
             image: "https://cdn1.jolicloset.com/img4/fblink/2020/07/201967-1.jpg",
             name: "CHANEL Sky Blue Turquoise Jacket Cardigan Leather Chain 20C Cruise 2020",
@@ -83,6 +87,7 @@ const outfit = [{
     },
     {
         outfitImage: "/assets/EmInParisOutfits/Outfit2.2.jpg",
+        category: "emily",
         items: [{
             image: "https://www.theoutnet.com/variants/images/210639989709/F/w1020_q80.jpg",
             name: "Alexandre Vauthier Strapless Draped Stretch-silk Satin Bustier Top",
@@ -106,6 +111,7 @@ const outfit = [{
     },
     {
         outfitImage: "/assets/EmInParisOutfits/Outfit2.3.jpg",
+        category: "emily",
         items: [{
             image: "https://cdn.modesens.com/product/10019621_46",
             name: "Keith Haring X Alice + Olivia Lonnie Graphic Reversible Silk Bomber Jacket In Black",
@@ -129,6 +135,7 @@ const outfit = [{
     },
     {
         outfitImage: "/assets/EmInParisOutfits/Outfit2.4.jpg",
+        category: "emily",
         items: [{
             image: "https://cdn.shopify.com/s/files/1/0040/5313/9523/products/Petal_Cami_Crop_Top-_Cream_1080x.jpg?v=1600198278",
             name: "the naked laundry Petal Cami Crop Top- Cream",
@@ -145,6 +152,7 @@ const outfit = [{
     },
     {
         outfitImage: "/assets/EmInParisOutfits/Outfit2.5.jpg",
+        category: "emily",
         items: [ {
             image: "https://images.lvrcdn.com/Big70I/B41/020_8bb728d9-d59b-4c14-ae0d-d7d7e9597df5.JPG",
             name: "DOLCE & GABBANA PRINTED OFF SHOULDER COTTON POPLIN DRESS",
@@ -161,6 +169,7 @@ const outfit = [{
     },
     {
         outfitImage: "/assets/EmInParisOutfits/Outfit3.1.jpg",
+        category: "emily",
         items: [ {
             image: "https://www.hartlyfashions.com/wp-content/uploads/2018/10/miller-dickey-jacket-black-white.png",
             name: "VERONICA BEARD Miller Dickey Checker Jacket",
@@ -189,6 +198,7 @@ const outfit = [{
     },
     {
         outfitImage: "/assets/EmInParisOutfits/Outfit3.2.jpg",
+        category: "emily",
         items: [ {
             image: "https://us.maje.com/dw/image/v2/AAON_PRD/on/demandware.static/-/Sites-maje-catalog-master-H13/default/dw5ce069b3/images/h13/Maje_E19RAPY-0071_H_P.jpg?sw=500&sh=500&sm=fit",
             name: "MAJE Rapy floral-print off-the-shoulder woven mini dress",
@@ -205,6 +215,7 @@ const outfit = [{
     },
     {
         outfitImage: "/assets/EmInParisOutfits/Outfit3.3.jpg",
+        category: "emily",
         items: [ {
             image: "https://cdn-images.farfetch-contents.com/13/93/35/54/13933554_17767917_1000.jpg",
             name: "Aje ‘Tilly” Dress",
@@ -236,168 +247,168 @@ const outfit = [{
   
  {
     outfitImage: "/assets/QueensGambitOutfits/4.4.jpg",
+    category: "queens",
     items: [ {
         image: "https://images.asos-media.com/products/accessorize-button-up-beach-midi-dress-in-white/13655190-1-white?$XXL$&wid=513&fit=constrain",
         name: "Accessorize button up beach midi dress in white",
         url: "https://www.asos.com/us/accessorize/accessorize-button-up-beach-midi-dress-in-white/prd/13655190?affid=25714&_cclid=Google_Cj0KCQiAk53-BRD0ARIsAJuNhptdWyCzyh-HD5TRWxiDo9AXmXbajJDKJRRLO4JuaoWWoMrKV9elWvoaAlQ9EALw_wcB&channelref=product+search&mk=abc&ppcadref=10104919891%7c106779534892%7caud-909745351665:pla-294682000766&cpn=10104919891&gclid=Cj0KCQiAk53-BRD0ARIsAJuNhptdWyCzyh-HD5TRWxiDo9AXmXbajJDKJRRLO4JuaoWWoMrKV9elWvoaAlQ9EALw_wcB&gclsrc=aw.ds",
-        avail: True
+        avail: true
     }
     ]
  },
  {
     outfitImage: "/assets/QueensGambitOutfits/4.5.jpg",
+    category: "queens",
     items: [ {
         image: "https://www.forever21.com/dw/image/v2/BFKH_PRD/on/demandware.static/-/Sites-f21-master-catalog/default/dw1725e9ff/1_front_750/00387705-08.jpg?sw=500&sh=750",
         name: "Crepe Pussycat Bow Top",
         url: "https://www.forever21.com/us/2000387705082.html?gclsrc=aw.ds&%243p=a_google_adwords&%24always_deeplink=false&lpurl=https%3A%2F%2Fwww.forever21.com%2Fus%2F2000387705082.html%3Fgclsrc%3Daw.ds%26&~ad_set_id=110143059781&~campaign_id=11647983085&~channel=u&~keyword=&~placement=&%24fallback_url=https%3A%2F%2Fwww.forever21.com%2Fus%2F2000387705082.html%3Fgclsrc%3Daw.ds%26&~campaign=&gclid=Cj0KCQiAk53-BRD0ARIsAJuNhpuZ5jXlmX1hMypwYR9DA3jb0CewML2JCdRcENpxaao6F6tN7aQZBdwaAqqbEALw_wcB&gclid=Cj0KCQiAk53-BRD0ARIsAJuNhpuZ5jXlmX1hMypwYR9DA3jb0CewML2JCdRcENpxaao6F6tN7aQZBdwaAqqbEALw_wcB&_branch_match_id=853808111856861985&utm_source=u",
-        avail: True
+        avail: true
     },
     {
         image: "https://media.kohlsimg.com/is/image/kohls/3358845_Gray?wid=1200&hei=1200&op_sharpen=1",
         name: "Women's White Mark Midi Skirt",
         url: "https://www.kohls.com/product/prd-3358845/womens-white-mark-solid-midi-skirt.jsp?skuid=20748147&CID=shopping15&utm_campaign=WEB%20EXCLUSIVE%20SEPARA&utm_medium=CSE&utm_source=google&utm_product=20748147&utm_campaignid=9733267375&gclid=Cj0KCQiAk53-BRD0ARIsAJuNhpuuLpSfZ__F9p_hXS0Sjjbwtz4gHwjQm2VY157BYryPCV_XQ1s5yhkaAjcNEALw_wcB&gclsrc=aw.ds",
-        avail: True
+        avail: true
     }
     ]
  },
  {
     outfitImage: "/assets/QueensGambitOutfits/4.6.jpg",
+    category: "queens",
     items: [ {
         image: "https://d1flfk77wl2xk4.cloudfront.net/Assets/GalleryImage/42/360/L_g0104336042.jpg",
         name: "petitkura - Peter Pan Collar Sleeveless Chiffon Top",
         url: "https://www.yesstyle.com/en/tcuc.USD/coc.US/info.html/pid.1073122167?cpid=1073122679&googtrans=en&bac=EXUXNBGL&%243p=a_google_adwords&%24always_deeplink=false&gclid=Cj0KCQiAk53-BRD0ARIsAJuNhpuQXEPXCv2vdwb9kywc1ANIA6J2W0yjiv80m5xaRkwuqfycubQOtGMaAl9PEALw_wcB&gclid=Cj0KCQiAk53-BRD0ARIsAJuNhpuQXEPXCv2vdwb9kywc1ANIA6J2W0yjiv80m5xaRkwuqfycubQOtGMaAl9PEALw_wcB&~ad_set_id=62829238544&~campaign_id=1425184459&~channel=Google%20Ads&~keyword=&~placement=&~feature=Shopping&%24fallback_url=https%3A%2F%2Fwww.yesstyle.com%2Fen%2Ftcuc.USD%2Fcoc.US%2Finfo.html%2Fpid.1073122167%3Fcpid%3D1073122679%26googtrans%3Den%26bac%3DEXUXNBGL&_branch_match_id=853808111856861985&utm_source=Google%20Ads&utm_medium=Shopping",
-        avail: True
+        avail: true
     },
     {
         image: "https://lp.cosstores.com/app001prod?set=source[/05/4d/054d8b251a0859fb2466eef01c4cc8c5661c5faf.jpg],origin[dam],type[DESCRIPTIVESTILLLIFE],device[hdpi],quality[80],ImageVersion[1]&call=url[file:/product/zoom]",
         name: "A-LINE COVERED SLIT MIDI SKIRT",
         url: "https://www.cosstores.com/en_usd/women/womenswear/skirts/product.a-line-covered-slit-midi-skirt-yellow.0930727001.html?gclid=Cj0KCQiAk53-BRD0ARIsAJuNhptE50j1Q7CJaN7VokO4TTg3EWNIbgy3qJ4bJpAr2i5RlFJKpWgAdC4aAhQCEALw_wcB",
-        avail: True
+        avail: true
     }
     ]
  },
  {
     outfitImage: "/assets/QueensGambitOutfits/5.1.jpg",
+    category: "queens",
     items: [ {
         image: "https://cdn.shopify.com/s/files/1/0274/7331/3863/products/pearly-dot-triple-pleat-cinnamon-black_10771184-P68_flat_1_2000x.jpg?v=1597253291",
         name: "Pearly Dot Triple Pleat",
         url: "https://anneklein.com/products/pearly-dot-triple-pleat?variant=32524684361799&gclid=Cj0KCQiAk53-BRD0ARIsAJuNhpsJigI8qcdogYh5X4f3BDBXEuL_4gna4WyxJJt-hNyNScw71SfIabcaAr6GEALw_wcB",
-        avail: True
+        avail: true
     }
     ]
  },
  {
     outfitImage: "/assets/QueensGambitOutfits/5.2.jpg",
+    category: "queens",
     items: [ {
         image: "https://i.etsystatic.com/25429554/r/il/a9d116/2708392629/il_794xN.2708392629_snr1.jpg",
         name: "Red and Black Chess Board Women's T-shirt",
         url: "https://www.etsy.com/listing/890629966/red-and-black-chess-board-womens-t-shirt?awc=7432_1606966134_5dfa9a40f63114ae239eb7c416450344&utm_medium=affiliate&utm_source=affiliate_window&utm_campaign=fr_buyer&utm_content=433093&utm_term=146067",
-        avail: True
+        avail: true
     },
     {
         image: "https://images-na.ssl-images-amazon.com/images/I/71v9xnE9JdL._AC_UY1000_.jpg",
         name: "Sash Belt/Hair tie/Scarf Black",
         url: "https://www.amazon.com/Sash-Belt-Scarf-Black-Georgette/dp/B001OOCFOU",
-        avail: True
+        avail: true
     }
 
     ]
  },
  {
     outfitImage: "/assets/QueensGambitOutfits/5.3.jpg",
+    category: "queens",
     items: [ {
         image: "https://www.forever21.com/dw/image/v2/BFKH_PRD/on/demandware.static/-/Sites-f21-master-catalog/default/dwb3eb72a9/1_front_750/00402423-04.jpg?sw=500&sh=750",
         name: "Paisley Print Shirt",
         url: "https://www.forever21.com/us/2000402423042.html?gclsrc=aw.ds&%243p=a_google_adwords&%24always_deeplink=false&lpurl=https%3A%2F%2Fwww.forever21.com%2Fus%2F2000402423042.html%3Fgclsrc%3Daw.ds%26&~ad_set_id=113703930935&~campaign_id=11644344459&~channel=u&~keyword=&~placement=&%24fallback_url=https%3A%2F%2Fwww.forever21.com%2Fus%2F2000402423042.html%3Fgclsrc%3Daw.ds%26&~campaign=&gclid=Cj0KCQiAk53-BRD0ARIsAJuNhpvqbB_hZcUD_Vx4buW2faUvd7hqCnSXKbB0BcDvA0_wV_dtfZ57lzoaAtd1EALw_wcB&gclid=Cj0KCQiAk53-BRD0ARIsAJuNhpvqbB_hZcUD_Vx4buW2faUvd7hqCnSXKbB0BcDvA0_wV_dtfZ57lzoaAtd1EALw_wcB&_branch_match_id=853808111856861985&utm_source=u",
-        avail: True
+        avail: true
     }
     ]
  },
  {
     outfitImage: "/assets/QueensGambitOutfits/5.4.jpg",
+    category: "queens",
     items: [ {
         image: "https://cdn.shopify.com/s/files/1/0150/1528/products/A-12-0015-000-SEDONA-SUNGLASSES-BLACK-1390_985x.jpg?v=1578423971",
         name: "SEDONA SUNGLASSES",
         url: "https://www.aninebing.com/products/sedona-sunglasses-black?utm_source=Google&utm_medium=PLA&utm_campaign=NB&gclid=Cj0KCQiAk53-BRD0ARIsAJuNhpsi6Z7ZzilyvZxnr-pIrml53bnK1bt14ZDQ9zWnNqYNjENNjtpmr-caAml6EALw_wcB",
-        avail: True
+        avail: true
     },
     {
         image: "https://i.s-madewell.com/is/image/madewell/AN441_KF0976_ld?wid=1400&hei=1779&fmt=jpeg&fit=crop&qlt=75,1&resMode=bisharp&op_usm=0.5,1,5,0",
         name: "V-Neck Button-Front Boxy-Crop Tee",
         url: "https://www.madewell.com/v-neck-button-front-boxy-crop-tee-99105860112.html?source=googlePLA&noPopUp=true",
-        avail: True
+        avail: true
     },
     {
         image: "https://img.ltwebstatic.com/images2_pi/2019/06/10/15601599763859238687_thumbnail_600x799.webp",
         name: "SHEIN Button Side Zipper Wrap Skirt",
         url: "https://us.shein.com/Button-Side-Zipper-Wrap-Skirt-p-727575-cat-1732.html?url_from=adplaswskirt07190425035XS_ssc&gclid=Cj0KCQiAk53-BRD0ARIsAJuNhpv-zTrk62qUlwC2G9Sqhjeh1jgWdfcVCtcWXUJX9UmqUVYQFIRmKxgaAjeyEALw_wcB",
-        avail: True
+        avail: true
     },
     {
         image: "https://s7d5.scene7.com/is/image/UrbanOutfitters/48258339_011_d?$xlarge$&fit=constrain&qlt=80&wid=683",
         name: "Lana Silk Scarf Scrunchie",
         url: "https://www.urbanoutfitters.com/shop/lana-silk-scarf-scrunchie?inventoryCountry=US&color=011&size=ONE%20SIZE&gclid=Cj0KCQiAk53-BRD0ARIsAJuNhptc8uODahrvUKaaz2PhbuXs67VeKAKfJOMxB478s8NZTCqqz1LY6X0aAs2WEALw_wcB&gclsrc=aw.ds&type=REGULAR&quantity=1",
-        avail: True
+        avail: true
     }
     ]
  },
  {
     outfitImage: "/assets/QueensGambitOutfits/6.2.jpg",
+    category: "queens",
     items: [ {
         image: "https://images-na.ssl-images-amazon.com/images/I/71v9xnE9JdL._AC_UY1000_.jpg",
         name: "Sash Belt/Hair tie/Scarf Black",
         url: "https://www.amazon.com/Sash-Belt-Scarf-Black-Georgette/dp/B001OOCFOU",
-        avail: True
+        avail: true
     },
     {
         image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcScvXDhUJrMNsJs2_inGQF89TlpJ8ASuI6uMwJZI2y7ez1ML-im79Zr_CbceGjjZoryyeOoVfX1uxTiZCJsXQ8EdGsdLMSptuY0lCaJH2E&usqp=CAY",
         name: "Contrast Detail Button-Up Blouse",
         url: "https://www.nordstrom.com/S/5496003?country=US&currency=USD&utm_channel=low_nd_seo_shopping&utm_source=google&sp_source=google",
-        avail: True
+        avail: true
     }
 
     ]
  },
  {
     outfitImage: "/assets/QueensGambitOutfits/6.3.jpg",
+    category: "queens",
     items: [ {
         image: "https://i.ebayimg.com/images/g/cfUAAOSwcpJe3WkD/s-l640.jpg",
         name: "Anthropologie Wool Blend Linda Plaid Pea Coat",
         url: "https://www.ebay.com/i/283906077588?chn=ps&mkevt=1&mkcid=28",
-        avail: True
+        avail: true
     },
     
  {
     image: "https://www.jcrew.com/s7-img-facade/K4227_BK0001_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=850&hei=850",
     name: "Tissue turtleneck",
     url: "https://www.jcrew.com/us/p/womens_category/maternity/tshirts_tanktops/tissue-turtleneck/K4227?color_name=black&noPopUp=true",
-    avail: True
+    avail: true
 },
 {
     image: "https://aritzia.scene7.com/is/image/Aritzia/zoom/f19_01_a07_68692_17573_on_c.jpg",
     name: "Babaton Modern Mini Skirt",
     url: "https://www.aritzia.com/us/en/product/modern-mini-skirt/68692089.html?gclid=CjwKCAiAwrf-BRA9EiwAUWwKXsew0kFpQ4Tpvyqb2o_OTr_Uct0pOrvoBmpzrBwibqYTLetmUV_7uxoCVfkQAvD_BwE",
-    avail: True
+    avail: true
 },
     ]
 },
 {
     outfitImage: "/assets/QueensGambitOutfits/6.4.jpg",
+    category: "queens",
     items: [ {
-        image: "https://bananarepublicfactory.gapfactory.com/webcontent/0019/576/524/cn19576524.jpg",
-        name: "Textured Fit-and-Flare Sweater Dress",
-        url: "https://bananarepublicfactory.gapfactory.com/browse/product.do?vid=1&pid=594267#pdp-page-content",
-        avail: True
-    }
-    ]
- },
- {
-    outfitImage: "/assets/QueensGambitOutfits/6.5.jpg",
-    items: [ {
-        image: "https://slimages.macys.com/is/image/MCY/products/8/optimized/9810258_fpx.tif?op_sharpen=1&wid=1230&hei=1500&fit=fit,1&$filterxlrg$",
-        name: "Sunburst Sheath Dress",
-        url: "https://www.macys.com/shop/product/calvin-klein-sunburst-sheath-dress?ID=2755347&pla_country=US",
-        avail: True
+        image: "",
+        name: "",
+        url: "",
+        avail: true
     }
     ]
  }
