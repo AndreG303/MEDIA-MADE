@@ -2,20 +2,24 @@ import React, { useState } from "react";
 import { Card } from "react-bootstrap";
 import "../../app.css";
 import { Link } from "react-router-dom";
+import TvShow1Jumbotron from "../TvShow1Jumbotron/TvShow1Jumbotron";
 
 function OutfitCard(props) {
-  console.log(props);
-  const outfitArray = props.showOutfits.map((e) => e._id);
-  const queenOutfit = props.showOutfits.filter((i) => {return i.category === "queens"}).map((e) => e._id);
-  const imageLength = props.showOutfits.map(
-    (imageEl) => 100 / props.showOutfits.length
-  );
-  const [widthState, setWidthState] = useState(imageLength);
+  const emilyArray = props.showOutfits.filter((i) => {return i.category === "emily"});
   const queensArray = props.showOutfits.filter((i) => {return i.category === "queens"});
+  const emilyLength = emilyArray.map((imageEl) => 100 / emilyArray);
+  const queensLength = queensArray.map((imageEl) => 100 / queensArray);
+  const [emilyWidthState, setEmilyWidthState] = useState(emilyLength);
+  const [queenWidthState, setQueenWidthState] = useState(queensLength);
+  const outfitArray = props.showOutfits.map((e) => e._id);
+  const emilyiD = emilyArray.map((e) => e._id);
+  const queensiD = queensArray.map((e) => e._id);
   
 
   return (
     <>
+<TvShow1Jumbotron>Emily in Paris</TvShow1Jumbotron>
+    {/* Emily in Paris */}
       <div
         style={{
           display: "flex",
@@ -23,17 +27,17 @@ function OutfitCard(props) {
           marginBottom: "20px",
         }}
       >
-        {widthState.map((cardWidth, i) => (
+        {emilyWidthState.map((cardWidth, i) => (
           <Card
             key={"card-" + i}
             className="full-outfit"
             style={{ width: cardWidth + "%", transition: "width 1s" }}
             onMouseOver={() => {
               let min = 5;
-              let variance = 100 - widthState.length * min;
+              let variance = 100 - emilyWidthState.length * min;
               let nWidth = [];
               let maxValue = -3;
-              widthState.forEach((width, x) => {
+              emilyWidthState.forEach((width, x) => {
                 nWidth.push(Math.abs(x - i));
                 maxValue =
                   maxValue < Math.abs(x - i) ? Math.abs(x - i) : maxValue;
@@ -47,26 +51,28 @@ function OutfitCard(props) {
               nWidth = nWidth.map((nw, i) => {
                 return scale * nw + min;
               });
-              setWidthState(nWidth);
+              setEmilyWidthState(nWidth);
             }}
           >
             <Link
               to={"/outfits/" + outfitArray[i]}
               onClick={
                 (props.handleChangeOfPage &&
-                  (() => props.handleChangeOfPage(outfitArray[i]))) ||
+                  (() => props.handleChangeOfPage(emilyiD[i]))) ||
                 (() => {})
               }
             >
               <Card.Img
                 variant="top"
-                src={process.env.PUBLIC_URL + props.showOutfits[i].outfitImage}
+                src={process.env.PUBLIC_URL + emilyArray[i].outfitImage}
               />
             </Link>
           </Card>
         ))}
       </div>
 
+    {/* Queen's Gambit */}
+    <TvShow1Jumbotron>Queen's Gambit</TvShow1Jumbotron>
       <div
         style={{
           display: "flex",
@@ -74,17 +80,17 @@ function OutfitCard(props) {
           marginBottom: "20px",
         }}
       >
-        {props.showOutfits.filter((i) => {return i.category === "emily"}).map((cardWidth, i) => (
+        {queenWidthState.map((cardWidth, i) => (
           <Card
             key={"card-" + i}
             className="full-outfit"
             style={{ width: cardWidth + "%", transition: "width 1s" }}
             onMouseOver={() => {
               let min = 5;
-              let variance = 100 - widthState.length * min;
+              let variance = 100 - queenWidthState.length * min;
               let nWidth = [];
               let maxValue = -3;
-              widthState.forEach((width, x) => {
+              queenWidthState.forEach((width, x) => {
                 nWidth.push(Math.abs(x - i));
                 maxValue =
                   maxValue < Math.abs(x - i) ? Math.abs(x - i) : maxValue;
@@ -98,65 +104,14 @@ function OutfitCard(props) {
               nWidth = nWidth.map((nw, i) => {
                 return scale * nw + min;
               });
-              setWidthState(nWidth);
+              setQueenWidthState(nWidth);
             }}
           >
             <Link
               to={"/outfits/" + outfitArray[i]}
               onClick={
                 (props.handleChangeOfPage &&
-                  (() => props.handleChangeOfPage(outfitArray[i]))) ||
-                (() => {})
-              }
-            >
-              <Card.Img
-                variant="top"
-                src={process.env.PUBLIC_URL + props.showOutfits[i].outfitImage}
-              />
-            </Link>
-          </Card>
-        ))}
-      </div>
-
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "inlineBlock",
-          marginBottom: "20px",
-        }}
-      >
-        {props.showOutfits.filter((i) => {return i.category === "queens"}).map((cardWidth, i) => (
-          <Card
-            key={"card-" + i}
-            className="full-outfit"
-            style={{ width: cardWidth + "%", transition: "width 1s" }}
-            onMouseOver={() => {
-              let min = 5;
-              let variance = 100 - widthState.length * min;
-              let nWidth = [];
-              let maxValue = -3;
-              widthState.forEach((width, x) => {
-                nWidth.push(Math.abs(x - i));
-                maxValue =
-                  maxValue < Math.abs(x - i) ? Math.abs(x - i) : maxValue;
-              });
-              let sum = 0;
-              nWidth = nWidth.map((nw, i) => {
-                return maxValue - nw;
-              });
-              nWidth.forEach((nw) => (sum += nw));
-              let scale = variance / sum;
-              nWidth = nWidth.map((nw, i) => {
-                return scale * nw + min;
-              });
-              setWidthState(nWidth);
-            }}
-          >
-            <Link
-              to={"/outfits/" + queenOutfit[i]}
-              onClick={
-                (props.handleChangeOfPage &&
-                  (() => props.handleChangeOfPage(queenOutfit[i]))) ||
+                  (() => props.handleChangeOfPage(queensiD[i]))) ||
                 (() => {})
               }
             >
