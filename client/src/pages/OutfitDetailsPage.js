@@ -17,7 +17,7 @@ function Outfits(props) {
   };
 
   return (
-    <>   
+    <>
       {showOutfits.length > 0 ? (
         <SingleOutfit
           showOutfits={showOutfits}

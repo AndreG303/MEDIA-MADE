@@ -18,8 +18,9 @@ function OutfitCard(props) {
   const [queenWidthState, setQueenWidthState] = useState(queensLength);
   const outfitArray = props.showOutfits.map((e) => e._id);
   const emilyiD = emilyArray.map((e) => e._id);
-  const queensiD = queensArray.map((q) => q._id);
+  const queensiD = queensArray.map((e) => e._id);
 
+  
 
   return (
     <>
