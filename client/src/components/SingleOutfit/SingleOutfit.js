@@ -6,10 +6,12 @@ import { Link } from "react-router-dom";
 function OutfitCard(props) {
   console.log(props);
   const outfitArray = props.showOutfits.map((e) => e._id);
+  const queenOutfit = props.showOutfits.filter((i) => {return i.category === "queens"}).map((e) => e._id);
   const imageLength = props.showOutfits.map(
     (imageEl) => 100 / props.showOutfits.length
   );
   const [widthState, setWidthState] = useState(imageLength);
+  const queensArray = props.showOutfits.filter((i) => {return i.category === "queens"});
   
 
   return (
@@ -151,16 +153,16 @@ function OutfitCard(props) {
             }}
           >
             <Link
-              to={"/outfits/" + outfitArray[i]}
+              to={"/outfits/" + queenOutfit[i]}
               onClick={
                 (props.handleChangeOfPage &&
-                  (() => props.handleChangeOfPage(outfitArray[i]))) ||
+                  (() => props.handleChangeOfPage(queenOutfit[i]))) ||
                 (() => {})
               }
             >
               <Card.Img
                 variant="top"
-                src={process.env.PUBLIC_URL + props.showOutfits[i].outfitImage}
+                src={process.env.PUBLIC_URL + queensArray[i].outfitImage}
               />
             </Link>
           </Card>
