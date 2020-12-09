@@ -27,16 +27,24 @@ router.post("/login", passport.authenticate("local"), (req, res) => {
 // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
 // otherwise send back an error
 router.post("/signup", (req, res) => {
-    console.log(req.body);
-    db.User.create({
+    let data = {
         username: req.body.username,
         email: req.body.email,
         password: req.body.password
-    })
+    }
+    db.User.create(
+        data
+    )
     .then(data => {
-        res.json({
-            username: data.username,
-            email: data.email});
+        req.login(
+            data
+        , (err) => {
+            res.json({
+                username: data.username,
+                email: data.email
+            });
+        }
+        )   
     })
     .catch(err => {
         console.log(err);
