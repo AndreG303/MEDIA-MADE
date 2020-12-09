@@ -49,11 +49,7 @@ body{
 
     z-index: 3;
 }
-@media (max-width: 767px) {
-  .typedLetters {
-    font-size: 50px;
-  }
-}
+
 
 /* about us page styling */
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
@@ -288,6 +284,10 @@ App {
   
   .scrollTop:hover{
     opacity: 1;
+  }
+
+  .navbar-toggler-icon{
+    background-color: white;
   }
   
   @keyframes fadeIn {
@@ -578,6 +578,47 @@ z-index: 0;
   left: 100%;
   margin-left: 0px;
 }
+.show-outfit-img {
+  height: 350px;
+  width: 200px;
+  padding-bottom: 35px;
+  padding-top: 30px;
+  align-items: center;
+  padding-left: 25px;
+  padding-right:25px;
+  margin-left:22px;
+  margin-bottom:20px;
+}
+.container-outfit{
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+div.col-md-4{
+  margin-left: 25px;
+}
+}
+p.itemName{
+  font-size: 22px;
+  font-family: 'Old Standard TT';
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-left: 30px;
+  color: white;
+}
+
+p.itemLink{
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  padding-left: 20px;
+  color: white;
+}
+@media (max-width: 767px) {
+  .typedLetters {
+    font-size: 50px;
+  }
 }
 
 
