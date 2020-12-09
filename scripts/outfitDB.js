@@ -412,181 +412,181 @@ const outfit = [{
     }
     ]
  },
- {
-    outfitImage: "/assets/QueensGambitOutfits/6.6.jpg",
-    category: "queens",
-    items: [ {
-        image: "https://static.zara.net/photos///2020/I/0/1/p/5646/123/501/2/w/1143/5646123501_6_1_1.jpg?ts=1602660817960",
-        name: "HIGH COLLAR KNIT SWEATER",
-        url: "https://www.zara.com/us/en/high-collar-knit-sweater-p05646123.html?v1=79333638",
-        avail: true
-    }
-    ]
- },
- {
-    outfitImage: "/assets/QueensGambitOutfits/6.7.jpg",
-    category: "queens",
-    items: [ {
-        image: "https://images.asos-media.com/products/other-stories-satin-short-sleeve-midaxi-dress-in-dusty-green/20109760-4?$XXL$&wid=513&fit=constrain",
-        name: "& Other Stories satin short sleeve midaxi dress in dusty green",
-        url: "https://www.asos.com/us/other-stories/other-stories-satin-short-sleeve-midaxi-dress-in-dusty-green/prd/20109760?affid=25714&_cclid=Google_CjwKCAiAwrf-BRA9EiwAUWwKXpgk9gWFCo0kQ7S4GjoTBQlnkkDmNclfqN87L1B_tDDVZhiO9RmcCxoCfo0QAvD_BwE&channelref=product+search&mk=abc&ppcadref=10104919891%7c106779534892%7cpla-294682000766&cpn=10104919891&gclid=CjwKCAiAwrf-BRA9EiwAUWwKXpgk9gWFCo0kQ7S4GjoTBQlnkkDmNclfqN87L1B_tDDVZhiO9RmcCxoCfo0QAvD_BwE&gclsrc=aw.ds",
-        avail: true
-    }
-    ]
- },
- {
-    outfitImage: "/assets/QueensGambitOutfits/6.8.jpg",
-    category: "queens",
-    items: [ {
-        image: "https://images.express.com/is/image/expressfashion/0006_01165867_2557_a001?cache=on&wid=480&fmt=jpeg&qlt=85,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
-        name: "Supersoft Lace Trim Pajama Tank",
-        url: "https://www.express.com/clothing/women/supersoft-lace-trim-pajama-tank/pro/01165867/color/Beige/?CID=SEO_GOO-SAG-F-Organic-Retail-00-000-Tees-US-Product-NA",
-        avail: true
-    },
-    {
-        image: "https://images.express.com/is/image/expressfashion/0006_01165748_2557_a001?cache=on&wid=480&fmt=jpeg&qlt=85,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
-        name: "Supersoft Lace Trim Pajama Short",
-        url: "https://www.express.com/clothing/women/supersoft-lace-trim-pajama-short/pro/01165748/color/Beige/",
-        avail: true
-    },
-    {
-        image: "https://www.lulus.com/images/product/xlarge/6199601_1291296.jpg?w=560",
-        name: "Delighted by You Brown Cable Knit Oversized Cardigan Sweater",
-        url: "https://www.lulus.com/products/delighted-by-you-brown-cable-knit-oversized-cardigan-sweater/1291296.html",
-        avail: true
-    }
+//  {
+//     outfitImage: "/assets/QueensGambitOutfits/6.6.jpg",
+//     category: "queens",
+//     items: [ {
+//         image: "https://static.zara.net/photos///2020/I/0/1/p/5646/123/501/2/w/1143/5646123501_6_1_1.jpg?ts=1602660817960",
+//         name: "HIGH COLLAR KNIT SWEATER",
+//         url: "https://www.zara.com/us/en/high-collar-knit-sweater-p05646123.html?v1=79333638",
+//         avail: true
+//     }
+//     ]
+//  },
+//  {
+//     outfitImage: "/assets/QueensGambitOutfits/6.7.jpg",
+//     category: "queens",
+//     items: [ {
+//         image: "https://images.asos-media.com/products/other-stories-satin-short-sleeve-midaxi-dress-in-dusty-green/20109760-4?$XXL$&wid=513&fit=constrain",
+//         name: "& Other Stories satin short sleeve midaxi dress in dusty green",
+//         url: "https://www.asos.com/us/other-stories/other-stories-satin-short-sleeve-midaxi-dress-in-dusty-green/prd/20109760?affid=25714&_cclid=Google_CjwKCAiAwrf-BRA9EiwAUWwKXpgk9gWFCo0kQ7S4GjoTBQlnkkDmNclfqN87L1B_tDDVZhiO9RmcCxoCfo0QAvD_BwE&channelref=product+search&mk=abc&ppcadref=10104919891%7c106779534892%7cpla-294682000766&cpn=10104919891&gclid=CjwKCAiAwrf-BRA9EiwAUWwKXpgk9gWFCo0kQ7S4GjoTBQlnkkDmNclfqN87L1B_tDDVZhiO9RmcCxoCfo0QAvD_BwE&gclsrc=aw.ds",
+//         avail: true
+//     }
+//     ]
+//  },
+//  {
+//     outfitImage: "/assets/QueensGambitOutfits/6.8.jpg",
+//     category: "queens",
+//     items: [ {
+//         image: "https://images.express.com/is/image/expressfashion/0006_01165867_2557_a001?cache=on&wid=480&fmt=jpeg&qlt=85,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
+//         name: "Supersoft Lace Trim Pajama Tank",
+//         url: "https://www.express.com/clothing/women/supersoft-lace-trim-pajama-tank/pro/01165867/color/Beige/?CID=SEO_GOO-SAG-F-Organic-Retail-00-000-Tees-US-Product-NA",
+//         avail: true
+//     },
+//     {
+//         image: "https://images.express.com/is/image/expressfashion/0006_01165748_2557_a001?cache=on&wid=480&fmt=jpeg&qlt=85,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon",
+//         name: "Supersoft Lace Trim Pajama Short",
+//         url: "https://www.express.com/clothing/women/supersoft-lace-trim-pajama-short/pro/01165748/color/Beige/",
+//         avail: true
+//     },
+//     {
+//         image: "https://www.lulus.com/images/product/xlarge/6199601_1291296.jpg?w=560",
+//         name: "Delighted by You Brown Cable Knit Oversized Cardigan Sweater",
+//         url: "https://www.lulus.com/products/delighted-by-you-brown-cable-knit-oversized-cardigan-sweater/1291296.html",
+//         avail: true
+//     }
 
 
-    ]
- },
- {
-    outfitImage: "/assets/QueensGambitOutfits/6.9.jpg",
-    category: "queens",
-    items: [ {
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOdqTalwdrt6LXro9Ammv2bxn7cGqeOC51BQ&usqp=CAU",
-        name: "Funky Junque Trendy Warm Oversized Chunky Soft Oversized Cable Knit Slouchy Beanie",
-        url: "https://www.amazon.com/Funky-Junque-H-6100-54-Oversized-Slouchy/dp/B017HVDRCC/ref=asc_df_B017HVDRCC/?tag=hyprod-20&linkCode=df0&hvadid=309788712891&hvpos=&hvnetw=g&hvrand=11112121497440520319&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9060351&hvtargid=pla-568864974125&psc=1&tag=&ref=&adgrpid=61292185883&hvpone=&hvptwo=&hvadid=309788712891&hvpos=&hvnetw=g&hvrand=11112121497440520319&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9060351&hvtargid=pla-568864974125",
-        avail: true
-    },
-    {
-       image: "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw0ec85f06/product_images/0716484260064NEW_00_020.jpg?sw=690&sh=1070&sm=fit",
-       name: "Pacsun Raglan Cozy Mock Neck Top",
-       url: "https://www.pacsun.com/ps-basics-by-pacsun/raglan-cozy-mock-neck-top-1548478.html?&country=US&currency=USD&OriginId=GOG&XCIDP=P:G_PacSun_Shopping_SSC_W_Tees&&OriginId=GOG&XCIDP=P:G_PacSun_Shopping_SSC_W_Tees&k_clickid=0fc8d3e7-dfcc-4c39-92a4-509ae12f3187&gclid=CjwKCAiAwrf-BRA9EiwAUWwKXvKmnHclKEITj5s6h4mh6nE4pIlPOv4OePLcF_sYslIjx1l1xn5_JxoCIjcQAvD_BwE",
-       avail: true
-   },
-   {
-    image: "https://slimages.macysassets.com/is/image/MCY/products/8/optimized/17678628_fpx.tif?op_sharpen=1&wid=1230&hei=1500&fit=fit,1&$filterxlrg$",
-    name: "Double-Collar Double-Breasted Trench Coat",
-    url: "https://www.macys.com/shop/product/lauren-ralph-lauren-double-collar-double-breasted-trench-coat?ID=11056434&pla_country=US&CAGPSPN=pla&cm_mmc=Google_Womens_PLA-_-RTW_Womens_Lauren_Ralph_Lauren_-_GS_Coats-_-72117738541-_-pg1050936501_c_kclickid_0fc8d3e7-dfcc-4c39-92a4-509ae12f3187_KID_EMPTY_255686941_19061550661_72117738541_aud-325772344535:pla-297482086746_726113104342USA__c_KID_&trackingid=424x1050936501&m_sc=sem&m_sb=Google&m_tp=PLA&m_ac=Google_Womens_PLA&m_ag=Coats&m_cn=RTW_Womens_Lauren_Ralph_Lauren_-_GS&m_pi=go_cmp-255686941_adg-19061550661_ad-72117738541_aud-325772344535:pla-297482086746_dev-c_ext-_prd-726113104342USA&catargetid=120156340030196029&cadevice=c&gclid=CjwKCAiAwrf-BRA9EiwAUWwKXjsWhzCAernl_1HtxHu5NLV6Uzm9WbO9YSFTBTPpUiGO3wA_LF9_kRoCotEQAvD_BwE",
-    avail: true
-}
+//     ]
+//  },
+//  {
+//     outfitImage: "/assets/QueensGambitOutfits/6.9.jpg",
+//     category: "queens",
+//     items: [ {
+//         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOdqTalwdrt6LXro9Ammv2bxn7cGqeOC51BQ&usqp=CAU",
+//         name: "Funky Junque Trendy Warm Oversized Chunky Soft Oversized Cable Knit Slouchy Beanie",
+//         url: "https://www.amazon.com/Funky-Junque-H-6100-54-Oversized-Slouchy/dp/B017HVDRCC/ref=asc_df_B017HVDRCC/?tag=hyprod-20&linkCode=df0&hvadid=309788712891&hvpos=&hvnetw=g&hvrand=11112121497440520319&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9060351&hvtargid=pla-568864974125&psc=1&tag=&ref=&adgrpid=61292185883&hvpone=&hvptwo=&hvadid=309788712891&hvpos=&hvnetw=g&hvrand=11112121497440520319&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9060351&hvtargid=pla-568864974125",
+//         avail: true
+//     },
+//     {
+//        image: "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw0ec85f06/product_images/0716484260064NEW_00_020.jpg?sw=690&sh=1070&sm=fit",
+//        name: "Pacsun Raglan Cozy Mock Neck Top",
+//        url: "https://www.pacsun.com/ps-basics-by-pacsun/raglan-cozy-mock-neck-top-1548478.html?&country=US&currency=USD&OriginId=GOG&XCIDP=P:G_PacSun_Shopping_SSC_W_Tees&&OriginId=GOG&XCIDP=P:G_PacSun_Shopping_SSC_W_Tees&k_clickid=0fc8d3e7-dfcc-4c39-92a4-509ae12f3187&gclid=CjwKCAiAwrf-BRA9EiwAUWwKXvKmnHclKEITj5s6h4mh6nE4pIlPOv4OePLcF_sYslIjx1l1xn5_JxoCIjcQAvD_BwE",
+//        avail: true
+//    },
+//    {
+//     image: "https://slimages.macysassets.com/is/image/MCY/products/8/optimized/17678628_fpx.tif?op_sharpen=1&wid=1230&hei=1500&fit=fit,1&$filterxlrg$",
+//     name: "Double-Collar Double-Breasted Trench Coat",
+//     url: "https://www.macys.com/shop/product/lauren-ralph-lauren-double-collar-double-breasted-trench-coat?ID=11056434&pla_country=US&CAGPSPN=pla&cm_mmc=Google_Womens_PLA-_-RTW_Womens_Lauren_Ralph_Lauren_-_GS_Coats-_-72117738541-_-pg1050936501_c_kclickid_0fc8d3e7-dfcc-4c39-92a4-509ae12f3187_KID_EMPTY_255686941_19061550661_72117738541_aud-325772344535:pla-297482086746_726113104342USA__c_KID_&trackingid=424x1050936501&m_sc=sem&m_sb=Google&m_tp=PLA&m_ac=Google_Womens_PLA&m_ag=Coats&m_cn=RTW_Womens_Lauren_Ralph_Lauren_-_GS&m_pi=go_cmp-255686941_adg-19061550661_ad-72117738541_aud-325772344535:pla-297482086746_dev-c_ext-_prd-726113104342USA&catargetid=120156340030196029&cadevice=c&gclid=CjwKCAiAwrf-BRA9EiwAUWwKXjsWhzCAernl_1HtxHu5NLV6Uzm9WbO9YSFTBTPpUiGO3wA_LF9_kRoCotEQAvD_BwE",
+//     avail: true
+// }
 
-    ]
- },
- {
-    outfitImage: "/assets/QueensGambitOutfits/7.1.jpg",
-    category: "queens",
-    items: [ {
-        image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSv8_rQ7uqlczdpOSt9nq-iSFCTg2g5O3bpD08R28cYTFPQ89Iz8RIAOPcOjHKY0vuqaZXd0vIlnBX_LVOqB9qG8k6YntvYcg&usqp=CAY",
-        name: "ASOS DESIGN wide jersey headband in white",
-        url: "https://www.asos.com/us/asos-design/asos-design-wide-jersey-headband-in-white/prd/20649170",
-        avail: true
-    },
-    {
-        image: "https://media.everlane.com/image/upload/c_fill,dpr_1.0,f_auto,g_face:center,q_auto,w_auto:100:1200/v1/i/60a363e4_0f7f.jpg",
-        name: "The Organic Cotton Pique Polo",
-        url: "https://www.everlane.com/products/womens-knit-polo-canvas?locale=US&utm_medium=cpc&utm_source=pla-google&utm_campaign=838503720&utm_content=435182470680&utm_term=aud-343731920531:pla-904739202459&adgroup=104880355847&pid=7687-54987&device=c&gclid=CjwKCAiAwrf-BRA9EiwAUWwKXtaLsjEtpQYMlBz5Y75AuqoK77zcHlKXCxQZAmzl_nTGyJm_eRBvFBoC2bMQAvD_BwE",
-        avail: true
-    },
-    {
-        image: "https://images.lululemon.com/is/image/lululemon/LW7AQES_0001_5?wid=1080&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72",
-        name: "Track That Short 5'",
-        url: "https://shop.lululemon.com/p/women-shorts/Track-That-Short-5/_/prod9270813?color=0001&sz=4&locale=en_US&sl=US&CID=Google_Women_Shopping_US&gclid=CjwKCAiAwrf-BRA9EiwAUWwKXmy9YIzTkMpB-PTKULvEX1qBXd_wKyXRI7yB3YSnJ7uEcYe_Km8flhoC6CAQAvD_BwE&gclsrc=aw.ds",
-        avail: true
-    },
-    {
-        image: "https://s7d4.scene7.com/is/image/WolverineWorldWide/WF34000_D?wid=826&hei=685&resMode=bilin&op_usm=0.5,1.0,8,0&iccEmbed=0&printRes=72",
-        name: "Women's Champion Originals",
-        url: "https://www.keds.com/en/champion-originals/044209485480.html?utm_source=google&utm_medium=cpc&adpos=&scid=scplp14492W-044209485480&sc_intid=14492W-044209485480&gclid=CjwKCAiAwrf-BRA9EiwAUWwKXmAvD2PjWrwv_MNZCM_g1OjbOvY-gwjvBTf0fJby_8wOcN1oFwiyUhoCpJMQAvD_BwE&gclsrc=aw.ds",
-        avail: true
-    }
-    ]
- },
- {
-    outfitImage: "/assets/QueensGambitOutfits/7.2.jpg",
-    category: "queens",
-    items: [ {
-        image: "https://static.zara.net/photos///2020/I/0/1/p/5070/926/800/2/w/1143/5070926800_6_1_1.jpg?ts=1597313914410",
-        name: "COAT WITH LAPEL COLLAR",
-        url: "https://www.zara.com/us/en/coat-with-lapel-collar-p05070626.html?v1=78532073",
-        avail: true
-    },
-    {
-        image: "https://media.everlane.com/image/upload/c_fill,dpr_1.0,f_auto,g_face:center,q_auto,w_auto:100:1200/v1/i/66786020_ad82.jpg",
-        name: "The Organic Cotton Turtleneck",
-        url: "https://www.everlane.com/products/womens-organic-cotton-turtleneck-canvas?locale=US&utm_medium=cpc&utm_source=pla-google&utm_campaign=838131515&utm_content=456926566752&utm_term=aud-337553806454:pla-940403820878&adgroup=109741878231&pid=8002-59155&device=c&gclid=CjwKCAiAwrf-BRA9EiwAUWwKXmIqzlHBCFMkWBa1FThexXAibQG6-TtIfmtoOZmhoIkjZ_ELZxEXBxoCEf8QAvD_BwE",
-        avail: true
-    },
-    {
-        image: "https://images.asos-media.com/products/johnny-loves-rosie-tortoise-circle-buckle-belt-in-black/20452736-1-black?$XXL$&wid=513&fit=constrain",
-        name: "Johnny Loves Rosie Tortoise Circle Buckle belt in black",
-        url: "https://www.asos.com/us/johnny-loves-rosie/johnny-loves-rosie-tortoise-circle-buckle-belt-in-black/prd/20452736",
-        avail: true
-    },
-    {
-        outfitImage: "/assets/QueensGambitOutfits/7.3.jpg",
-        category: "queens",
-        items: [ {
-            image: "https://cdn-images.farfetch-contents.com/15/51/86/89/15518689_28393559_1000.jpg",
-            name: "JW Anderson angled hem coat",
-            url: "https://www.farfetch.com/shopping/women/jw-anderson-angled-hem-coat-item-15518689.aspx?fsb=1&size=18&storeid=9158&utm_source=google&utm_medium=cpc&utm_keywordid=119356620&utm_shoppingproductid=15518689-54&pid=google_search&af_channel=Search&c=2069920048&af_c_id=2069920048&af_siteid=&af_keywords=aud-369354889647:pla-387245418436&af_adset_id=75217631654&af_ad_id=273101830441&af_sub1=119356620&af_sub5=15518689-54&is_retargeting=true&shopping=yes&gclid=CjwKCAiAwrf-BRA9EiwAUWwKXpLvNyHl6ZSSlWfSE-l7cQf-81TZoeKdao9SF-CQqDApZXpdIvIZzhoCeh0QAvD_BwE",
-            avail: true
-        },
-        {
-            image: "https://www.talbots.com/dw/image/v2/BCMM_PRD/on/demandware.static/-/Sites-master-catalog-talbots/default/dw9f68f6fb/images/203031020/203031020_5002.jpg?sfrm=jpg",
-            name: "POLISHED PLAID TRENCH COAT",
-            url: "https://www.talbots.com/polished-plaid-trench-coat/P203031020.html?dwvar_P203031020_color=SPICE%20MULTI&dwvar_P203031020_sizeType=MS&dwvar_P203031020_size=096",
-            avail: true
-        }
-        ]
-     },
-     {
-        outfitImage: "/assets/QueensGambitOutfits/7.4.jpg",
-        category: "queens",
-        items: [ {
-            image: "https://media.everlane.com/image/upload/c_fill,dpr_1.0,f_auto,g_face:center,q_auto,w_auto:100:1200/v1/i/76f2adf8_5092.jpg",
-            name: "The Belgian-Waffle Wool Beanie",
-            url: "https://www.everlane.com/products/womens-belgian-waffle-beanie-bone?locale=US",
-            avail: true
-        },
-        {
-            image: "https://dimg.dillards.com/is/image/DillardsZoom/mainProduct/guess-single-breasted-button-front-skirted-coat/05836938_zi_white.jpg",
-            name: "Guess Single Breasted Button Front Skirted Coat",
-            url: "https://www.dillards.com/p/guess-single-breasted-button-front-skirted-coat/509698719?googleShop=Y",
-            avail: true
-        },
-        {
-            image: "https://anninc.scene7.com/is/image/AN/554503_9192?$fullBpdp$",
-            name: "The Easy Straight Pant",
-            url: "https://www.anntaylor.com/the-easy-straight-pant/554503?skuId=30603684&defaultColor=9192&prodId=554503&currency=usd&cid=PLA_AT_GGL_NB_Bottoms|Full%20Length&gclid=CjwKCAiAwrf-BRA9EiwAUWwKXt06VYkiEbXP-TMDxJ8MKfapnV_j8_VtoAHAq6T3HWUl1nS2n9wScRoCp8wQAvD_BwE&selectedColor=9192",
-            avail: true
-        },
-        {
-            image: "https://slimages.macys.com/is/image/MCY/products/5/optimized/17790195_fpx.tif?op_sharpen=1&wid=1230&hei=1500&fit=fit,1&$filterxlrg$",
-            name: "Franco Sarto Marquee Booties",
-            url: "https://www.macys.com/shop/product/franco-sarto-marquee-booties?ID=9452813&pla_country=US&CAGPSPN=pla&cm_mmc=Google_Womens_Shoes_PLA-_-Google_PLA_Womens_Shoes_Franco_Sarto_Google_PLA_Womens_Shoes_Franco_Sarto_Boots-_-473325281719-_-pg1051993707_c_kclickid_0fc8d3e7-dfcc-4c39-92a4-509ae12f3187_KID_EMPTY_11384848754_116777589772_473325281719_aud-325772344535:pla-980142578106_17122149630USA__c_KID_&trackingid=456x1051993707&m_sc=sem&m_sb=Google&m_tp=PLA&m_ac=Google_Womens_Shoes_PLA&m_ag=Google_PLA_WomensShoes_FrancoSarto_Boots&m_cn=Google_PLA_Womens_Shoes_Franco_Sarto&m_pi=go_cmp-11384848754_adg-116777589772_ad-473325281719_aud-325772344535:pla-980142578106_dev-c_ext-_prd-17122149630USA&gclid=CjwKCAiAwrf-BRA9EiwAUWwKXnK5QXH0nJSaOQBgHrc1AwGw7Aw0oSr0XjBeKYjymmoJ3RvMCj8wmBoC8nYQAvD_BwE",
-            avail: true
-        }
+//     ]
+//  },
+//  {
+//     outfitImage: "/assets/QueensGambitOutfits/7.1.jpg",
+//     category: "queens",
+//     items: [ {
+//         image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSv8_rQ7uqlczdpOSt9nq-iSFCTg2g5O3bpD08R28cYTFPQ89Iz8RIAOPcOjHKY0vuqaZXd0vIlnBX_LVOqB9qG8k6YntvYcg&usqp=CAY",
+//         name: "ASOS DESIGN wide jersey headband in white",
+//         url: "https://www.asos.com/us/asos-design/asos-design-wide-jersey-headband-in-white/prd/20649170",
+//         avail: true
+//     },
+//     {
+//         image: "https://media.everlane.com/image/upload/c_fill,dpr_1.0,f_auto,g_face:center,q_auto,w_auto:100:1200/v1/i/60a363e4_0f7f.jpg",
+//         name: "The Organic Cotton Pique Polo",
+//         url: "https://www.everlane.com/products/womens-knit-polo-canvas?locale=US&utm_medium=cpc&utm_source=pla-google&utm_campaign=838503720&utm_content=435182470680&utm_term=aud-343731920531:pla-904739202459&adgroup=104880355847&pid=7687-54987&device=c&gclid=CjwKCAiAwrf-BRA9EiwAUWwKXtaLsjEtpQYMlBz5Y75AuqoK77zcHlKXCxQZAmzl_nTGyJm_eRBvFBoC2bMQAvD_BwE",
+//         avail: true
+//     },
+//     {
+//         image: "https://images.lululemon.com/is/image/lululemon/LW7AQES_0001_5?wid=1080&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&fit=constrain,0&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72",
+//         name: "Track That Short 5'",
+//         url: "https://shop.lululemon.com/p/women-shorts/Track-That-Short-5/_/prod9270813?color=0001&sz=4&locale=en_US&sl=US&CID=Google_Women_Shopping_US&gclid=CjwKCAiAwrf-BRA9EiwAUWwKXmy9YIzTkMpB-PTKULvEX1qBXd_wKyXRI7yB3YSnJ7uEcYe_Km8flhoC6CAQAvD_BwE&gclsrc=aw.ds",
+//         avail: true
+//     },
+//     {
+//         image: "https://s7d4.scene7.com/is/image/WolverineWorldWide/WF34000_D?wid=826&hei=685&resMode=bilin&op_usm=0.5,1.0,8,0&iccEmbed=0&printRes=72",
+//         name: "Women's Champion Originals",
+//         url: "https://www.keds.com/en/champion-originals/044209485480.html?utm_source=google&utm_medium=cpc&adpos=&scid=scplp14492W-044209485480&sc_intid=14492W-044209485480&gclid=CjwKCAiAwrf-BRA9EiwAUWwKXmAvD2PjWrwv_MNZCM_g1OjbOvY-gwjvBTf0fJby_8wOcN1oFwiyUhoCpJMQAvD_BwE&gclsrc=aw.ds",
+//         avail: true
+//     }
+//     ]
+//  },
+//  {
+//     outfitImage: "/assets/QueensGambitOutfits/7.2.jpg",
+//     category: "queens",
+//     items: [ {
+//         image: "https://static.zara.net/photos///2020/I/0/1/p/5070/926/800/2/w/1143/5070926800_6_1_1.jpg?ts=1597313914410",
+//         name: "COAT WITH LAPEL COLLAR",
+//         url: "https://www.zara.com/us/en/coat-with-lapel-collar-p05070626.html?v1=78532073",
+//         avail: true
+//     },
+//     {
+//         image: "https://media.everlane.com/image/upload/c_fill,dpr_1.0,f_auto,g_face:center,q_auto,w_auto:100:1200/v1/i/66786020_ad82.jpg",
+//         name: "The Organic Cotton Turtleneck",
+//         url: "https://www.everlane.com/products/womens-organic-cotton-turtleneck-canvas?locale=US&utm_medium=cpc&utm_source=pla-google&utm_campaign=838131515&utm_content=456926566752&utm_term=aud-337553806454:pla-940403820878&adgroup=109741878231&pid=8002-59155&device=c&gclid=CjwKCAiAwrf-BRA9EiwAUWwKXmIqzlHBCFMkWBa1FThexXAibQG6-TtIfmtoOZmhoIkjZ_ELZxEXBxoCEf8QAvD_BwE",
+//         avail: true
+//     },
+//     {
+//         image: "https://images.asos-media.com/products/johnny-loves-rosie-tortoise-circle-buckle-belt-in-black/20452736-1-black?$XXL$&wid=513&fit=constrain",
+//         name: "Johnny Loves Rosie Tortoise Circle Buckle belt in black",
+//         url: "https://www.asos.com/us/johnny-loves-rosie/johnny-loves-rosie-tortoise-circle-buckle-belt-in-black/prd/20452736",
+//         avail: true
+//     },
+//     {
+//         outfitImage: "/assets/QueensGambitOutfits/7.3.jpg",
+//         category: "queens",
+//         items: [ {
+//             image: "https://cdn-images.farfetch-contents.com/15/51/86/89/15518689_28393559_1000.jpg",
+//             name: "JW Anderson angled hem coat",
+//             url: "https://www.farfetch.com/shopping/women/jw-anderson-angled-hem-coat-item-15518689.aspx?fsb=1&size=18&storeid=9158&utm_source=google&utm_medium=cpc&utm_keywordid=119356620&utm_shoppingproductid=15518689-54&pid=google_search&af_channel=Search&c=2069920048&af_c_id=2069920048&af_siteid=&af_keywords=aud-369354889647:pla-387245418436&af_adset_id=75217631654&af_ad_id=273101830441&af_sub1=119356620&af_sub5=15518689-54&is_retargeting=true&shopping=yes&gclid=CjwKCAiAwrf-BRA9EiwAUWwKXpLvNyHl6ZSSlWfSE-l7cQf-81TZoeKdao9SF-CQqDApZXpdIvIZzhoCeh0QAvD_BwE",
+//             avail: true
+//         },
+//         {
+//             image: "https://www.talbots.com/dw/image/v2/BCMM_PRD/on/demandware.static/-/Sites-master-catalog-talbots/default/dw9f68f6fb/images/203031020/203031020_5002.jpg?sfrm=jpg",
+//             name: "POLISHED PLAID TRENCH COAT",
+//             url: "https://www.talbots.com/polished-plaid-trench-coat/P203031020.html?dwvar_P203031020_color=SPICE%20MULTI&dwvar_P203031020_sizeType=MS&dwvar_P203031020_size=096",
+//             avail: true
+//         }
+//         ]
+//      },
+//      {
+//         outfitImage: "/assets/QueensGambitOutfits/7.4.jpg",
+//         category: "queens",
+//         items: [ {
+//             image: "https://media.everlane.com/image/upload/c_fill,dpr_1.0,f_auto,g_face:center,q_auto,w_auto:100:1200/v1/i/76f2adf8_5092.jpg",
+//             name: "The Belgian-Waffle Wool Beanie",
+//             url: "https://www.everlane.com/products/womens-belgian-waffle-beanie-bone?locale=US",
+//             avail: true
+//         },
+//         {
+//             image: "https://dimg.dillards.com/is/image/DillardsZoom/mainProduct/guess-single-breasted-button-front-skirted-coat/05836938_zi_white.jpg",
+//             name: "Guess Single Breasted Button Front Skirted Coat",
+//             url: "https://www.dillards.com/p/guess-single-breasted-button-front-skirted-coat/509698719?googleShop=Y",
+//             avail: true
+//         },
+//         {
+//             image: "https://anninc.scene7.com/is/image/AN/554503_9192?$fullBpdp$",
+//             name: "The Easy Straight Pant",
+//             url: "https://www.anntaylor.com/the-easy-straight-pant/554503?skuId=30603684&defaultColor=9192&prodId=554503&currency=usd&cid=PLA_AT_GGL_NB_Bottoms|Full%20Length&gclid=CjwKCAiAwrf-BRA9EiwAUWwKXt06VYkiEbXP-TMDxJ8MKfapnV_j8_VtoAHAq6T3HWUl1nS2n9wScRoCp8wQAvD_BwE&selectedColor=9192",
+//             avail: true
+//         },
+//         {
+//             image: "https://slimages.macys.com/is/image/MCY/products/5/optimized/17790195_fpx.tif?op_sharpen=1&wid=1230&hei=1500&fit=fit,1&$filterxlrg$",
+//             name: "Franco Sarto Marquee Booties",
+//             url: "https://www.macys.com/shop/product/franco-sarto-marquee-booties?ID=9452813&pla_country=US&CAGPSPN=pla&cm_mmc=Google_Womens_Shoes_PLA-_-Google_PLA_Womens_Shoes_Franco_Sarto_Google_PLA_Womens_Shoes_Franco_Sarto_Boots-_-473325281719-_-pg1051993707_c_kclickid_0fc8d3e7-dfcc-4c39-92a4-509ae12f3187_KID_EMPTY_11384848754_116777589772_473325281719_aud-325772344535:pla-980142578106_17122149630USA__c_KID_&trackingid=456x1051993707&m_sc=sem&m_sb=Google&m_tp=PLA&m_ac=Google_Womens_Shoes_PLA&m_ag=Google_PLA_WomensShoes_FrancoSarto_Boots&m_cn=Google_PLA_Womens_Shoes_Franco_Sarto&m_pi=go_cmp-11384848754_adg-116777589772_ad-473325281719_aud-325772344535:pla-980142578106_dev-c_ext-_prd-17122149630USA&gclid=CjwKCAiAwrf-BRA9EiwAUWwKXnK5QXH0nJSaOQBgHrc1AwGw7Aw0oSr0XjBeKYjymmoJ3RvMCj8wmBoC8nYQAvD_BwE",
+//             avail: true
+//         }
     
     
     
     
-        ]
-     }
+//         ]
+//      }
 
 
-    ]
- }
+//     ]
+//  }
 
 
 
