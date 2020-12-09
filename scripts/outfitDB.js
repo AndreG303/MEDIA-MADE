@@ -1,14 +1,24 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 
-mongoose.connect(
-  ( process.env.MONGODB_URI ||
-    "mongodb://localhost/proj3"),
-    {
-  useNewUrlParser: true,
-  useFindAndModify: false
+const asyncDB = async () => {
+    try {
+        mongoose.connect(
+            (process.env.MONGODB_URI ||
+                "mongodb://localhost/proj3"), {
+                useNewUrlParser: true,
+                useFindAndModify: false
+            }
+        );
+        console.log("MongoDB Connected");
+    } catch (err) {
+
+        console.error(err.message);
+        process.exit(1);;
     }
-);
+}
+
+asyncDB();
 
 const outfit = [{
 //Emily in Paris Outfits
