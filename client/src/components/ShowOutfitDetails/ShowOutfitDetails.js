@@ -112,7 +112,7 @@ function OutfitPage(props) {
         {(() => {
           if(!loggedIn){
             return(
-              <p className="login-closet-text">Login to Add To Your Closet</p>
+              <p className="login-closet-text">Login to Add this Outfit to Your Closet</p>
             )
           }
           else if (props.showAddToCloset && loggedIn) {
