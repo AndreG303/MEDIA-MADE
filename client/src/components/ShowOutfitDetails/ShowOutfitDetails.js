@@ -2,9 +2,12 @@ import React, { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import API from "../../utils/API";
 import { Row, Col, Container } from "../Grid";
-import { Button } from "react-bootstrap";
+import { Button} from "react-bootstrap";
 import TopBtn from "../TopBtn/TopBtn.js";
 import UserContext from "../../utils/UserContext";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function OutfitPage(props) {
   const [outfit, setOutfit] = useState({
@@ -52,10 +55,13 @@ function OutfitPage(props) {
     [props]
   );
 
+  const notifyAdd = () => toast("Outfit Successfully Added to Your Closet!");
+
   const handleAddToCloset = async () => {
     console.log(outfitid);
     await API.updateUserOutfits(outfitid).then((data) => {
       console.log(data);
+      return notifyAdd();
     });
   };
 
@@ -63,13 +69,15 @@ function OutfitPage(props) {
     API.deleteUserOutfit(outfitid).then((data) => {
       console.log(data);
       if (props.deleteOutfit) {
-        props.deleteOutfit(outfitid);
+        props.deleteOutfit(outfitid); 
       }
+      
     });
   };
 
   return (
-    <div className="container-outfit">
+    <div className="container-outfit"> 
+
       <Container >
         <Row>
           <Col size="md-4">
@@ -117,13 +125,23 @@ function OutfitPage(props) {
           }
           else if (props.showAddToCloset && loggedIn) {
             return (
+              <div>
+
               <Button
                 className="buttons"
                 variant="outline-light"
                 onClick={handleAddToCloset}
+                          
               >
                 ADD TO CLOSET
               </Button>
+              <ToastContainer
+              position="bottom-right"
+              
+              />
+              </div>
+              
+            
             );
           } else if (loggedIn)  {
             return (
@@ -133,7 +151,7 @@ function OutfitPage(props) {
                 onClick={(event) => handleDelete(event, outfit._id)}
               >
                 DELETE OUTFIT
-              </Button>
+              </Button>  
             );
           }
         })()}
