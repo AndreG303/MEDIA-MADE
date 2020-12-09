@@ -25,18 +25,7 @@ function OutfitPage(props) {
     },
     outfitImg: {
       padding: "20px",
-    },
-    outfitTextTitle: {
-      fontSize: "25px",
-      fontFamily: "Old Standard TT",
-      textTransform: "uppercase",
-      paddingTop: "20px",
-    },
-    outfitTextLink: {
-      fontFamily: "'Rubik', sans-serif",
-      fontSize: "25px",
-      color: "white",
-    },
+    }
   };
 
   const { outfitid } = useParams();
@@ -86,7 +75,6 @@ function OutfitPage(props) {
           <Col size="md-4">
             <img
               className="show-outfit-img"
-              style={styles.emily}
               src={outfit.outfitImage}
               alt="outfit"
             />
@@ -122,7 +110,12 @@ function OutfitPage(props) {
           </Col>
         </Row>
         {(() => {
-          if (props.showAddToCloset && loggedIn) {
+          if(!loggedIn){
+            return(
+              <p className="login-closet-text">Login to Add To Your Closet</p>
+            )
+          }
+          else if (props.showAddToCloset && loggedIn) {
             return (
               <Button
                 className="buttons"
