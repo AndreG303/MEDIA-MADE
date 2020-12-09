@@ -36,7 +36,7 @@ function QueensOutfitCard(props) {
             className="full-outfit"
             style={{ width: cardWidth + "%", transition: "width 1s" }}
             onMouseOver={() => {
-              let min = 5;
+              let min = 3;
               let variance = 100 - queenWidthState.length * min;
               let nWidth = [];
               let maxValue = -3;
