@@ -4,7 +4,7 @@ Have you ever found yourself watching your favorite TV show and wish you could w
 
 ### Link to Deployed app: https://damp-ocean-72048.herokuapp.com/
 
-![Screen Shot 2020-11-14 at 7 53 28 AM](https://user-images.githubusercontent.com/65183415/99151240-8a07be80-264e-11eb-9961-9b1c72a72c7a.png)
+![Screen Shot 2020-11-14 at 7 53 28 AM](https://user-images.githubusercontent.com/61949164/101684706-d3241600-3a34-11eb-860b-2b1910901d50.PNG)
 
 ## Table of Contents
 - [User Story](#user-story)
