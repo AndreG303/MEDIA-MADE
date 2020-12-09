@@ -489,9 +489,6 @@ header:visited {
   color:#fcfcfc;
 }
 
-
-
-
 .stars {
 position:absolute;
 top:0;
@@ -599,7 +596,7 @@ z-index: 0;
 div.col-md-4{
   margin-left: 25px;
 }
-}
+
 p.itemName{
   font-size: 22px;
   font-family: 'Old Standard TT';
@@ -614,6 +611,14 @@ p.itemLink{
   font-size: 20px;
   padding-left: 20px;
   color: white;
+}
+
+.aboutContainer {
+  display: block;
+  justify-content: center;
+  
+
+}
 }
 @media (max-width: 767px) {
   .typedLetters {
