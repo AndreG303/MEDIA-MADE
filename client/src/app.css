@@ -311,12 +311,12 @@ App {
   border: 1px solid gray;
   margin-bottom: 20px;
   margin-left: 20px;
-  box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0px 0px 15px -1px rgba(187, 160, 173, 0.527);
 }
 
 img.show-outfit-img{
-  -webkit-box-shadow: 0px 2px 8px 5px rgba(0,0,0,0.67); 
-box-shadow: 0px 2px 8px 5px rgba(0,0,0,0.67);
+  border: 1px solid gray;
+  box-shadow: 0px 0px 10px 4px rgba(189, 168, 178, 0.527);
 }
 
 div.full-outfit.card{
@@ -324,13 +324,14 @@ div.full-outfit.card{
 }
 
 .container-outfit{
-  background-color: #d8dbe2;
+  background-color: #000000da;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
   padding: 20px;
-  border-radius: 2%;
+  border-radius: 2%; 
+  box-shadow: 0px 0px 10px 2px rgba(165, 119, 142, 0.692);
 }
 
 
@@ -343,25 +344,29 @@ div.full-outfit.card{
   padding-top: 40px;
   padding-bottom: 20px;
   
+} 
+
+p.login-closet-text{
+  text-align: center;
+  padding: 15px;
+  color: #a6a9af;
+  font-family: 'Rubik';
+  font-style: italic;
+  font-size: 20px;
 }
 
-/* button styling */
-button.buttons.btn.btn-outline-light{
-  border-style: solid;
-  border-color: white;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+p.itemName{
+  font-size: 25px;
+  font-family: 'Old Standard TT';
+  text-transform: uppercase;
+  padding-top: 20px;
+  color: white;
 }
 
-a {
-  color: #58a4b0;
-}
-
-a:hover {
-  color: #A9BCD0;
-  text-decoration: none;
-
+p.itemLink{
+  font-family: 'Rubik', sans-serif;
+  font-size: 25px;
+  color: white;
 }
 
 .backText {
@@ -371,7 +376,28 @@ a:hover {
   text-align: center;
   padding: 20px;
   font-size: 70px;
-  text-shadow: -1px 0 hotpink, 0 1px black, 1px 0 black, 0 -1px hotpink;
+  text-shadow: -1px 0 rgb(255, 118, 187), 0 1px black, 1px 0 black, 0 -1px rgb(255, 118, 187);
+}
+
+/* button styling */
+button.buttons.btn.btn-outline-light{
+  border: 1px solid gray;
+  box-shadow: 0px 0px 4px 1px rgba(185, 134, 164, 0.876);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family: 'Rubik', sans-serif;
+  margin-top: 30px;
+}
+
+a {
+  color: gray;
+}
+
+a:hover {
+  color: rgb(248, 222, 242);
+  text-decoration: none;
+
 }
 
 /* tv show jumbotron styling */
